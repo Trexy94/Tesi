@@ -1,0 +1,15 @@
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is '.\tesi.blg'
+[31] biber-MSWIN32:303> INFO - === 
+[53] Biber.pm:359> INFO - Reading '.\tesi.bcf'
+[145] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[160] Biber.pm:3670> INFO - Processing section 0
+[178] Biber.pm:3840> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
+[181] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[186] bibtex.pm:1292> INFO - Found BibTeX data source 'bibliografia.bib'
+[204] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[204] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[206] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'it-IT'
+[206] Biber.pm:3505> INFO - No sort tailoring available for locale 'it-IT'
+[209] bbl.pm:608> INFO - Writing '.\tesi.bbl' with encoding 'UTF-8'
+[210] bbl.pm:712> INFO - Output to .\tesi.bbl
