@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}L'azienda}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}L'idea}{1}{section.1.2}
+\contentsline {section}{\numberline {1.2}Lo stage}{1}{section.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Organizzazione del testo}{1}{section.1.3}
 \defcounter {refsection}{0}\relax 

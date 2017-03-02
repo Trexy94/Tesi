@@ -107,8 +107,8 @@ Class=LaTeXView
 Document=capitoli\capitolo-1.tex
 
 [Frame5_View0,0]
-TopLine=35
-Cursor=447
+TopLine=12
+Cursor=805
 
 [SessionInfo]
 FrameCount=6

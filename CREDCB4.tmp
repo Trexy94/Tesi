@@ -3,9 +3,8 @@
 % Acronimi
 %**************************************************************
 \renewcommand{\acronymname}{Acronimi e abbreviazioni}
-\newacronym[description={\glslink{API}{Application Program Interface}}]
-    {api}{API}{Application Program Interface}
-\newacronym[description={\glslink{KMS}{Knowledge Managment System}}]
+
+\newacronym[description={\glslink{KSM}{Knowledge Managment System}}]
     {kms}{KMS}{Knowledge Managment System}
 \newacronym[description={\glslink{ICT}{Information and Communication Tecnology}}]
     {ict}{ICT}{Information and Communication Tecnology}
@@ -18,16 +17,16 @@
 %**************************************************************
 % Glossario
 %**************************************************************
-\renewcommand{\glossaryname}{Glossario}
+%\renewcommand{\glossaryname}{Glossario}
 
-\newglossaryentry{API}
-{
-    name=\glslink{api}{API},
-    text=Application Program Interface,
-    sort=api,
-    description={in informatica con il termine \emph{Application Programming Interface API} (ing. interfaccia di programmazione di un'applicazione) si indica ogni insieme di procedure disponibili al programmatore, di solito raggruppate a formare un set di strumenti specifici per l'espletamento di un determinato compito all'interno di un certo programma. La finalità è ottenere un'astrazione, di solito tra l'hardware e il programmatore o tra software a basso e quello ad alto livello semplificando così il lavoro di programmazione}
-}
-
+%\newglossaryentry{apig}
+%{
+    %name=\glslink{api}{API},
+    %text=Application Program Interface,
+    %sort=api,
+    %description={in informatica con il termine \emph{Application Programming Interface API} (ing. interfaccia di programmazione di un'applicazione) si indica ogni insieme di procedure disponibili al programmatore, di solito raggruppate a formare un set di strumenti specifici per l'espletamento di un determinato compito all'interno di un certo programma. La finalità è ottenere un'astrazione, di solito tra l'hardware e il programmatore o tra software a basso e quello ad alto livello semplificando così il lavoro di programmazione}
+%}
+%
 %\newglossaryentry{umlg}
 %{
     %name=\glslink{uml}{UML},
@@ -41,27 +40,25 @@
     sort=uml,
     description={Knowledge management system:\\
 		I Knowledge management system sono sistemi software che supportano le fasi del ciclo dell'informazione e la comunicazione all'interno di una comunità di pratica (ad esempio un'azienda) o di apprendimento (ad esempio una classe "virtuale") anche disperse nello spazio. Dovrebbero assistere le persone ad esplicitare la conoscenza tacita, a reperirla, a condividerla, supportando in particolare le seguenti funzioni:
+		
 		\begin{itemize}
 			\item Cattura delle competenze collettive
 \item Controllo per realizzare obiettivi comuni
-\item Integrazione delle conoscenze frammentate
+\item Integrazione delle conoscenze frammentate}
 		\end{itemize}
 }
-}
-\newglossaryentry{ICT}{
+\newglossaryentry{ICT}
     name=\glslink{ict}{ICT},
     text=ICT,
     sort=ict,
-    description={Information and communication tecnology:\\ Le tecnologie dell'informazione e della comunicazione (in inglese Information and Communications Technology, in acronimo ICT), sono l'insieme dei metodi e delle tecnologie che realizzano i sistemi di trasmissione, ricezione ed elaborazione di informazioni (tecnologie digitali comprese)}
-		}
-\newglossaryentry{B2C}{
+    description={Information and communication tecnology:\\ Le tecnologie dell'informazione e della comunicazione (in inglese Information and Communications Technology, in acronimo ICT), sono l'insieme dei metodi e delle tecnologie che realizzano i sistemi di trasmissione, ricezione ed elaborazione di informazioni (tecnologie digitali comprese).}
+\newglossaryentry{B2C}
    name=\glslink{b2c}{B2C},
     text=B2C,
     sort=b2c,
-    description={Con Business to Consumer, spesso abbreviato in \emph{B2C}, si indicano le relazioni che un'impresa commerciale detiene con i suoi clienti per le attività di vendita e/o di assistenza}
-		}
-\newglossaryentry{B2B}{
+    description={Con Business to Consumer, spesso abbreviato in \emph{B2C}, si indicano le relazioni che un'impresa commerciale detiene con i suoi clienti per le attività di vendita e/o di assistenza.}
+\newglossaryentry{B2B}
     name=\glslink{b2b}{B2B},
     text=B2B,
     sort=b2b,
-    description={Business-to-business, spesso indicato con l'acronimo \emph{B2B}, in italiano commercio interaziendale, è una locuzione utilizzata per descrivere le transazioni commerciali elettroniche tra imprese, distinguendole da quelle che intercorrono tra le imprese e altri gruppi, come quelle oppure quelle tra una impresa e il governo}}
+    description={Business-to-business, spesso indicato con l'acronimo B2B, in italiano commercio interaziendale, è una locuzione utilizzata per descrivere le transazioni commerciali elettroniche tra imprese, distinguendole da quelle che intercorrono tra le imprese e altri gruppi, come quelle oppure quelle tra una impresa e il governo.}
