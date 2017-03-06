@@ -1,15 +1,15 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is '.\tesi.blg'
-[34] biber-MSWIN32:303> INFO - === 
-[58] Biber.pm:359> INFO - Reading '.\tesi.bcf'
-[155] Biber.pm:832> INFO - Using all citekeys in bib section 0
-[170] Biber.pm:3670> INFO - Processing section 0
-[189] Biber.pm:3840> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
-[192] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[197] bibtex.pm:1292> INFO - Found BibTeX data source 'bibliografia.bib'
-[214] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[214] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[216] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'it-IT'
-[216] Biber.pm:3505> INFO - No sort tailoring available for locale 'it-IT'
-[219] bbl.pm:608> INFO - Writing '.\tesi.bbl' with encoding 'UTF-8'
-[219] bbl.pm:712> INFO - Output to .\tesi.bbl
+[31] biber-MSWIN32:303> INFO - === 
+[53] Biber.pm:359> INFO - Reading '.\tesi.bcf'
+[196] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[209] Biber.pm:3670> INFO - Processing section 0
+[226] Biber.pm:3840> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
+[228] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[232] bibtex.pm:1292> INFO - Found BibTeX data source 'bibliografia.bib'
+[249] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[249] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[250] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'it-IT'
+[250] Biber.pm:3505> INFO - No sort tailoring available for locale 'it-IT'
+[253] bbl.pm:608> INFO - Writing '.\tesi.bbl' with encoding 'UTF-8'
+[254] bbl.pm:712> INFO - Output to .\tesi.bbl
