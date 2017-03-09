@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=capitoli\capitolo-2.tex
 
 [Frame1_View0,0]
-TopLine=38
-Cursor=8591
+TopLine=59
+Cursor=5153
 
 [SessionInfo]
 FrameCount=2

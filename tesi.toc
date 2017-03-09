@@ -10,6 +10,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Lo stage}{1}{section.1.2}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Organizzazione del testo}{2}{section.1.3}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}tecnologie e strumenti utilizzati}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Tecnologie utilizzate}{3}{section.2.1}
@@ -42,68 +44,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Strumenti utilizzati}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strumenti di supporto all\IeC {\textquoteright }attivit\IeC {\`a} di Analisi}{5}{section*.21}
+\contentsline {subsubsection}{Strumenti di supporto all\IeC {\textquoteright }attivit\IeC {\`a} di Codifica}{5}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Astah}{5}{section*.22}
+\contentsline {paragraph}{Eclipse}{5}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strumenti di supporto all\IeC {\textquoteright }attivit\IeC {\`a} di Codifica}{5}{section*.23}
+\contentsline {subsubsection}{Strumenti per il versionamento}{5}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Eclipse}{5}{section*.24}
+\contentsline {paragraph}{Git}{5}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strumenti per il versionamento}{5}{section*.25}
+\contentsline {subsubsection}{Strumenti per \emph {build automation}}{5}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Git}{5}{section*.26}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strumenti per \emph {build automation}}{6}{section*.27}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Apache Maven}{6}{section*.28}
+\contentsline {paragraph}{Apache Maven}{5}{section*.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Descrizione dello stage}{7}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Introduzione al progetto}{7}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{7}{section.3.2}
+\contentsline {subsection}{\numberline {3.1.1}Considerazioni preliminari}{7}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.1.2}Il progetto nello specifico}{7}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Pianificazione}{7}{section.3.4}
+\contentsline {section}{\numberline {3.2}Il progetto}{8}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{9}{chapter.4}
+\contentsline {subsection}{\numberline {3.2.1}Problematiche iniziali}{8}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Casi d'uso}{9}{section.4.1}
+\contentsline {subsubsection}{Approccio alla piattaforma}{8}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{10}{section.4.2}
+\contentsline {subsection}{\numberline {3.2.2}Il progetto nello specifico}{8}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Progettazione e codifica}{13}{chapter.5}
+\contentsline {subsubsection}{Approccio alle problematiche}{8}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{13}{section.5.1}
+\contentsline {chapter}{Glossary}{9}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{13}{section.5.2}
+\contentsline {chapter}{Acronyms}{11}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Progettazione}{13}{section.5.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namespace 1}{13}{section*.35}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{13}{section.5.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Codifica}{13}{section.5.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{15}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{17}{chapter.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{17}{section.7.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{17}{section.7.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{17}{section.7.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Valutazione personale}{17}{section.7.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{19}{appendix.Alph1}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossary}{21}{section*.36}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{23}{section*.38}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{25}{appendix*.40}
+\contentsline {chapter}{Bibliografia}{13}{appendix*.33}
