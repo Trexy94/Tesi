@@ -38,39 +38,15 @@ per gestire i progetti assegnati dalle aziende clienti e monitorare l’operato 
 attraverso l’assegnazione di task e il controllo del loro compimento.
 L’azienda ritiene questo tipo di piattaforma fondamentale per il project management
 e un’ottima fonte di business. Per questo motivo, l’azienda vuole trasformare la
-\section{Il progetto}
 piattaforma in un prodotto software in grado di svolgere alcune attività senza l’utilizzo
-di applicazioni terze. L’ottimizzazione avverrà attraverso l’introduzione di plugin utili
-ad automatizzare il più possibile le attività di project management. I plugin svolti
-durante il periodo di stage hanno consentito di superare i limiti della piattaforma
-Alfresco relativamente al protocollo di servizio LDAP.
-\subsection{Problematiche iniziali}
-La piattaforma Alfresco offre numerose funzionalità, una fra queste è la possibilità di
-autenticazione degli utenti tramite il protocollo LDAP.
-L’azienda ha deciso di utilizzare questo tipo di protocollo per la registrazione delle
-informazioni degli utenti, in quanto essendo dotato di una struttura gerarchica ad
-albero fornisce alte prestazioni di lettura per una enorme scala di dati, rappresentando
-la soluzione migliore per una realtà aziendale.
-La piattaforma in questione ha manifestato un grosso limite relativamente al protocollo
-LDAP, in quanto gli utenti possono autenticarsi ma non cambiare e recuperare la
-propria password tramite il protocollo LDAP.
-L’azienda inizialmente per arginare questo problema ha creato le medesime funzionalità
-esternamente alla piattaforma perchè all’interno del personale non vi era alcun
-dipendente con capacità tecniche tali da poter esser integrate nel sistema; pertanto è
-stato chiesto allo stagista Franco Berton di esaminare la documentazione necessaria
-per risolvere le problematiche presenti.
+di applicazioni terze. L’ottimizzazione avverrà attraverso l’introduzione di moduli utili
+ad automatizzare il più possibile le attività di project management. I moduli svolti
+durante il periodo di stage hanno consentito di aggiungere alcune funzioni di tracciamento dei clienti e di gestione dei progetti ad Alfresco.
+\subsection{Considerazioni iniziali}
+Alfresco, soprattutto nella versione Community, utilizzata dall'azienda perchè Open Source è dotata di pochissime utilità di base, dal momento che il profitto dell'azienda che produce il software proviene dalla consulenza tecnica fornita dai loro esperti e dalla vendita di moduli ulteriori che vanno ad estendere la dotazione di base, moduli disponibili, soprattutto nel caso dei più interessanti, solo tramite la sottoscrizione di un abbonamento, che viene valutato di caso in caso ma è comunque costoso. L'azienda quindi punta a fornire moduli adatti alla gestione di clienti e progetti integrati direttamente in Alfresco, e punta quindi gradualmente ad accentrare in Alfresco più funzionalità possibili, sostituendo gradualmente gli applicativi attualmente utilizzati ad esempio per la gestione dei progetti e la rendicontazione, per poi in un futuro poter proporre a  clienti terzi il prodotto finito.Per questo motivo il progetto di stage si è concretizzato in quanto esposto, cercando quindi di introdurre alcune funzionalità.
 \subsubsection{Approccio alla piattaforma}
-La prima settimana di stage è stata dedicata prevalentemente allo studio dell’archittetura
-e della SDK della piattaforma. Per prendere dimestichezza con il sistema, l’azienda
-ha chiesto di cambiare il layout della Login e della Dashboard secondo i mockup creati
-appositamente dallo staff grafico.
-Queste richieste hanno comportato la creazione di file Javascript per effettuare le
-modifiche strutturali delle interfacce servendosi della tecnologia Jquery e la modifica
-di alcuni file css per modificare l’aspetto grafico delle interfacce in base ai mockup
-presentati.
-I cambiamenti strutturali e grafici delle pagine effettuati sono illustrati di seguito:
-\subsection{Il progetto nello specifico}
- \subsubsection{Approccio alle problematiche}
+Le prime due settimane di stage sono state dedicate prevalentemente allo studio della complessa archittetura
+e della SDK della piattaforma.
 Per affrontare le problematiche appena illustrate è stato effettuato un attento studio
 della SDK di Alfresco, individuando il tipo di archetype da utilizzare. La scelta è
 ricaduta sull’archtype all-in-one in quanto permette lo sviluppo sia del lato front-end

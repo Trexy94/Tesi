@@ -12,6 +12,7 @@
 
 %**************************************************************
 \section{Tecnologie utilizzate}
+In seguito verranno descritte più nel drttaglio le tecnologie apprese o particolarmente approfondite durante lo svolgimento dello stage, che vanno ad aggiungersi a quelle pregresse, come ad esempio l'HTML e il CSS, già noti e ampiamente utilizzati nel corso del progetto.
 \subsection{Linguaggi di Programmazione}
 \subsubsection{Java}
 Java è un linguaggio di programmazione orientato agli oggetti a tipizzazione statica,
@@ -21,7 +22,7 @@ once, run anywhere: il codice compilato che viene eseguito su una piattaforma no
 deve essere ricompilato per essere eseguito su una piattaforma diversa. Il prodotto
 della compilazione è infatti in un formato chiamato bytecode che può essere eseguito da
 una qualunque implementazione di un processore virtuale detto Java Virtual Machine.
-Alfresco usa Java per il lato backend, soprattutto per i webscript.
+Alfresco usa Java per il lato backend, soprattutto per i webscript, per i quali è stato largamente utilizzato assieme alla sua API.
 \subsubsection{Javascript}
 JavaScript è un linguaggio di scripting orientato agli oggetti e agli eventi, comunemente
 utilizzato nella programmazione Web lato client per la creazione, in siti web e
@@ -29,6 +30,7 @@ applicazioni web, di effetti dinamici interattivi, tramite funzioni di script in
 eventi innescati, a loro volta, in vari modi dall’utente sulla pagina web in uso. Tali
 funzioni di script possono essere opportunamente inserite in file HTML, in pagine JSP
 o in appositi file separati con estensione .js, poi richiamati nella logica di business.
+Nel progetto esso è stato usato per popolare dinamicamente le pagine di cui si sono composti i vari moduli e per eseguire i controlli sui form una volta inviate le richieste.
 \subsection{Formato per l’interscambio di dati}
 \subsubsection{JSON}
 JSON (JavaScript Object Notation) è un formato di scambio dati leggero e facile
@@ -41,6 +43,7 @@ due strutture:
 \item Una collezione di coppie nome/valore, spesso realizzato come un array associativo;
 \item Un elenco ordinato di valori, spesso realizzato come una lista.
 \end{itemize}
+Nel progetto esso è stato usato per poter scambiare i dati tra il lato frontend e il lato backend
 \subsection{Tecnica per l’interscambio di dati}
 \subsubsection{AJAX}
 AJAX, acronimo di Asynchronous Javascript And XML, è una tecnica di sviluppo
@@ -53,6 +56,7 @@ background senza interferire con il comportamento della pagina esistente. Normal
 le funzioni richiamate sono scritte con il linguaggio JavaScript. Tuttavia, e a dispetto
 del nome, l’uso di JavaScript e di XML non è obbligatorio, come non è detto che le
 richieste di caricamento debbano essere necessariamente asincrone.
+Nel progetto esso è stato usato per mettere in comunicazione il lato frontend e il lato backend
 \subsection{Framework}
 \subsubsection{Spring}
 Spring è un framework per realizzare applicazioni web basate sul Modello MVC
@@ -65,13 +69,14 @@ scegliere quale dei suoi componenti usare, fornendo nello stesso momento un fram
 coesivo per lo sviluppo di applicazioni distribuite. Questa architettura a livelli consiste
 in diversi moduli (o componenti) ben definiti, ognuno dei quali può rimanere da solo o
 essere implementato con altri.
+Su questo framework si basa la mappatura di Alfresco.
 \subsubsection{Jquery}
 JQuery è un framework nato con il preciso intento di rendere il codice più sintetico
 e di limitare al minimo l’estensione degli oggetti globali per ottenere la massima
 compatibilità con altre librerie. Grazie a questo principio jquery è in grado di offrire
 un’ampia gamma di funzionalità, che vanno dalla manipolazione degli stili CSS e degli
 elementi HTML, agli effetti grafici, per passare a comodi metodi per chiamate AJAX
-cross-browser.
+cross-browser. Nel progetto esso è stato utilizzato per la creazione di popup ed effetti per l'utente.
 \subsubsection{Alfresco Surf}
 Alfresco Surf è un framework messo a disposizione della piattaforma Alfresco con cui è
 possibile creare interfaccia grafiche, modelli e componenti sfruttando scripts server-side
@@ -93,6 +98,11 @@ per riferirsi ad una particolare entry, senza avere ambiguità.
 Ogni attributo dell’entry ha un tipo ed uno o più valori.
 In LDAP, le entry di una directory sono strutturate come in una struttura gerarchica
 di un albero.
+L'azienda fa uso di questo protocollo per la profilatura degli utenti in virtù della sua ottima integrazione con alfresco, di conseguenza si è dovuta utilizzare questa tecnologia per avere accesso ai dati degli utenti registrati
+\subsection{Data Base Management System}
+\subsubsection{PostgreSQL}
+PostgreSQL  è un completo DBMS ad oggetti rilasciato con licenza libera; spesso viene abbreviato come "Postgres".
+PostgreSQL è una reale alternativa sia rispetto ad altri prodotti liberi come ad esempio MySQL, con i quali però comunque condivide molti aspetti del suo linguaggio, che a quelli a codice chiuso come ad esempio Oracle, poichè offre caratteristiche uniche nel suo genere che lo pongono per alcuni aspetti all'avanguardia nel settore dei database. È il DBMS usato in maniera predefinita da Alfresco e per questo motivo è stato scelto per questo progetto.
 \section{Strumenti utilizzati}
 %\subsubsection{Strumenti di supporto all’attività di Analisi}
 %\paragraph{Astah}
