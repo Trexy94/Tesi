@@ -8,48 +8,28 @@
 \label{cap:descrizione-stage}
 %**************************************************************
 
-\intro{In questo capitolosi intende illustrare nel dettaglio le fasi e le considerazioni che hanno portato allo sviluppo del progetto e che sono alla sua base}\\
+\intro{In questo capitolo si intende illustrare nel dettaglio le fasi e le considerazioni che hanno portato allo sviluppo del progetto e che sono alla base della proposta di stage}\\
 
 %**************************************************************
 \section{Introduzione al progetto}
 \subsection{Considerazioni preliminari}
-Prima di cominciare l’approfondimento inerente al progetto di stage, è necessario
-esplicitare alcune considerazioni. Innanzitutto, lo stage si è svolto in un’azienda i
-cui prodotti software vengono realizzati attraverso l’impiego di procedure, regole e
-strumenti idonei a raggiungere la massima qualità. I principi qualitativi fondamentali
-su cui Ennova Research si basa sono:
+Per prima cosa, è necessario premettere che l'azienda in cui si è svolto lo stage per i suoi prodotti software richiede l'impiego di procedure, regole e strumenti idonei a raggiungere il miglior risultato possibile.
+In particolare, durante lo stage sono stati richiesti i seguenti punti:
 \begin{itemize}
-\item Tracciabilità: identificare con certezza lo stato del processo, delle attività e delle
-componenti in lavorazione;
-\item Identificazione: possibilità di identificare con certezza ogni elemento che entra a
-far parte del processo produttivo, rendendo evidenti le modifiche e lo stato di
-aggiornamento di ciascun elemento;
-\item Riproducibilità: possibilità di ripetere un processo;
-\item Documentazione: descrizione delle informazioni necessarie per la realizzazione
-del prodotto in modo puntuale e preciso
-\item Misurazione: ogni attività deve essere caratterizzata da un insieme di indicatori
-che consentano di misurare non solo la qualità, ma anche di tener traccia dei costi (in termini di tempo, nel caso del progetto qui esposto).
+\item Tracciabilità: è stato spesso richiesto di rendere conto dello stato di avanzamento dei processi, delle componenti e delle attività in lavorazione, al fine di verificare il rispotto della tabella di marcia,
+\item Documentazione: descrizione di quanto è stato fatto, delle strategie utilizzate e dei dettagli implementativi in modo puntuale e preciso, per far sì che quanto è stato fatto generi utilità all'azienda e sia riutilizzabile e replicabile in futuro, senza dover rifare tutte le attività, avendo già una strategia e una soluzione pronte e immediatamente utilizzabili.
+\item Misurazione: per ogni attività eseguita, deve essere misurabile il suo costo(in termini di tempo, nel caso del progetto qui esposto), e la sua qualità complessiva, in base a vari indicatori.
 \end{itemize}
-Questi principi sono stati rigorosamente seguiti nello sviluppo dei plugin al fine di
-raggiungere un livello di qualità conforme ai canoni aziendali.
-\subsection{Il progetto nello specifico}
-Come in precedenza spiegato, l’azienda Ennova Research utilizza la piattaforma Alfresco
-per gestire i progetti assegnati dalle aziende clienti e monitorare l’operato dei dipendenti
-attraverso l’assegnazione di task e il controllo del loro compimento.
-L’azienda ritiene questo tipo di piattaforma fondamentale per il project management
-e un’ottima fonte di business. Per questo motivo, l’azienda vuole trasformare la
-piattaforma in un prodotto software in grado di svolgere alcune attività senza l’utilizzo
-di applicazioni terze. L’ottimizzazione avverrà attraverso l’introduzione di moduli utili
-ad automatizzare il più possibile le attività di project management. I moduli svolti
-durante il periodo di stage hanno consentito di aggiungere alcune funzioni di tracciamento dei clienti e di gestione dei progetti ad Alfresco.
+Quanto esposto è stato tenuto in grande considerazione durante lo sviluppo, al fine di realizzare un prodotto quanto più possibile conforme agli standard di qualità aziendali
 \subsection{Considerazioni iniziali}
-Alfresco, soprattutto nella versione Community, utilizzata dall'azienda perchè Open Source è dotata di pochissime utilità di base, dal momento che il profitto dell'azienda che produce il software proviene dalla consulenza tecnica fornita dai loro esperti e dalla vendita di moduli ulteriori che vanno ad estendere la dotazione di base, moduli disponibili, soprattutto nel caso dei più interessanti, solo tramite la sottoscrizione di un abbonamento, che viene valutato di caso in caso ma è comunque costoso. L'azienda quindi punta a fornire moduli adatti alla gestione di clienti e progetti integrati direttamente in Alfresco, e punta quindi gradualmente ad accentrare in Alfresco più funzionalità possibili, sostituendo gradualmente gli applicativi attualmente utilizzati ad esempio per la gestione dei progetti e la rendicontazione, per poi in un futuro poter proporre a  clienti terzi il prodotto finito.Per questo motivo il progetto di stage si è concretizzato in quanto esposto, cercando quindi di introdurre alcune funzionalità.
-\subsubsection{Approccio alla piattaforma}
-Le prime due settimane di stage sono state dedicate prevalentemente allo studio della complessa archittetura
+Alfresco, soprattutto nella versione Community, utilizzata dall'azienda perché Open Source è dotata di pochissime utilità di base, dal momento che il profitto dell'azienda che produce il software proviene dalla consulenza tecnica fornita dai loro esperti e dalla vendita di moduli ulteriori che vanno ad estendere la dotazione di base, moduli disponibili, soprattutto nel caso dei più interessanti, solo tramite la sottoscrizione di un abbonamento, che viene valutato di caso in caso ma è comunque costoso. L'azienda quindi punta a fornire moduli adatti alla gestione di clienti e progetti integrati direttamente in Alfresco, e punta quindi gradualmente ad accentrare in Alfresco più funzionalità possibili, sostituendo gradualmente gli applicativi attualmente utilizzati ad esempio per la gestione dei progetti e la rendicontazione, per poi in un futuro poter proporre a  clienti terzi il prodotto finito.Per questo motivo il progetto di stage si è concretizzato in quanto esposto, cercando quindi di introdurre alcune funzionalità.
+\subsection{Approccio alla piattaforma}
+Le prime due settimane di stage sono state dedicate quasi interamente allo studio della complessa architettura
 e della SDK della piattaforma.
-Per affrontare le problematiche appena illustrate è stato effettuato un attento studio
-della SDK di Alfresco, individuando il tipo di archetype da utilizzare. La scelta è
-ricaduta sull’archtype all-in-one in quanto permette lo sviluppo sia del lato front-end
-che di quello back-end, rispecchiando il giusto approccio per i plugin da sviluppare.
-Successivamente, è stata effettuata un’attenta attività di analisi e di progettazione per
-realizzare quanto dovuto, utilizzando gli strumenti idonei alle diverse fasi.
+Per affrontare quanto appena illustrate è stato effettuato un attento studio
+della SDK di Alfresco, scegliendo il tipo di archetipo da utilizzare. La scelta è
+ricaduta sull’archetipo all-in-one in quanto permette lo sviluppo sia del lato front-end
+che di quello back-end in simultanea, senza dover distribuire ed installare separatamente un modulo per ogni parte sviluppata.
+In seguito, si sono analizzate le richieste poste dall'azienda in merito alle funzionalità desiderate al fine di individuare le strategie e i metodi migliori per realizzare quanto richiesto
+\subsection{Ambiente di test}
+Assieme allo sviluppo dei vari moduli, è proceduta a pari passo anche la creazione e il mantenimento di un ambiente di test dove poter testare i moduli in maniera sicura prima di portarli in produzione e applicare i moduli nel \gls{KMS} aziendale. Ciò è stato espressamente richiesto dall'azienda e quindi i moduli prodotti, non appena la loro installazione era possibile, sono stati caricati e provati nel \gls{KMS} di test che replicava quello dell'azienda, e successivamente, prima del rilascio finale, in una copia esatta del software del \gls{KMS} di produzione.

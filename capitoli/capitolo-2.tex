@@ -35,15 +35,14 @@ Nel progetto esso è stato usato per popolare dinamicamente le pagine di cui si 
 \subsubsection{JSON}
 JSON (JavaScript Object Notation) è un formato di scambio dati leggero e facile
 da leggere e scrivere sia per macchine che per umani, si basa su un sottoinsieme del
-linguaggio di programmazione JavaScript (Standard ECMA-262 3rd Edition - Dicembre
-1999), inoltre è un formato di testo completamente indipendente da qualsiasi linguaggio.
+linguaggio di programmazione JavaScript, anche se ne è indipendente, ed  inoltre è un formato di testo completamente indipendente da qualsiasi linguaggio.
 Per queste caratteristiche è un linguaggio di scambio dati ideale. JSON è costruito su
 due strutture:
 \begin{itemize}
 \item Una collezione di coppie nome/valore, spesso realizzato come un array associativo;
 \item Un elenco ordinato di valori, spesso realizzato come una lista.
 \end{itemize}
-Nel progetto esso è stato usato per poter scambiare i dati tra il lato frontend e il lato backend
+Nel progetto esso è stato usato per poter scambiare i dati tra il lato frontend e il lato backend attraverso il passaggio di oggetti JSON tramite AJAX
 \subsection{Tecnica per l’interscambio di dati}
 \subsubsection{AJAX}
 AJAX, acronimo di Asynchronous Javascript And XML, è una tecnica di sviluppo
@@ -52,11 +51,11 @@ Lo sviluppo di applicazioni HTML con AJAX si basa su uno scambio di dati in
 background fra web browser e server, che consente l’aggiornamento dinamico di una
 pagina web senza esplicito ricaricamento da parte dell’utente.
 AJAX è asincrono, nel senso che i dati extra sono richiesti al server e caricati in
-background senza interferire con il comportamento della pagina esistente. Normalmente
+background senza interferire con il comportamento della pagina esistente, anche se è possibile, ma sconsigliato, effettuare richieste sincrone. Normalmente
 le funzioni richiamate sono scritte con il linguaggio JavaScript. Tuttavia, e a dispetto
 del nome, l’uso di JavaScript e di XML non è obbligatorio, come non è detto che le
 richieste di caricamento debbano essere necessariamente asincrone.
-Nel progetto esso è stato usato per mettere in comunicazione il lato frontend e il lato backend
+Nel progetto esso è stato usato per mettere in comunicazione il lato frontend e il lato backend, grazie anche all'utilizzo delle librerie AJAX messe a disposizione dell'API Javascript di Alfresco.
 \subsection{Framework}
 \subsubsection{Spring}
 Spring è un framework per realizzare applicazioni web basate sul Modello MVC
@@ -65,11 +64,10 @@ aspect oriented programming. Esso si occupa di mappare metodi e classi Java con
 determinati url, di gestire differenti tipologie di "viste" restituite al client, di realizzare
 applicazioni internazionalizzate e di gestire i cosiddetti temi per personalizzare al
 massimo l’esperienza utente. Questo framework è strutturato a livelli, e permette di
-scegliere quale dei suoi componenti usare, fornendo nello stesso momento un framework
-coesivo per lo sviluppo di applicazioni distribuite. Questa architettura a livelli consiste
+scegliere quale dei suoi componenti usare, fornendo nello stesso momento un framework di ottima qualità per lo sviluppo di applicazioni distribuite. Questa architettura a livelli consiste
 in diversi moduli (o componenti) ben definiti, ognuno dei quali può rimanere da solo o
 essere implementato con altri.
-Su questo framework si basa la mappatura di Alfresco.
+Su questo framework si basa la struttura di base di Alfresco.
 \subsubsection{Jquery}
 JQuery è un framework nato con il preciso intento di rendere il codice più sintetico
 e di limitare al minimo l’estensione degli oggetti globali per ottenere la massima
@@ -87,8 +85,8 @@ Anche se Alfresco stesso sta per abbandonarlo in favore di Angular2, esso è anc
 LDAP è un acronimo che sta per LIGHTWEIGHT DIRECTORY ACCESS
 PROTOCOL. Come suggerisce il nome stesso, è un protocollo leggero per accedere
 ai servizi di directory, basati sul protocollo X.500. LDAP opera su TCP/IP o su altre
-connessioni orientate ai servizi di trasferimento LDAP nasce per sostituire DAP in
-quanto molto oneroso dal punto di vista dell’impiego delle risorse. LDAP è basato
+connessioni orientate ai servizi di trasferimento. LDAP nasce per sostituire DAP in
+quanto molto oneroso dal punto di vista dell’impiego delle risorse ed è basato
 sul modello client-sever: un client LDAP invia una richiesta ad un server LDAP, che
 processa la richiesta ricevuta, accede eventualmente ad un directory database e ritorna
 dei risultati al client.
@@ -98,7 +96,7 @@ per riferirsi ad una particolare entry, senza avere ambiguità.
 Ogni attributo dell’entry ha un tipo ed uno o più valori.
 In LDAP, le entry di una directory sono strutturate come in una struttura gerarchica
 di un albero.
-L'azienda fa uso di questo protocollo per la profilatura degli utenti in virtù della sua ottima integrazione con alfresco, di conseguenza si è dovuta utilizzare questa tecnologia per avere accesso ai dati degli utenti registrati
+L'azienda fa uso di questo protocollo per la profilatura degli utenti in virtù della sua ottima integrazione con Alfresco, e quindi di conseguenza si è dovuta utilizzare questa tecnologia per avere accesso ai dati degli utenti registrati
 \subsection{Data Base Management System}
 \subsubsection{PostgreSQL}
 PostgreSQL  è un completo DBMS ad oggetti rilasciato con licenza libera; spesso viene abbreviato come "Postgres".
@@ -119,21 +117,20 @@ di un progetto allo scopo di estendere la piattaforma di Alfresco. Le funzionali
 presentate da questo IDE in termini di aiuti al programmatore e la sua integrazione con Maven hanno permesso uno sviluppo rapido ed efficiente dei plugin.
 \subsubsection{Strumenti per il versionamento}
 \paragraph{Git}
-Il sistema di versioning adottato è Git, che negli ultimi anni si è affermato come uno
+Il sistema di versioning adottato per questo progetto e in generale utilizzato dall'azienda è Git, che negli ultimi anni si è affermato come uno
 dei migliori sistemi di controllo di versione.
 Le caratteristiche per cui si è distinto dagli altri software sono:
 \begin{itemize}
-\item L’architettura, progettata per essere completamente distribuita, in modo da
-rendere possibile il lavoro e il versionamento offline;
-\item Le potenti funzionalità con cui è possibile lavorare alle ramificazioni branching
-della storia del codice sorgente;
-\item Le performance generalmente migliori.
+\item L’architettura, progettata per essere totalmente distribuita, in modo da
+rendere possibile il lavoro e il versionamento offline ed anche un versionamento integrato con i principali IDE;
+\item Le funzionalità di branching e merging potenti, rapide e comode, che permettono una efficente gestione di progetti, anche di grandi dimensioni;
+\item Le performance generalmente migliori e la possibilità di pubblicare i repository con i principali protocolli.
 \end{itemize}
-Ennova Research si appoggia inoltre su GitLab, un servizio di hosting per progetti
+Ennova Research si appoggia nello specifico su GitLab, un servizio di hosting per progetti basato
 su Git.
 \subsubsection{Strumenti per \emph{build automation}}
 \paragraph{Apache Maven}
- Maven è un software usato principalmente per la gestione di progetti Java e \emph{build automation}. Per funzionalità è similare ad Apache Ant, ma basato su concetti differenti. Può essere usato anche in progetti scritti in C\#, Ruby, Scala e altri linguaggi. Il progetto Maven è ospitato da Apache Software Foundation, dove faceva parte dell'ex progetto Jakarta.
+ Maven è un software usato principalmente per la gestione di progetti Java e \emph{build automation}. Per funzionalità è similare ad Apache Ant, ma basato su concetti differenti. Può essere usato anche in progetti scritti in C\#, Ruby, Scala e altri linguaggi. Il progetto Maven è ospitato da Apache Software Foundation.
 Maven usa un costrutto conosciuto come Project Object Model (POM); un file XML che descrive le dipendenze fra il progetto e le varie versioni di librerie necessarie nonché le dipendenze fra di esse. In questo modo si separano le librerie dalla directory di progetto utilizzando questo file descrittivo per definirne le relazioni.
-Maven effettua automaticamente il download di librerie Java e plug-in Maven dai vari repository definiti scaricandoli in locale o in un repository centralizzato lato sviluppo. Questo permette di recuperare in modo uniforme i vari file JAR e di poter spostare il progetto indipendentemente da un ambiente all'altro avendo la sicurezza di utilizzare sempre le stesse versioni delle librerie.
+Maven effettua automaticamente il download di librerie Java e plug-in Maven dai vari repository definiti scaricandoli in locale o in un repository centralizzato lato sviluppo. Questo permette di recuperare in modo uniforme i vari file JAR e di poter spostare il progetto indipendentemente da un ambiente all'altro avendo la sicurezza di utilizzare sempre le stesse versioni delle librerie e la possibilità di impostare profili di esecuzione diversi.
 Per automatizzare la build e il lancio dell'SDK, Alfresco si basa appunto su Maven.
