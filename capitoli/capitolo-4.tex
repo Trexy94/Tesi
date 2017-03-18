@@ -83,3 +83,41 @@
 %\hline
 %\end{tabularx}
 %\end{table}%
+%**************************************************************
+\chapter{Accenni al funzionamento di Alfresco}}
+\label{cap:architettura}
+%**************************************************************
+
+\intro{In questo capitolo sarà esposto come creare un modulo e accenni all'architettura di Alfresco}\\
+
+%**************************************************************
+\section{architettura di Alfresco}
+\subsection{Gestione dei moduli}
+\subsubsection{creazione}
+Bisogna innanzitutto rispondere ai prerequisiti descritti in  \href{http://docs.alfresco.com/sdk2.1/concepts/alfresco-sdk-installing-prerequisite-software.html}{questa pagina}.
+Fatto questo il progetto può essere importato in un IDE, ad esempio per Eclipse in \href{http://docs.alfresco.com/community/tasks/alfresco-sdk-rad-eclipse-import-projects.html}{questo sito}
+Le cartelle su cui andremo a sviluppare saranno la repo-amp e la share-amp. La share-amp verrà utilizzata per sviluppare l’interfaccia grafica del modulo mentre la parte di repo-amp  per lo sviluppo del “back-end”, le altre folder create servono per replicare l’ambiente di Alfresco in fase di esecuzione del modulo, e quindi non ha senso lavorare su di esse.
+è necessario installare il driver jdbc se si intende  lavorare nell’SDK interagendo con database terzi, e dato che non è incluso nell'SDK anche se presente nell'ambiente finale, va incluso seguendo quanto detto in  \href{https://community.alfresco.com/thread/213317-sdk-21-including-third-party-jar-libraries}{questo luogo} . 
+Una volta fatto questo, bisogna aprire nell’IDE o anche a mano all’indirizzo, partendo dalla cartella di installazione (sono riportati gli indirizzi utilizzando i nomi dell’esempio sopra citato: \texttt{/ alfresco-extension / acme-cms-poc / acme-cms-poc-share-amp / src / main / amp / config / alfresco / web-extension / site-webscripts / com / example / pages}
+ (questo porta a dove è situata la pagina dimostrativa). È sufficiente fermarsi due o tre livelli sopra se l’intenzione è quella di mettere la gerarchia per una pagina custom (come fatto in questo progetto).
+Una pagina fatta in alfresco share è composta da tre file, per semplicità prendiamo in considerazione la pagina di esempio già fornita:
+un file .xml, che descrive i dati essenziali della pagina:
+\begin{lstlisting}[language=XML]
+<webscript>
+    <shortname>Simple Page</shortname>
+    <description>Simple page definition</description>
+    <family>Share</family>
+    <authentication>user</authentication>
+    <url>/simple-page</url>
+</webscript>
+\end{lstlisting}
+molto importanti sono il tag authentication, che specifica il livello di autenticazione necessario per accedere alla pagina, e il tag url, dal momento che definisce l’indirizzo della pagina, che sarà \texttt{<ip>:port/share/page/hdp/ws<url>} (hdp genera la pagina con header e footer, dp la pagina grezza).
+Vi è poi il file .html che si comporta proprio come il body di una pagina html.
+Vi è infine un file .js, che serve per applicare delle modifiche via json al model.
+Quanto detto è sufficiente per creare una pagina che non necessiti di interazioni con java.
+
+Per quanto riguarda una pagina che invece fa uso delle api di Alfresco il procedimento è più complicato: la pagina che verrà mostrata all’utente è collocata nella cartella \texttt{alfresco-extension /acme-cms-poc /acme-cms-poc-repo / amp / src / main / amp / config / alfresco / extension /templates / webscripts}.
+La pagina generata è situata all’indirizzo \texttt{<ip>:<porta>/alfresco/service<url>}.
+E’ inoltre necessario creare un bean che fa da collegamento tra il codice java, situato in \texttt{alfresco-extension / acme-cms-poc / acme-cms-poc-repo-amp / src / main / java / <package>}, e la pagina che verrà generata. Per farlo seguire quanto descritto in \href{http://docs.alfresco.com/community/tasks/bean-config.html}{questo sito}.
+
+\subsubsection{Manutenzione}
