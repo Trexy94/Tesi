@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  18 MAR 2017 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  19 MAR 2017 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1457,13 +1457,13 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 ] [4
 
 ]
-(.\/tesi.toc)
+(.\/tesi.toc [5
+
+])
 \tf@toc=\write8
 \openout8 = `tesi.toc'.
 
- [5
-
-] (.\/tesi.lof)
+ [6] (.\/tesi.lof)
 \tf@lof=\write9
 \openout9 = `tesi.lof'.
 
@@ -1471,9 +1471,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 \tf@lot=\write10
 \openout10 = `tesi.lot'.
 
- [6
+ [7
 
-]) (./capitoli/capitolo-1.tex
+] [8
+
+])
+(./capitoli/capitolo-1.tex
 Capitolo 1.
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 11.
 (c:/texlive/2016/texmf-dist/tex/latex/base/t1cmss.fd
@@ -1495,15 +1498,10 @@ Underfull \vbox (badness 2197) has occurred while \output is active []
 
 
 
-
 ]
 
 LaTeX Warning: Hyper reference `cap:modulo-tema' on page 2 undefined on input l
 ine 52.
-
-
-LaTeX Warning: Hyper reference `cap:modulo-clienti' on page 2 undefined on inpu
-t line 53.
 
 
 LaTeX Warning: Hyper reference `cap:modulo-progetti' on page 2 undefined on inp
@@ -1534,15 +1532,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 [9]) (./capitoli/capitolo-4.tex [10]
 Capitolo 4.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 88.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 100.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 101.
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1558,37 +1552,296 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-Overfull \hbox (4.85797pt too wide) in paragraph at lines 96--104
+Overfull \hbox (4.85797pt too wide) in paragraph at lines 97--105
 \T1/cmtt/m/n/10 main / amp / config / alfresco / web-extension / site-webscript
 s / com /
  []
 
 [11
 
-]) (./capitoli/capitolo-5.tex) (./capitoli/capitolo-6.tex
-Overfull \hbox (6.68974pt too wide) in paragraph at lines 118--5
+]
+Overfull \hbox (6.68974pt too wide) in paragraph at lines 119--122
 \T1/cmtt/m/n/10 src / main / amp / config / alfresco / extension /templates / w
 ebscripts\T1/cmr/m/n/10 (-20) .
  []
 
-) (./capitoli/capitolo-7.tex) (./capitoli/capitolo-A.tex)
-Overfull \hbox (77.78989pt too wide) has occurred while \output is active
-\T1/cmr/m/n/10 12 \T1/cmr/m/sl/10 CAPITOLO 4.  CREAZIONE DEL MODULO \T1/cmr/m/n
-/10 E ACCENNI AL FUNZIONAMENTO DI ALFRESCO
+) (./capitoli/capitolo-5.tex [12]
+Capitolo 5.
+[13
+
+]
+Overfull \hbox (48.90509pt too wide) in paragraph at lines 92--93
+[]\T1/cmr/m/n/10 (-20) SI è ag-giun-ta in-nan-zi-tut-to una nuo-va vo-ce di me-
+nu ag-giun-gen-do il fi-le \T1/cmtt/m/n/10 / AIOProject-share-amp
  []
 
-[12] (.\/tesi.gls) (.\/tesi.acr [13
+
+Overfull \hbox (42.12387pt too wide) in paragraph at lines 92--93
+\T1/cmtt/m/n/10 / src / main / amp / config / alfresco / web-extension / site-d
+ata / extensions
+ []
+
+[14]
+Overfull \hbox (57.15134pt too wide) in paragraph at lines 128--129
+[]\T1/cmtt/m/n/10 / AIOProject-share-amp / src / main / amp / config / alfresco
+ / web-extension
+ []
+
+
+Overfull \hbox (6.04105pt too wide) in paragraph at lines 128--129
+\T1/cmtt/m/n/10 / site-webscripts / com / clienti / pages / clienti.get.desc.xm
+l\T1/cmr/m/n/10 (-20) , im-
+ []
+
+
+Overfull \hbox (57.15134pt too wide) in paragraph at lines 129--130
+[]\T1/cmtt/m/n/10 / AIOProject-share-amp / src / main / amp / config / alfresco
+ / web-extension
+ []
+
+
+Overfull \hbox (7.51624pt too wide) in paragraph at lines 129--130
+\T1/cmtt/m/n/10 / site-webscripts / com / clienti / pages / clienti.get.html.ft
+l \T1/cmr/m/n/10 (-20) che
+ []
+
+
+Overfull \hbox (57.15134pt too wide) in paragraph at lines 130--131
+[]\T1/cmtt/m/n/10 / AIOProject-share-amp / src / main / amp / config / alfresco
+ / web-extension
+ []
+
+
+Overfull \hbox (50.35632pt too wide) in paragraph at lines 131--132
+\T1/cmr/m/n/10 (-20) so con la li-nea \T1/cmtt/m/n/10 <script src="$url.context
+ / js / clienti / clienti.js"></script>\T1/cmr/m/n/10 (-20) ,
+ []
+
+
+Overfull \hbox (57.15134pt too wide) in paragraph at lines 138--139
+[]\T1/cmtt/m/n/10 / AIOProject-share-amp / src / main / amp / config / alfresco
+ / web-extension
+ []
+
+
+Overfull \hbox (67.1239pt too wide) in paragraph at lines 138--139
+\T1/cmtt/m/n/10 / site-webscripts / com / visualizza_clienti / pages / vis_clie
+nti.get.desc.xml
+ []
+
+
+Overfull \hbox (57.15134pt too wide) in paragraph at lines 139--140
+[]\T1/cmtt/m/n/10 / AIOProject-share-amp / src / main / amp / config / alfresco
+ / web-extension
+ []
+
+
+Overfull \hbox (67.1239pt too wide) in paragraph at lines 139--140
+\T1/cmtt/m/n/10 / site-webscripts / com / visualizza_clienti / pages / vis_clie
+nti.get.html.ftl
+ []
+
+
+Overfull \hbox (57.15134pt too wide) in paragraph at lines 140--141
+[]\T1/cmtt/m/n/10 / AIOProject-share-amp / src / main / amp / config / alfresco
+ / web-extension
+ []
+
+
+Overfull \hbox (31.71477pt too wide) in paragraph at lines 140--141
+\T1/cmtt/m/n/10 / site-webscripts / com /visualizza_clienti / pages / vis_clien
+ti.get.js\T1/cmr/m/n/10 (-20) ,
+ []
+
+
+Overfull \hbox (4.66415pt too wide) in paragraph at lines 141--142
+[]\T1/cmtt/m/n/10 / AIOProject-share-amp / src / main / amp / web / css / vis_c
+lienti
+ []
+
+
+Overfull \hbox (8.86313pt too wide) in paragraph at lines 142--143
+[]\T1/cmtt/m/n/10 / AIOProject-share-amp / src / main / amp / web / js / vis_cl
+ienti /
+ []
+
+[15] (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Overfull \hbox (26.90259pt too wide) in paragraph at lines 166--167
+\T1/cmtt/m/n/10 src / main / amp / config / alfresco / module / AIOProject-repo
+-amp / config
+ []
+
+[16] [17]
+Overfull \hbox (89.8872pt too wide) in paragraph at lines 219--220
+\T1/cmtt/m/n/10 amp / config / alfresco / module / AIOProject-repo-amp / contex
+t / webscript-context.xml
+ []
+
+
+Overfull \hbox (105.63336pt too wide) in paragraph at lines 225--228
+\T1/cmtt/m/n/10 main / amp / config / alfresco / extension / templates / webscr
+ipts / clients.post.desc.xml
+ []
+
+
+Overfull \hbox (22.87024pt too wide) in paragraph at lines 225--228
+\T1/cmr/m/n/10 (-20) e in \T1/cmtt/m/n/10 / AIOProject-repo-amp / src / main / 
+amp / config / alfresco / extension
+ []
+
+
+Overfull \hbox (37.21063pt too wide) in paragraph at lines 225--228
+\T1/cmr/m/n/10 (-20) lo-ro no-me, che chia-ma-no uno la fun-zio-ne \T1/cmtt/m/n
+/10 detail(id,nome,pi,descr,datainizio,datafine)\T1/cmr/m/n/10 (-20) ,e
+ []
+
+
+Overfull \hbox (5.25513pt too wide) in paragraph at lines 231--232
+[]\T1/cmtt/m/n/10 public void execute(WebScriptRequest req, WebScriptResponse r
+es) \T1/cmr/m/n/10 (-20) me-
+ []
+
+[18]
+Overfull \hbox (100.38464pt too wide) in paragraph at lines 236--238
+\T1/cmtt/m/n/10 main / amp / config / alfresco / extension / templates / webscr
+ipts / delete.post.desc.xml
+ []
+
+
+Overfull \hbox (22.87024pt too wide) in paragraph at lines 236--238
+\T1/cmr/m/n/10 (-20) e in \T1/cmtt/m/n/10 / AIOProject-repo-amp / src / main / 
+amp / config / alfresco / extension
+ []
+
+
+Overfull \hbox (5.25513pt too wide) in paragraph at lines 241--242
+[]\T1/cmtt/m/n/10 public void execute(WebScriptRequest req, WebScriptResponse r
+es) \T1/cmr/m/n/10 (-20) me-
+ []
+
+
+Overfull \hbox (77.20308pt too wide) in paragraph at lines 245--248
+ []\T1/cmr/bx/n/10 inactive.java[] \T1/cmr/m/n/10 (-20) Que-sto web-script, si-
+tua-to in \T1/cmtt/m/n/10 / AIOProject-repo-amp/src/main/java/inactive.java
+ []
+
+
+Overfull \hbox (1.98645pt too wide) in paragraph at lines 245--248
+\T1/cmtt/m/n/10 alfresco / extension / templates / webscripts / inactive.post.d
+esc.xml \T1/cmr/m/n/10 (-20) e
+ []
+
+
+Overfull \hbox (16.29407pt too wide) in paragraph at lines 245--248
+\T1/cmr/m/n/10 (-20) in \T1/cmtt/m/n/10 / AIOProject-repo-amp / src / main / am
+p / config / alfresco / extension
+ []
+
+
+Overfull \hbox (38.97408pt too wide) in paragraph at lines 245--248
+\T1/cmr/m/n/10 (-20) san-te e il suo no-me, che chia-ma la fun-zio-ne \T1/cmtt/
+m/n/10 detail(id,nome,pi,descr,datainizio,datafine)\T1/cmr/m/n/10 (-20) .
+ []
+
+
+Overfull \hbox (5.25513pt too wide) in paragraph at lines 251--252
+[]\T1/cmtt/m/n/10 public void execute(WebScriptRequest req, WebScriptResponse r
+es) \T1/cmr/m/n/10 (-20) me-
+ []
+
+[19]
+Overfull \hbox (55.12347pt too wide) in paragraph at lines 257--258
+\T1/cmtt/m/n/10 src / main / java / query_processor.java \T1/cmr/m/n/10 (-20) e
+ dal-la pa-gi-na de-fi-ni-ta in \T1/cmtt/m/n/10 / AIOProject-repo-amp
+ []
+
+
+Overfull \hbox (21.129pt too wide) in paragraph at lines 257--258
+\T1/cmtt/m/n/10 / src / main / amp / config / alfresco / extension / templates 
+/ webscripts
+ []
+
+
+Overfull \hbox (110.88208pt too wide) in paragraph at lines 257--258
+\T1/cmtt/m/n/10 amp / config / alfresco / extension / templates / webscripts / 
+query_processor.post.html.ftl
+ []
+
+[20]
+Overfull \hbox (5.25513pt too wide) in paragraph at lines 297--298
+[]\T1/cmtt/m/n/10 public void execute(WebScriptRequest req, WebScriptResponse r
+es) \T1/cmr/m/n/10 (-20) me-
+ []
+
+
+Overfull \hbox (17.78595pt too wide) in paragraph at lines 299--300
+[]\T1/cmtt/m/n/10 create_folder_tree(String ID, String descr,Boolean box1, Bool
+ean box2,
+ []
+
+
+Overfull \hbox (75.59348pt too wide) in paragraph at lines 302--305
+\T1/cmtt/m/n/10 / src / main / java / TablePageGenerator.java \T1/cmr/m/n/10 (-
+20) e dal-la pa-gi-na de-fi-ni-ta in \T1/cmtt/m/n/10 /AIOProject-repo-amp
+ []
+
+
+Overfull \hbox (21.129pt too wide) in paragraph at lines 302--305
+\T1/cmtt/m/n/10 / src / main / amp / config / alfresco / extension / templates 
+/ webscripts
+ []
+
+
+Overfull \hbox (3.57217pt too wide) in paragraph at lines 302--305
+\T1/cmtt/m/n/10 / TablePageGenerator.post.desc.xml \T1/cmr/m/n/10 (-20) e in \T
+1/cmtt/m/n/10 / AIOProject-repo-amp / src / main
+ []
+
+
+Overfull \hbox (136.6008pt too wide) in paragraph at lines 302--305
+\T1/cmtt/m/n/10 / amp / config / alfresco / extension / templates / webscripts 
+/ TablePageGenerator.post.html.ftl
+ []
+
+
+Overfull \hbox (5.25513pt too wide) in paragraph at lines 308--309
+[]\T1/cmtt/m/n/10 public void execute(WebScriptRequest req, WebScriptResponse r
+es) \T1/cmr/m/n/10 (-20) me-
+ []
+
+
+Overfull \hbox (100.38464pt too wide) in paragraph at lines 313--315
+\T1/cmtt/m/n/10 main / amp / config / alfresco / extension / templates / webscr
+ipts / update.post.desc.xml
+ []
+
+
+Overfull \hbox (17.62152pt too wide) in paragraph at lines 313--315
+\T1/cmr/m/n/10 (-20) e in \T1/cmtt/m/n/10 / AIOProject-repo-amp / src / main /a
+mp / config / alfresco / extension
+ []
+
+[21]
+Overfull \hbox (5.25513pt too wide) in paragraph at lines 318--319
+[]\T1/cmtt/m/n/10 public void execute(WebScriptRequest req, WebScriptResponse r
+es) \T1/cmr/m/n/10 (-20) me-
+ []
+
+) (./capitoli/capitolo-6.tex) (./capitoli/capitolo-7.tex)
+(./capitoli/capitolo-A.tex) [22] (.\/tesi.gls) (.\/tesi.acr [23
 
 
 
-] [14
+] [24
 
-]) (./inizio-fine/bibliografia.tex
-[15
+])
+(./inizio-fine/bibliografia.tex [25
 
-] [16
+] [26
 
-]) [17
+]) [27
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
@@ -1605,27 +1858,27 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26293 strings out of 493013
- 436222 string characters out of 6136993
- 1039628 words of memory out of 5000000
- 29092 multiletter control sequences out of 15000+600000
- 27311 words of font info for 105 fonts, out of 8000000 for 9000
+ 28086 strings out of 493013
+ 459988 string characters out of 6136993
+ 1197678 words of memory out of 5000000
+ 30749 multiletter control sequences out of 15000+600000
+ 28344 words of font info for 114 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 61i,6n,122p,1919b,1335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,6n,122p,1919b,2646s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/
-texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive/2016/t
-exmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb><c:/texlive/2016/texmf-dist/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive/2016/texmf-dist/
 fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2016/texmf-dist/fonts/type
-1/public/cm-super/sfbi2488.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/c
-m-super/sfbx1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
-bx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
-><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texli
-ve/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2016/te
-xmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2016/texmf-dist/f
-onts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1
-/public/cm-super/sfcc1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm
--super/sfcc1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfr
+1/public/cm-super/sfbx1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/c
+m-super/sfbx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
+bx1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
+><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texli
+ve/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2016/te
+xmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2016/texmf-dist/f
+onts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1
+/public/cm-super/sfcc1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm
+-super/sfrm0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfr
 m1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
 <c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texliv
 e/2016/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2016/tex
@@ -1634,10 +1887,10 @@ nts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
 public/cm-super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-
 super/sftt0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt
 1000.pfb>
-Output written on .\/tesi.pdf (23 pages, 538091 bytes).
+Output written on .\/tesi.pdf (35 pages, 576822 bytes).
 PDF statistics:
- 462 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
- 99 named destinations out of 1000 (max. 500000)
- 31990 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 703 PDF objects out of 1000 (max. 8388607)
+ 629 compressed objects within 7 object streams
+ 222 named destinations out of 1000 (max. 500000)
+ 33622 words of extra memory for PDF output out of 35830 (max. 10000000)
 
