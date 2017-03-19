@@ -78,48 +78,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}architettura di Alfresco}{11}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Gestione dei moduli}{11}{section.4.2}
+\contentsline {section}{\numberline {4.2}Gestione dei moduli}{12}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}creazione}{11}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}creazione}{12}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Manutenzione}{12}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Manutenzione}{14}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Il modulo clienti}{13}{chapter.5}
+\contentsline {chapter}{\numberline {5}Il modulo clienti}{17}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}scopo del modulo}{13}{section.5.1}
+\contentsline {section}{\numberline {5.1}scopo del modulo}{17}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}implementazione delle funzionalit\IeC {\`a}}{13}{section.5.2}
+\contentsline {section}{\numberline {5.2}implementazione delle funzionalit\IeC {\`a}}{17}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Creazione della parte share}{14}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Creazione della parte share}{18}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{pagina Clienti}{15}{section*.22}
+\contentsline {subsubsection}{pagina Clienti}{19}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pagina vis\_clienti}{15}{section*.23}
+\contentsline {subsubsection}{Pagina vis\_clienti}{19}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Creazione della parte repo}{17}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Creazione della parte repo}{21}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Creazione delle variabili del modulo}{17}{section*.24}
+\contentsline {subsubsection}{Creazione delle variabili del modulo}{21}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Creazione dei webscript}{18}{section*.25}
+\contentsline {subsubsection}{Creazione dei webscript}{22}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{clients.java}{18}{section*.26}
+\contentsline {paragraph}{clients.java}{22}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{delete.java}{19}{section*.27}
+\contentsline {paragraph}{delete.java}{23}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{inactive.java}{19}{section*.28}
+\contentsline {paragraph}{inactive.java}{23}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{query\_processor.java}{20}{section*.29}
+\contentsline {paragraph}{query\_processor.java}{24}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{TablePageGenerator.java}{21}{section*.30}
+\contentsline {paragraph}{TablePageGenerator.java}{25}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{update.java}{22}{section*.31}
+\contentsline {paragraph}{update.java}{26}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}lato estetico}{22}{section.5.3}
+\contentsline {section}{\numberline {5.3}lato estetico}{26}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}risultati raggiunti}{22}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}risultati raggiunti}{26}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossary}{23}{section*.32}
+\contentsline {chapter}{Glossary}{27}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{25}{section*.34}
+\contentsline {chapter}{Acronyms}{29}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{27}{appendix*.36}
+\contentsline {chapter}{Bibliografia}{31}{appendix*.40}

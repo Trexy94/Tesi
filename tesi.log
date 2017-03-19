@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  19 MAR 2017 17:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  19 MAR 2017 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1299,7 +1299,17 @@ Package biblatex Info: ... file 'english.lbx' found.
 
 (c:/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
-) (.\/tesi.aux)
+) (.\/tesi.aux
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+)
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
@@ -1328,8 +1338,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
-
-(c:/texlive/2016/texmf-dist/tex/latex/caption/ltcaption.sty
+ (c:/texlive/2016/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
@@ -1536,7 +1545,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 101.
+<immagini//architettura/wcm.jpg, id=228, 730.73pt x 548.0475pt>
+File: immagini//architettura/wcm.jpg Graphic file (type jpg)
+
+<use immagini//architettura/wcm.jpg>
+Package pdftex.def Info: immagini//architettura/wcm.jpg used on input line 97.
+(pdftex.def)             Requested size: 372.0pt x 278.99876pt.
+
+<immagini//architettura/architettura1.jpg, id=229, 730.73pt x 548.0475pt>
+File: immagini//architettura/architettura1.jpg Graphic file (type jpg)
+
+<use immagini//architettura/architettura1.jpg>
+Package pdftex.def Info: immagini//architettura/architettura1.jpg used on input
+ line 102.
+(pdftex.def)             Requested size: 372.0pt x 278.99876pt.
+
+<immagini//architettura/architettura2.png, id=230, 838.13126pt x 722.7pt>
+File: immagini//architettura/architettura2.png Graphic file (type png)
+
+<use immagini//architettura/architettura2.png>
+Package pdftex.def Info: immagini//architettura/architettura2.png used on input
+ line 107.
+(pdftex.def)             Requested size: 372.0pt x 320.76791pt.
+
+<immagini//architettura/architettura3.png, id=232, 603.25375pt x 681.54625pt>
+File: immagini//architettura/architettura3.png Graphic file (type png)
+
+<use immagini//architettura/architettura3.png>
+Package pdftex.def Info: immagini//architettura/architettura3.png used on input
+ line 112.
+(pdftex.def)             Requested size: 372.0pt x 420.27681pt.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 121.
+
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1552,24 +1592,29 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-Overfull \hbox (4.85797pt too wide) in paragraph at lines 97--105
+Overfull \hbox (4.85797pt too wide) in paragraph at lines 117--125
 \T1/cmtt/m/n/10 main / amp / config / alfresco / web-extension / site-webscript
 s / com /
  []
 
 [11
 
-]
-Overfull \hbox (6.68974pt too wide) in paragraph at lines 119--122
+ <./immagini//architettura/wcm.jpg>] [12 <./immagini//architettura/architettura
+1.jpg>]
+Overfull \hbox (6.68974pt too wide) in paragraph at lines 139--142
 \T1/cmtt/m/n/10 src / main / amp / config / alfresco / extension /templates / w
 ebscripts\T1/cmr/m/n/10 (-20) .
  []
 
-) (./capitoli/capitolo-5.tex [12]
-Capitolo 5.
-[13
+
+Underfull \vbox (badness 1484) has occurred while \output is active []
+
+ [13 <./immagini//architettura/architettura2.png>] [14 <./immagini//architettur
+a/architettura3.png>]) (./capitoli/capitolo-5.tex [15] [16
 
 ]
+Capitolo 5.
+[17]
 Overfull \hbox (48.90509pt too wide) in paragraph at lines 92--93
 []\T1/cmr/m/n/10 (-20) SI è ag-giun-ta in-nan-zi-tut-to una nuo-va vo-ce di me-
 nu ag-giun-gen-do il fi-le \T1/cmtt/m/n/10 / AIOProject-share-amp
@@ -1581,7 +1626,7 @@ Overfull \hbox (42.12387pt too wide) in paragraph at lines 92--93
 ata / extensions
  []
 
-[14]
+[18]
 Overfull \hbox (57.15134pt too wide) in paragraph at lines 128--129
 []\T1/cmtt/m/n/10 / AIOProject-share-amp / src / main / amp / config / alfresco
  / web-extension
@@ -1665,7 +1710,7 @@ Overfull \hbox (8.86313pt too wide) in paragraph at lines 142--143
 ienti /
  []
 
-[15] (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+[19] (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Overfull \hbox (26.90259pt too wide) in paragraph at lines 166--167
@@ -1673,7 +1718,7 @@ Overfull \hbox (26.90259pt too wide) in paragraph at lines 166--167
 -amp / config
  []
 
-[16] [17]
+[20] [21]
 Overfull \hbox (89.8872pt too wide) in paragraph at lines 219--220
 \T1/cmtt/m/n/10 amp / config / alfresco / module / AIOProject-repo-amp / contex
 t / webscript-context.xml
@@ -1703,7 +1748,7 @@ Overfull \hbox (5.25513pt too wide) in paragraph at lines 231--232
 es) \T1/cmr/m/n/10 (-20) me-
  []
 
-[18]
+[22]
 Overfull \hbox (100.38464pt too wide) in paragraph at lines 236--238
 \T1/cmtt/m/n/10 main / amp / config / alfresco / extension / templates / webscr
 ipts / delete.post.desc.xml
@@ -1751,7 +1796,7 @@ Overfull \hbox (5.25513pt too wide) in paragraph at lines 251--252
 es) \T1/cmr/m/n/10 (-20) me-
  []
 
-[19]
+[23]
 Overfull \hbox (55.12347pt too wide) in paragraph at lines 257--258
 \T1/cmtt/m/n/10 src / main / java / query_processor.java \T1/cmr/m/n/10 (-20) e
  dal-la pa-gi-na de-fi-ni-ta in \T1/cmtt/m/n/10 / AIOProject-repo-amp
@@ -1769,7 +1814,7 @@ Overfull \hbox (110.88208pt too wide) in paragraph at lines 257--258
 query_processor.post.html.ftl
  []
 
-[20]
+[24]
 Overfull \hbox (5.25513pt too wide) in paragraph at lines 297--298
 []\T1/cmtt/m/n/10 public void execute(WebScriptRequest req, WebScriptResponse r
 es) \T1/cmr/m/n/10 (-20) me-
@@ -1823,25 +1868,25 @@ Overfull \hbox (17.62152pt too wide) in paragraph at lines 313--315
 mp / config / alfresco / extension
  []
 
-[21]
+[25]
 Overfull \hbox (5.25513pt too wide) in paragraph at lines 318--319
 []\T1/cmtt/m/n/10 public void execute(WebScriptRequest req, WebScriptResponse r
 es) \T1/cmr/m/n/10 (-20) me-
  []
 
 ) (./capitoli/capitolo-6.tex) (./capitoli/capitolo-7.tex)
-(./capitoli/capitolo-A.tex) [22] (.\/tesi.gls) (.\/tesi.acr [23
+(./capitoli/capitolo-A.tex) [26] (.\/tesi.gls) (.\/tesi.acr [27
 
 
 
-] [24
+] [28
 
 ])
-(./inizio-fine/bibliografia.tex [25
+(./inizio-fine/bibliografia.tex [29
 
-] [26
+] [30
 
-]) [27
+]) [31
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
@@ -1853,44 +1898,47 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 141.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28086 strings out of 493013
- 459988 string characters out of 6136993
- 1197678 words of memory out of 5000000
- 30749 multiletter control sequences out of 15000+600000
- 28344 words of font info for 114 fonts, out of 8000000 for 9000
+ 28126 strings out of 493013
+ 460986 string characters out of 6136993
+ 1198777 words of memory out of 5000000
+ 30773 multiletter control sequences out of 15000+600000
+ 29120 words of font info for 115 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 61i,6n,122p,1919b,2646s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,6n,122p,1919b,2810s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2016/texmf-dist
 /fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive/2016/texmf-dist/
 fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2016/texmf-dist/fonts/type
-1/public/cm-super/sfbx1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/c
-m-super/sfbx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
-bx1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
-><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texli
-ve/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2016/te
-xmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2016/texmf-dist/f
-onts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1
-/public/cm-super/sfcc1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm
--super/sfrm0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfr
-m1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-<c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texliv
-e/2016/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2016/tex
-mf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2016/texmf-dist/fo
-nts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
-public/cm-super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-
-super/sftt0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt
-1000.pfb>
-Output written on .\/tesi.pdf (35 pages, 576822 bytes).
+1/public/cm-super/sfbx0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/c
+m-super/sfbx1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
+bx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
+><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texli
+ve/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2016/te
+xmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2016/texmf-dist/f
+onts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1
+/public/cm-super/sfcc1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm
+-super/sfcc1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfr
+m0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+<c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texliv
+e/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2016/tex
+mf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2016/texmf-dist/fo
+nts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
+public/cm-super/sfti1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-
+super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt
+0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on .\/tesi.pdf (39 pages, 809366 bytes).
 PDF statistics:
- 703 PDF objects out of 1000 (max. 8388607)
- 629 compressed objects within 7 object streams
- 222 named destinations out of 1000 (max. 500000)
- 33622 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 743 PDF objects out of 1000 (max. 8388607)
+ 658 compressed objects within 7 object streams
+ 230 named destinations out of 1000 (max. 500000)
+ 34154 words of extra memory for PDF output out of 35830 (max. 10000000)
 
