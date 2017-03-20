@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  19 MAR 2017 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  20 MAR 2017 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1299,17 +1299,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 
 (c:/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
-) (.\/tesi.aux
-
-LaTeX Warning: Label `overflow' multiply defined.
-
-
-LaTeX Warning: Label `overflow' multiply defined.
-
-
-LaTeX Warning: Label `overflow' multiply defined.
-
-)
+) (.\/tesi.aux)
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
@@ -1338,7 +1328,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- (c:/texlive/2016/texmf-dist/tex/latex/caption/ltcaption.sty
+
+(c:/texlive/2016/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
@@ -1545,37 +1536,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-<immagini//architettura/wcm.jpg, id=228, 730.73pt x 548.0475pt>
-File: immagini//architettura/wcm.jpg Graphic file (type jpg)
-
-<use immagini//architettura/wcm.jpg>
-Package pdftex.def Info: immagini//architettura/wcm.jpg used on input line 97.
-(pdftex.def)             Requested size: 372.0pt x 278.99876pt.
-
-<immagini//architettura/architettura1.jpg, id=229, 730.73pt x 548.0475pt>
-File: immagini//architettura/architettura1.jpg Graphic file (type jpg)
-
-<use immagini//architettura/architettura1.jpg>
-Package pdftex.def Info: immagini//architettura/architettura1.jpg used on input
- line 102.
-(pdftex.def)             Requested size: 372.0pt x 278.99876pt.
-
-<immagini//architettura/architettura2.png, id=230, 838.13126pt x 722.7pt>
-File: immagini//architettura/architettura2.png Graphic file (type png)
-
-<use immagini//architettura/architettura2.png>
-Package pdftex.def Info: immagini//architettura/architettura2.png used on input
- line 107.
-(pdftex.def)             Requested size: 372.0pt x 320.76791pt.
-
-<immagini//architettura/architettura3.png, id=232, 603.25375pt x 681.54625pt>
+<immagini//architettura/architettura3.png, id=231, 603.25375pt x 681.54625pt>
 File: immagini//architettura/architettura3.png Graphic file (type png)
 
 <use immagini//architettura/architettura3.png>
 Package pdftex.def Info: immagini//architettura/architettura3.png used on input
- line 112.
+ line 98.
 (pdftex.def)             Requested size: 372.0pt x 420.27681pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 121.
+ [11
+
+]
+<immagini//architettura/architettura2.png, id=239, 838.13126pt x 722.7pt>
+File: immagini//architettura/architettura2.png Graphic file (type png)
+
+<use immagini//architettura/architettura2.png>
+Package pdftex.def Info: immagini//architettura/architettura2.png used on input
+ line 117.
+(pdftex.def)             Requested size: 372.0pt x 320.76791pt.
+ [12 <./immagini//architettura/architettura3.png>]
+<immagini//architettura/dev-extensions-share-architecture.png, id=250, 1353.055
+pt x 714.67pt>
+File: immagini//architettura/dev-extensions-share-architecture.png Graphic file
+ (type png)
+
+<use immagini//architettura/dev-extensions-share-architecture.png>
+Package pdftex.def Info: immagini//architettura/dev-extensions-share-architectu
+re.png used on input line 134.
+(pdftex.def)             Requested size: 372.0pt x 196.48578pt.
+
+<immagini//architettura/dev-platform-integration-architecture.png, id=251, 1405
+.25pt x 913.4125pt>
+File: immagini//architettura/dev-platform-integration-architecture.png Graphic 
+file (type png)
+
+<use immagini//architettura/dev-platform-integration-architecture.png>
+Package pdftex.def Info: immagini//architettura/dev-platform-integration-archit
+ecture.png used on input line 139.
+(pdftex.def)             Requested size: 372.0pt x 241.80228pt.
+
+<immagini//architettura/dev-repo-extension-points.png, id=252, 1412.27625pt x 8
+43.15pt>
+File: immagini//architettura/dev-repo-extension-points.png Graphic file (type p
+ng)
+ <use immagini//architettura/dev-repo-extension-points.png>
+Package pdftex.def Info: immagini//architettura/dev-repo-extension-points.png u
+sed on input line 144.
+(pdftex.def)             Requested size: 372.0pt x 222.08281pt.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 153.
 
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1592,29 +1599,28 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-Overfull \hbox (4.85797pt too wide) in paragraph at lines 117--125
+Overfull \hbox (4.85797pt too wide) in paragraph at lines 149--157
 \T1/cmtt/m/n/10 main / amp / config / alfresco / web-extension / site-webscript
 s / com /
  []
 
-[11
-
- <./immagini//architettura/wcm.jpg>] [12 <./immagini//architettura/architettura
-1.jpg>]
-Overfull \hbox (6.68974pt too wide) in paragraph at lines 139--142
+[13 <./immagini//architettura/architettura2.png>] [14 <./immagini//architettura
+/dev-extensions-share-architecture.png> <./immagini//architettura/dev-platform-
+integration-architecture.png>]
+Overfull \hbox (6.68974pt too wide) in paragraph at lines 171--174
 \T1/cmtt/m/n/10 src / main / amp / config / alfresco / extension /templates / w
 ebscripts\T1/cmr/m/n/10 (-20) .
  []
 
 
-Underfull \vbox (badness 1484) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./immagini//architettura/architettura2.png>] [14 <./immagini//architettur
-a/architettura3.png>]) (./capitoli/capitolo-5.tex [15] [16
+ [15 <./immagini//architettura/dev-repo-extension-points.png>]) (./capitoli/cap
+itolo-5.tex [16]
+Capitolo 5.
+[17
 
 ]
-Capitolo 5.
-[17]
 Overfull \hbox (48.90509pt too wide) in paragraph at lines 92--93
 []\T1/cmr/m/n/10 (-20) SI è ag-giun-ta in-nan-zi-tut-to una nuo-va vo-ce di me-
 nu ag-giun-gen-do il fi-le \T1/cmtt/m/n/10 / AIOProject-share-amp
@@ -1898,21 +1904,18 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 141.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28126 strings out of 493013
- 460986 string characters out of 6136993
- 1198777 words of memory out of 5000000
- 30773 multiletter control sequences out of 15000+600000
+ 28135 strings out of 493013
+ 461688 string characters out of 6136993
+ 1198989 words of memory out of 5000000
+ 30781 multiletter control sequences out of 15000+600000
  29120 words of font info for 115 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 61i,6n,122p,1919b,2810s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,7n,122p,1919b,2646s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2016/texmf-dist
@@ -1935,10 +1938,10 @@ nts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
 public/cm-super/sfti1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-
 super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt
 0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on .\/tesi.pdf (39 pages, 809366 bytes).
+Output written on .\/tesi.pdf (39 pages, 978668 bytes).
 PDF statistics:
- 743 PDF objects out of 1000 (max. 8388607)
- 658 compressed objects within 7 object streams
- 230 named destinations out of 1000 (max. 500000)
- 34154 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 754 PDF objects out of 1000 (max. 8388607)
+ 665 compressed objects within 7 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 34159 words of extra memory for PDF output out of 35830 (max. 10000000)
 

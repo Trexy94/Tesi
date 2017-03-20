@@ -92,27 +92,59 @@
 
 %**************************************************************
 \section{architettura di Alfresco}
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth]{/architettura/wcm.jpg}
-\caption{Web Content Management\label{overflow}}
-\end{figure}
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth]{/architettura/architettura1.jpg}
-\caption{architettura1\label{overflow}}
-\end{figure}
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth]{/architettura/architettura2.png}
-\caption{architettura2\label{overflow}}
-\end{figure}
+Al cuore di Alfresco c'è un repository che fornisce uno spazio per i contenuti, e un ampio spettro di servizi che possono essere utilizzati dalle applicazioni per manipolare il suo contenuto.il diagramma \ref{fig:architettura-generale} a seguito mostra l'idea alla base di Alfresco, che può essere considerato consistente di tree principali componenti: la piattaforma(Paltform), la User Interface (UI), e la componente di ricerca(Search), basata su Apache Lucene. Queste componenti sono implementate come applicazioni web separate.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth]{/architettura/architettura3.png}
-\caption{architettura3}
+\caption{architettura generale}
+\label{fig:architettura-generale}
 \end{figure}
-\section{Gestione dei moduli\label{overflow}}
+Il principale componente è chiamato Platform e è implementato nella web application alfresco.war. Essa fornisce il repository dove i file sono tenuti in memoria oltre a tutti i servizi di accesso e gestione collegati. Alfresco Share fotnisce una interfaccia web (UI) per il repository ed è implementata nella web application share.war. Share nasce per facilitare agli utenti la gestione dei loro siti, docomenti, utenti e così via.
+la funzionalità di ricerca è implementata su Apache Solr 4 e fornise una indicizzazione di tutti i contenuti, che rende possibile una potente funzionalità di ricerca. Oltre ai web client che accedono al repository via Share ci sono anche i dispositivi mobile che possono accedervi tramite le APIs REST fornite dalla piattaforma.
+
+Se si approfondisce il componente Platform (contenuto nell'alfresco.war) vedremo che esso supporta i workflow nella forma dell'integrato Activiti Workflow Engine. La piattaforma di solito, come in questo caso, viene integrata con un Directory Server (LDAP), per essere in grado di sincronizzare i gruppi e gli utenti con Alfresco Community Edition. E la maggior parte delle installazioni, compresa quella dell'azienda, integrano Alfresco anche con un server SMTO così il componente Platform può mandare E-mail, quali ad esempio, ma non solo, inviti ai siti.
+
+Per maggiori informazioni si rimanda alla visione della documentazione di Alfresco.
+
+Oltre a Share vi sono anche molti altri client che possono connettersi al repository, e questi includono anche molti client compatibili con CMIS, e via il protocollo SharePoint e il client SharePoint. Esiste anche, a pagamento, la possibilità di sincronizzare i contenuti nel cloud.
+
+Platform inoltre contiene numerose APIs, Servizi, e protocolli.
+
+Il diagramma \ref{fig:architettura-estesa} illustra questa architettura estesa
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{/architettura/architettura2.png}
+\caption{architettura estesa\label{fig:architettura-estesa}}
+\end{figure}
+
+Si noti come i metadati del contenuto sono conservati in un database relazionale come PostgreSQL, MySQL, Oracle, e così via. Il contenuto in se è conservato nel file system (o altri sistemi di storage come Amazon S3).
+
+Alfresco fornisce un buon numero di punti di estensione per permettere ad uno sviluppatore di customizzarlo. Questi punti hanno molte forme, tra cui:
+\begin{itemize}
+\item Platform extension points, illustrati nell'immagine \ref{fig:dev-platform-integration-architecture.png}
+\item Share extension points, illustrati nell'immagine \ref{fig:dev-extensions-share-architecture}
+\item Platform integration points, illustrati nell'immagine \ref{fig:dev-repo-extension-points.png}
+\item APIs
+\item Protocolli
+\item Servizi
+\end{itemize}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{/architettura/dev-extensions-share-architecture.png}
+\caption{Architettura di Share\label{fig:dev-extensions-share-architecture}}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{/architettura/dev-platform-integration-architecture.png}
+\caption{Architettura del componente Platform\label{fig:dev-platform-integration-architecture.png}}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{/architettura/dev-repo-extension-points.png}
+\caption{Architettura del Repository\label{fig:dev-repo-extension-points.png}}
+\end{figure}
+\section{Gestione dei moduli}
 \subsection{creazione}
 Bisogna innanzitutto rispondere ai prerequisiti descritti in  \href{http://docs.alfresco.com/sdk2.1/concepts/alfresco-sdk-installing-prerequisite-software.html}{questa pagina}.
 Fatto questo il progetto può essere importato in un IDE, ad esempio per Eclipse in \href{http://docs.alfresco.com/community/tasks/alfresco-sdk-rad-eclipse-import-projects.html}{questo sito}

@@ -78,11 +78,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}architettura di Alfresco}{11}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Gestione dei moduli}{12}{section.4.2}
+\contentsline {section}{\numberline {4.2}Gestione dei moduli}{13}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}creazione}{12}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}creazione}{13}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Manutenzione}{14}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Manutenzione}{16}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Il modulo clienti}{17}{chapter.5}
 \defcounter {refsection}{0}\relax 
@@ -92,34 +92,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Creazione della parte share}{18}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{pagina Clienti}{19}{section*.26}
+\contentsline {subsubsection}{pagina Clienti}{19}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pagina vis\_clienti}{19}{section*.27}
+\contentsline {subsubsection}{Pagina vis\_clienti}{19}{section*.28}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.2}Creazione della parte repo}{21}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Creazione delle variabili del modulo}{21}{section*.28}
+\contentsline {subsubsection}{Creazione delle variabili del modulo}{21}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Creazione dei webscript}{22}{section*.29}
+\contentsline {subsubsection}{Creazione dei webscript}{22}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{clients.java}{22}{section*.30}
+\contentsline {paragraph}{clients.java}{22}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{delete.java}{23}{section*.31}
+\contentsline {paragraph}{delete.java}{23}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{inactive.java}{23}{section*.32}
+\contentsline {paragraph}{inactive.java}{23}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{query\_processor.java}{24}{section*.33}
+\contentsline {paragraph}{query\_processor.java}{24}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{TablePageGenerator.java}{25}{section*.34}
+\contentsline {paragraph}{TablePageGenerator.java}{25}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{update.java}{26}{section*.35}
+\contentsline {paragraph}{update.java}{26}{section*.36}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}lato estetico}{26}{section.5.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.1}risultati raggiunti}{26}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossary}{27}{section*.36}
+\contentsline {chapter}{Glossary}{27}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{29}{section*.38}
+\contentsline {chapter}{Acronyms}{29}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{31}{appendix*.40}
+\contentsline {chapter}{Bibliografia}{31}{appendix*.41}
