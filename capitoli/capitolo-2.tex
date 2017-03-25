@@ -4,133 +4,34 @@
 % !TEX spellcheck = it-IT
 
 %**************************************************************
-\chapter{tecnologie e strumenti utilizzati}
-\label{cap:tecnologie-strumenti}
+\chapter{Descrizione dello stage}
+\label{cap:descrizione-stage}
 %**************************************************************
 
-\intro{In questo capitolo saranno esposte le principali tecnologie utilizzate e i principali strumenti che sono stati utilizzati per portare a compimento il progetto assegnato}\\
+\intro{In questo capitolo si intende illustrare nel dettaglio le fasi e le considerazioni che hanno portato allo sviluppo del progetto e che sono alla base della proposta di stage}\\
 
 %**************************************************************
-\section{Tecnologie utilizzate}
-In seguito verranno descritte più nel drttaglio le tecnologie apprese o particolarmente approfondite durante lo svolgimento dello stage, che vanno ad aggiungersi a quelle pregresse, come ad esempio l'HTML e il CSS, già noti e ampiamente utilizzati nel corso del progetto.
-\subsection{Linguaggi di Programmazione}
-\subsubsection{Java}
-Java è un linguaggio di programmazione orientato agli oggetti a tipizzazione statica,
-specificatamente progettato per essere il più possibile indipendente dalla piattaforma
-di esecuzione. Uno dei principi fondamentali del linguaggio è espresso dal motto write
-once, run anywhere: il codice compilato che viene eseguito su una piattaforma non
-deve essere ricompilato per essere eseguito su una piattaforma diversa. Il prodotto
-della compilazione è infatti in un formato chiamato bytecode che può essere eseguito da
-una qualunque implementazione di un processore virtuale detto Java Virtual Machine.
-Alfresco usa Java per il lato backend, soprattutto per i webscript, per i quali è stato largamente utilizzato assieme alla sua API.
-\subsubsection{Javascript}
-JavaScript è un linguaggio di scripting orientato agli oggetti e agli eventi, comunemente
-utilizzato nella programmazione Web lato client per la creazione, in siti web e
-applicazioni web, di effetti dinamici interattivi, tramite funzioni di script invocate da
-eventi innescati, a loro volta, in vari modi dall’utente sulla pagina web in uso. Tali
-funzioni di script possono essere opportunamente inserite in file HTML, in pagine JSP
-o in appositi file separati con estensione .js, poi richiamati nella logica di business.
-Nel progetto esso è stato usato per popolare dinamicamente le pagine di cui si sono composti i vari moduli e per eseguire i controlli sui form una volta inviate le richieste.
-\subsection{Formato per l’interscambio di dati}
-\subsubsection{JSON}
-JSON (JavaScript Object Notation) è un formato di scambio dati leggero e facile
-da leggere e scrivere sia per macchine che per umani, si basa su un sottoinsieme del
-linguaggio di programmazione JavaScript, anche se ne è indipendente, ed  inoltre è un formato di testo completamente indipendente da qualsiasi linguaggio.
-Per queste caratteristiche è un linguaggio di scambio dati ideale. JSON è costruito su
-due strutture:
+\section{Introduzione al progetto}
+\subsection{Considerazioni preliminari}
+Per prima cosa, è necessario premettere che l'azienda in cui si è svolto lo stage per i suoi prodotti software richiede l'impiego di procedure, regole e strumenti idonei a raggiungere il miglior risultato possibile.
+In particolare, durante lo stage sono stati richiesti i seguenti punti:
 \begin{itemize}
-\item Una collezione di coppie nome/valore, spesso realizzato come un array associativo;
-\item Un elenco ordinato di valori, spesso realizzato come una lista.
+\item Tracciabilità: è stato spesso richiesto di rendere conto dello stato di avanzamento dei processi, delle componenti e delle attività in lavorazione, al fine di verificare il rispetto della tabella di marcia,
+\item Documentazione: descrizione di quanto è stato fatto, delle strategie utilizzate e dei dettagli implementativi in modo puntuale e preciso, per far sì che quanto è stato fatto generi utilità all'azienda e sia riutilizzabile e replicabile in futuro, senza dover rifare tutte le attività, avendo già una strategia e una soluzione pronte e immediatamente utilizzabili.
+\item Misurazione: per ogni attività eseguita, deve essere misurabile il suo costo(in termini di tempo, nel caso del progetto qui esposto), e la sua qualità complessiva, in base a vari indicatori.
 \end{itemize}
-Nel progetto esso è stato usato per poter scambiare i dati tra il lato frontend e il lato backend attraverso il passaggio di oggetti JSON tramite AJAX
-\subsection{Tecnica per l’interscambio di dati}
-\subsubsection{AJAX}
-AJAX, acronimo di Asynchronous Javascript And XML, è una tecnica di sviluppo
-software per la realizzazione di applicazioni web interattive.
-Lo sviluppo di applicazioni HTML con AJAX si basa su uno scambio di dati in
-background fra web browser e server, che consente l’aggiornamento dinamico di una
-pagina web senza esplicito ricaricamento da parte dell’utente.
-AJAX è asincrono, nel senso che i dati extra sono richiesti al server e caricati in
-background senza interferire con il comportamento della pagina esistente, anche se è possibile, ma sconsigliato, effettuare richieste sincrone. Normalmente
-le funzioni richiamate sono scritte con il linguaggio JavaScript. Tuttavia, e a dispetto
-del nome, l’uso di JavaScript e di XML non è obbligatorio, come non è detto che le
-richieste di caricamento debbano essere necessariamente asincrone.
-Nel progetto esso è stato usato per mettere in comunicazione il lato frontend e il lato backend, grazie anche all'utilizzo delle librerie AJAX messe a disposizione dell'API Javascript di Alfresco.
-\subsection{Framework}
-\subsubsection{Spring}
-Spring è un framework per realizzare applicazioni web basate sul Modello MVC
-avendo come punti di forza l’inversion of control (tramite dependency injection) e la
-aspect oriented programming. Esso si occupa di mappare metodi e classi Java con
-determinati url, di gestire differenti tipologie di "viste" restituite al client, di realizzare
-applicazioni internazionalizzate e di gestire i cosiddetti temi per personalizzare al
-massimo l’esperienza utente. Questo framework è strutturato a livelli, e permette di
-scegliere quale dei suoi componenti usare, fornendo nello stesso momento un framework di ottima qualità per lo sviluppo di applicazioni distribuite. Questa architettura a livelli consiste
-in diversi moduli (o componenti) ben definiti, ognuno dei quali può rimanere da solo o
-essere implementato con altri.
-Su questo framework si basa la struttura di base di Alfresco.
-\subsubsection{Jquery}
-JQuery è un framework nato con il preciso intento di rendere il codice più sintetico
-e di limitare al minimo l’estensione degli oggetti globali per ottenere la massima
-compatibilità con altre librerie. Grazie a questo principio jquery è in grado di offrire
-un’ampia gamma di funzionalità, che vanno dalla manipolazione degli stili CSS e degli
-elementi HTML, agli effetti grafici, per passare a comodi metodi per chiamate AJAX
-cross-browser. Nel progetto esso è stato utilizzato per la creazione di popup ed effetti per l'utente.
-\subsubsection{Alfresco Surf}
-Alfresco Surf è un framework messo a disposizione della piattaforma Alfresco con cui è
-possibile creare interfaccia grafiche, modelli e componenti sfruttando scripts server-side
-e templates.
-Anche se Alfresco stesso sta per abbandonarlo in favore di Angular2, esso è ancora il framework con cui viene distribuito il lato frontend nelle distribuzioni di Alfresco.
-\subsection{Protocolli di servizi}
-\subsubsection{LDAP}
-LDAP è un acronimo che sta per LIGHTWEIGHT DIRECTORY ACCESS
-PROTOCOL. Come suggerisce il nome stesso, è un protocollo leggero per accedere
-ai servizi di directory, basati sul protocollo X.500. LDAP opera su TCP/IP o su altre
-connessioni orientate ai servizi di trasferimento. LDAP nasce per sostituire DAP in
-quanto molto oneroso dal punto di vista dell’impiego delle risorse ed è basato
-sul modello client-sever: un client LDAP invia una richiesta ad un server LDAP, che
-processa la richiesta ricevuta, accede eventualmente ad un directory database e ritorna
-dei risultati al client.
-Il modello di informazioni di LDAP è basato sulle entry. Un’entry è una collezione di
-attributi aventi un unico nome globale: il Distinguished Name (DN). Il DN è usato
-per riferirsi ad una particolare entry, senza avere ambiguità.
-Ogni attributo dell’entry ha un tipo ed uno o più valori.
-In LDAP, le entry di una directory sono strutturate come in una struttura gerarchica
-di un albero.
-L'azienda fa uso di questo protocollo per la profilatura degli utenti in virtù della sua ottima integrazione con Alfresco, e quindi di conseguenza si è dovuta utilizzare questa tecnologia per avere accesso ai dati degli utenti registrati
-\subsection{Data Base Management System}
-\subsubsection{PostgreSQL}
-PostgreSQL  è un completo DBMS ad oggetti rilasciato con licenza libera; spesso viene abbreviato come "Postgres".
-PostgreSQL è una reale alternativa sia rispetto ad altri prodotti liberi come ad esempio MySQL, con i quali però comunque condivide molti aspetti del suo linguaggio, che a quelli a codice chiuso come ad esempio Oracle, poichè offre caratteristiche uniche nel suo genere che lo pongono per alcuni aspetti all'avanguardia nel settore dei database. È il DBMS usato in maniera predefinita da Alfresco e per questo motivo è stato scelto per questo progetto.
-\section{Strumenti utilizzati}
-%\subsubsection{Strumenti di supporto all’attività di Analisi}
-%\paragraph{Astah}
-%Astah è un software molto diffuso per la produzione di diagrammi UML.
-%Le sue potenzialità vanno in realtà oltre alla semplice produzione grafica di diagrammi,
-%ma in questo progetto è stato utilizzato esclusivamente per la realizzazione dei
-%diagrammi dei casi d’uso inseriti nell’analisi dei requisiti.
-\subsection{Strumenti di supporto all’attività di Codifica}
-\subsubsection{Eclipse}
-Eclipse è un ambiente di sviluppo integrato multi-linguaggio e multipiattaforma. Ideato da un consorzio di grandi società quali Ericsson, HP, IBM, Intel, MontaVista Software, QNX, SAP e Serena Software, chiamato Eclipse Foundation.
-Eclipse è un software libero distribuito sotto i termini della Eclipse Public License ed è lo strumento che viene imposto dall'azienda ai suoi dipendenti, in quanto sofware libero, quindi la sua adozione per questo progetto è stata scontata.
-Questo IDE è stato utilizzato per l’importazione
-di un progetto allo scopo di estendere la piattaforma di Alfresco. Le funzionalità
-presentate da questo IDE in termini di aiuti al programmatore e la sua integrazione con Maven hanno permesso uno sviluppo rapido ed efficiente dei plugin.
-\subsection{Strumenti per il versionamento}
-\subsubsection{Git}
-Il sistema di versioning adottato per questo progetto e in generale utilizzato dall'azienda è Git, che negli ultimi anni si è affermato come uno
-dei migliori sistemi di controllo di versione.
-Le caratteristiche per cui si è distinto dagli altri software sono:
-\begin{itemize}
-\item L’architettura, progettata per essere totalmente distribuita, in modo da
-rendere possibile il lavoro e il versionamento offline ed anche un versionamento integrato con i principali IDE;
-\item Le funzionalità di branching e merging potenti, rapide e comode, che permettono una efficente gestione di progetti, anche di grandi dimensioni;
-\item Le performance generalmente migliori e la possibilità di pubblicare i repository con i principali protocolli.
-\end{itemize}
-Ennova Research si appoggia nello specifico su GitLab, un servizio di hosting per progetti basato
-su Git.
-\subsection{Strumenti per \emph{build automation}}
-\subsubsection{Apache Maven}
- Maven è un software usato principalmente per la gestione di progetti Java e \emph{build automation}. Per funzionalità è similare ad Apache Ant, ma basato su concetti differenti. Può essere usato anche in progetti scritti in C\#, Ruby, Scala e altri linguaggi. Il progetto Maven è ospitato da Apache Software Foundation.
-Maven usa un costrutto conosciuto come Project Object Model (POM); un file XML che descrive le dipendenze fra il progetto e le varie versioni di librerie necessarie nonché le dipendenze fra di esse. In questo modo si separano le librerie dalla directory di progetto utilizzando questo file descrittivo per definirne le relazioni.
-Maven effettua automaticamente il download di librerie Java e plug-in Maven dai vari repository definiti scaricandoli in locale o in un repository centralizzato lato sviluppo. Questo permette di recuperare in modo uniforme i vari file JAR e di poter spostare il progetto indipendentemente da un ambiente all'altro avendo la sicurezza di utilizzare sempre le stesse versioni delle librerie e la possibilità di impostare profili di esecuzione diversi.
-Per automatizzare la build e il lancio dell'SDK, Alfresco si basa appunto su Maven.
+Quanto esposto è stato tenuto in grande considerazione durante lo sviluppo, al fine di realizzare un prodotto quanto più possibile conforme agli standard di qualità aziendali
+\subsection{Considerazioni iniziali}
+Alfresco, soprattutto nella versione Community, utilizzata dall'azienda perché Open Source è dotata di pochissime utilità di base, dal momento che il profitto dell'azienda che produce il software proviene dalla consulenza tecnica fornita dai loro esperti e dalla vendita di moduli ulteriori che vanno ad estendere la dotazione di base, moduli disponibili, soprattutto nel caso dei più interessanti, solo tramite la sottoscrizione di un abbonamento, che viene valutato di caso in caso ma è comunque costoso. L'azienda quindi punta a fornire moduli adatti alla gestione di clienti e progetti integrati direttamente in Alfresco, e punta quindi gradualmente ad accentrare in Alfresco più funzionalità possibili, sostituendo gradualmente gli applicativi attualmente utilizzati ad esempio per la gestione dei progetti e la rendicontazione, per poi in un futuro poter proporre a  clienti terzi il prodotto finito. Per questo motivo il progetto di stage si è concretizzato in quanto esposto, cercando quindi di introdurre alcune funzionalità.
+\subsection{Approccio alla piattaforma}
+Le prime due settimane di stage sono state dedicate quasi interamente allo studio della complessa architettura
+e della SDK della piattaforma.
+Per affrontare quanto appena illustrate è stato effettuato un attento studio
+della SDK di Alfresco, scegliendo il tipo di archetipo da utilizzare. La scelta è
+ricaduta sull’archetipo all-in-one in quanto permette lo sviluppo sia del lato front-end
+che di quello back-end in simultanea, senza dover distribuire ed installare separatamente un modulo per ogni parte sviluppata.
+In seguito, si sono analizzate le richieste poste dall'azienda in merito alle funzionalità desiderate al fine di individuare le strategie e i metodi migliori per realizzare quanto richiesto
+\subsection{Ambiente di test}
+Assieme allo sviluppo dei vari moduli, è proceduta a pari passo anche la creazione e il mantenimento di un ambiente di test dove poter testare i moduli in maniera sicura prima di portarli in produzione e applicare i moduli nel \gls{KMS} aziendale. Ciò è stato espressamente richiesto dall'azienda e quindi i moduli prodotti, non appena la loro installazione era possibile, sono stati caricati e provati nel \gls{KMS} di test che replicava quello dell'azienda, e successivamente, prima del rilascio finale, in una copia esatta del software del \gls{KMS} di produzione.
+\section{Vincoli}
+per quanto riguarda l'implementazione, non sono stati imposti allo stagista vincoli stringenti per quanto riguarda i dettagli implementativi e accessibilità, anche se è stato esplicitato che il codice doveva essere facile da manutenere e che tutti i parametri e le stringhe utilizzate dovevano essere collocate in opportuni file di properties, in maniera da rendere facile configurazione e localizzazione.

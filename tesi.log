@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  23 MAR 2017 23:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  25 MAR 2017 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1239,20 +1239,20 @@ File: biblatex.cfg
 \glo@main@file=\write6
 \openout6 = `tesi.glo'.
 
-Package glossaries Info: Writing glossary file tesi.glo on input line 69.
+Package glossaries Info: Writing glossary file tesi.glo on input line 70.
 \glo@acronym@file=\write7
 \openout7 = `tesi.acn'.
 
-Package glossaries Info: Writing glossary file tesi.acn on input line 69.
-Package hyperref Info: Option `colorlinks' set `true' on input line 114.
-Package hyperref Info: Option `linktocpage' set `true' on input line 114.
-Package hyperref Info: Option `breaklinks' set `true' on input line 114.
-Package hyperref Info: Option `pageanchor' set `true' on input line 114.
-Package hyperref Info: Option `plainpages' set `false' on input line 114.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 114.
+Package glossaries Info: Writing glossary file tesi.acn on input line 70.
+Package hyperref Info: Option `colorlinks' set `true' on input line 115.
+Package hyperref Info: Option `linktocpage' set `true' on input line 115.
+Package hyperref Info: Option `breaklinks' set `true' on input line 115.
+Package hyperref Info: Option `pageanchor' set `true' on input line 115.
+Package hyperref Info: Option `plainpages' set `false' on input line 115.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 115.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 114.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 114.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 115.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 115.
 
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -1509,15 +1509,17 @@ ut line 54.
 Capitolo 2.
 [3
 
-] [4]
+]) (./capitoli/capitolo-3.tex [4]
+Capitolo 3.
+[5
+
+] [6]
 Underfull \vbox (badness 1014) has occurred while \output is active []
 
- [5])
-(./capitoli/capitolo-3.tex [6] [7] [8
+ [7])
+(./capitoli/capitolo-4.tex [8] [9] [10
 
 ]
-Capitolo 3.
-[9]) (./capitoli/capitolo-4.tex [10]
 Capitolo 4.
 <immagini//architettura/architettura3.png, id=239, 603.25375pt x 681.54625pt>
 File: immagini//architettura/architettura3.png Graphic file (type png)
@@ -1526,9 +1528,7 @@ File: immagini//architettura/architettura3.png Graphic file (type png)
 Package pdftex.def Info: immagini//architettura/architettura3.png used on input
  line 98.
 (pdftex.def)             Requested size: 372.0pt x 420.27681pt.
- [11
-
-]
+ [11]
 <immagini//architettura/architettura2.png, id=247, 838.13126pt x 722.7pt>
 File: immagini//architettura/architettura2.png Graphic file (type png)
 
@@ -1627,10 +1627,10 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28165 strings out of 493013
- 462150 string characters out of 6136993
- 1188154 words of memory out of 5000000
- 30801 multiletter control sequences out of 15000+600000
+ 27942 strings out of 493013
+ 458083 string characters out of 6136993
+ 1188125 words of memory out of 5000000
+ 30583 multiletter control sequences out of 15000+600000
  28988 words of font info for 114 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,7n,122p,1931b,2744s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1656,10 +1656,10 @@ nts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
 public/cm-super/sfti1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-
 super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt
 0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on .\/tesi.pdf (43 pages, 985749 bytes).
+Output written on .\/tesi.pdf (43 pages, 993774 bytes).
 PDF statistics:
- 792 PDF objects out of 1000 (max. 8388607)
- 699 compressed objects within 7 object streams
- 239 named destinations out of 1000 (max. 500000)
+ 785 PDF objects out of 1000 (max. 8388607)
+ 692 compressed objects within 7 object streams
+ 234 named destinations out of 1000 (max. 500000)
  34191 words of extra memory for PDF output out of 35830 (max. 10000000)
 

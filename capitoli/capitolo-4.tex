@@ -91,15 +91,15 @@
 \intro{In questo capitolo sarà esposto come creare un modulo e accenni all'architettura di Alfresco}\\
 
 %**************************************************************
-\section{architettura di Alfresco}
-Al cuore di Alfresco c'è un repository che fornisce uno spazio per i contenuti, e un ampio spettro di servizi che possono essere utilizzati dalle applicazioni per manipolare il suo contenuto.il diagramma \ref{fig:architettura-generale} a seguito mostra l'idea alla base di Alfresco, che può essere considerato consistente di tree principali componenti: la piattaforma (Paltform), la User Interface (UI), e la componente di ricerca (Search), basata su Apache Lucene. Queste componenti sono implementate come applicazioni web separate.
+\section{Architettura di Alfresco}
+Al cuore di Alfresco c'è un repository che fornisce uno spazio per i contenuti, e un ampio spettro di servizi che possono essere utilizzati dalle applicazioni per manipolare il suo contenuto.il diagramma \ref{fig:architettura-generale} a seguito mostra l'idea alla base di Alfresco, che può essere considerato consistente di tre principali componenti: la piattaforma (Platform), la User Interface (UI), e la componente di ricerca (Search), basata su Apache Lucene. Queste componenti sono implementate come applicazioni web separate.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth]{/architettura/architettura3.png}
 \caption{architettura generale}
 \label{fig:architettura-generale}
 \end{figure}
-Il principale componente è chiamato Platform ed è implementato nella web application alfresco.war. Essa fornisce il repository dove i file sono tenuti in memoria oltre a tutti i servizi di accesso e gestione collegati. Alfresco Share fornisce una interfaccia web (UI) per il repository ed è implementata nella web application share.war. Share nasce per facilitare agli utenti la gestione dei loro siti, docomenti, utenti e così via.
+Il principale componente è chiamato Platform ed è implementato nella web application alfresco.war. Essa fornisce il repository dove i file sono tenuti in memoria oltre a tutti i servizi di accesso e gestione collegati. Alfresco Share fornisce una interfaccia web (UI) per il repository ed è implementata nella web application share.war. Share nasce per facilitare agli utenti la gestione dei loro siti, documenti, utenti e così via.
 la funzionalità di ricerca è implementata su Apache Solr 4 e fornisce una indicizzazione di tutti i contenuti, che rende possibile una potente funzionalità di ricerca. Oltre ai web client che accedono al repository via Share ci sono anche i dispositivi mobile che possono accedervi tramite le APIs REST fornite dalla piattaforma.
 
 Se si approfondisce il componente Platform (contenuto nell'alfresco.war) vedremo che esso supporta i workflow nella forma dell'integrato Activiti Workflow Engine. La piattaforma di solito, come anche nell'azienda in cui è stato svolto lo stage, viene integrata con un Directory Server (LDAP), per essere in grado di sincronizzare i gruppi e gli utenti con Alfresco Community Edition. La maggior parte delle installazioni, compresa quella di Ennova, integrano Alfresco anche con un server SMTP così il componente Platform può mandare E-mail, come ad esempio, ma non solo, inviti ai siti.
@@ -148,7 +148,7 @@ Alfresco fornisce un buon numero di punti di estensione per permettere ad uno sv
 L’Alfresco SDK è un kit di sviluppo basato su Maven che fornisce un approccio semplice
 da utilizzare per lo sviluppo di applicazioni ed estensioni per Alfresco. Con questa SDK è
 possibile sviluppare, testare, eseguire, documentare e rilasciare il proprio modulo od estensione per Alfresco. La SDK fornisce tre archetipi di Maven che possono essere
-usati al fine di generare un progetto per Alfresco, e sono pensati per fornire un approccio standardizzaro allo sviluppo, rilascio e distribuzione dei prodotti relativi ad Alfresco. È quindi possibile generare i
+usati al fine di generare un progetto per Alfresco, e sono pensati per fornire un approccio standardizzato allo sviluppo, rilascio e distribuzione dei prodotti relativi ad Alfresco. È quindi possibile generare i
 seguenti tipi di archetipi:
 \begin{itemize}
 \item Alfresco Repository AMP: questo archetipo si utilizza per creare moduli
@@ -170,7 +170,7 @@ L’Alfresco Repository AMP genera un scheletro di progetto per gestire le esten
 personalizzazioni dell’Alfresco Repository. Questo tipo di archetipo dovrebbe essere utilizzato:
 \begin{itemize}
 \item  per lo sviluppo di un componente repo che non si vuole distribuire nello stesso modulo di un componente all-in-one, per facilitare il lavoro in progetti di grandi dimensioni, che così possono suddividere il progetto in componenti più piccole.
-\item per poter creare un componente che sia riusabile e si possa reincludere a sua volta in componenti all-in-one.
+\item per poter creare un componente che sia riusabile e si possa re-includere a sua volta in componenti all-in-one.
 \item per creare un modulo che vada ad interagire con la sola parte repo.
 \end{itemize}
 Questo archetipo presenta caratteristiche ulteriori:
@@ -232,11 +232,11 @@ un file .xml, che descrive i dati essenziali della pagina:
 molto importanti sono il tag authentication, che specifica il livello di autenticazione necessario per accedere alla pagina, e il tag url, dal momento che definisce l’indirizzo della pagina, che sarà \texttt{<ip>:port/share/page/hdp/ws<url>} (hdp genera la pagina con header e footer, dp la pagina grezza).
 Vi è poi il file .html che si comporta proprio come il body di una pagina html.
 Vi è infine un file .js, che serve per applicare delle modifiche via json al model.
-Quanto detto è sufficiente per creare una pagina che non necessiti di interazioni con java.
+Quanto detto è sufficiente per creare una pagina che non necessiti di interazioni con Java.
 
 Per quanto riguarda una pagina che invece fa uso delle api di Alfresco il procedimento è più complicato: la pagina che verrà mostrata all’utente è collocata nella cartella \texttt{alfresco-extension /acme-cms-poc /acme-cms-poc-repo / amp / src / main / amp / config / alfresco / extension /templates / webscripts}.
 La pagina generata è situata all’indirizzo \texttt{<ip>:<porta>/alfresco/service<url>}.
-E’ inoltre necessario creare un bean che fa da collegamento tra il codice java, situato in \texttt{alfresco-extension / acme-cms-poc / acme-cms-poc-repo-amp / src / main / java / <package>}, e la pagina che verrà generata. Per farlo seguire quanto descritto in \href{http://docs.alfresco.com/community/tasks/bean-config.html}{questo sito}.
+È inoltre necessario creare un bean che fa da collegamento tra il codice java, situato in \texttt{alfresco-extension / acme-cms-poc / acme-cms-poc-repo-amp / src / main / java / <package>}, e la pagina che verrà generata. Per farlo seguire quanto descritto in \href{http://docs.alfresco.com/community/tasks/bean-config.html}{questo sito}.
 
 \subsection{Manutenzione}
 Nel momento in cui si vorrà ad andare a modificare un modulo per evenienze riguardanti aspetti grafici o logici indiretti, bisognerà aprire il modulo con un IDE a piacere, e applicare le modifiche desiderate sui file. Il risultato delle modifiche effettuate è visionabile lanciando il comando \texttt{./run.sh} una volta posizionti all’interno della folder del modulo su linux, \texttt{run.bat} su windows, in alternativa al comando \texttt{mvn install -Prun}  o  \texttt{mvn clean install -Prun}, se è necessario anche svuotare la cache; avviato il server basterà
@@ -244,7 +244,7 @@ aprire il browser e digitare l’url : \texttt{<ip>:8080/share/page}.
 Per quanto riguarda l’importazione dei moduli nell'ambiente di Alfresco vero e proprio, si dovrà lanciare il comando \texttt{mvn clean install} all'interno sempre del folder del modulo e all’interno della cartella target delle rispettive cartelle repo-amp e share-amp si creeranno un repo-amp file e uno share-amp file. Questi dovranno essere inseriti rispettivamente nelle cartelle amps e amps\_share nell'ambiente dell'Alfresco di produzione.
 Per installare il modulo  è necessario lanciare il file \texttt{alfresco-community/bin/apply\_amps.bat}, oppure lanciandolo tramite il flag \texttt{-force} se si ha già un modulo con lo stesso nome che si vuole sovrascrivere.
 Attenzione
-L’ installazione dei moduli comporta un deploy che sovrascriverà il contenuto delle cartelle
+L’installazione dei moduli comporta un deploy che sovrascriverà il contenuto delle cartelle
 \texttt{tomcat/webapps/share} e \texttt{tomcat/webapps/alfresco}. Di conseguenza nel momento in cui si è andati ad effettuare delle estensioni direttamente all’interno di queste cartelle il contenuto andrà perso. Quindi prima di effettuare questa operazione è necessario fare il backup delle cartelle indicate precedentemente.
 
 \emph{Per comodità d’ora in poi il nome del progetto sarà indicato come AIOProject}.
