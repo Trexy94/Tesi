@@ -126,8 +126,64 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.1}risultati raggiunti}{30}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossary}{31}{section*.37}
+\contentsline {chapter}{\numberline {6}Il modulo progetti}{31}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{33}{section*.39}
+\contentsline {section}{\numberline {6.1}scopo del modulo}{31}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{35}{appendix*.41}
+\contentsline {section}{\numberline {6.2}implementazione delle funzionalit\IeC {\`a}}{31}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Parte share}{33}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Pagina di visualizzazione dei progetti}{33}{subsection.6.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Pagina di inserimento di un progetto}{34}{subsection.6.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.3}Parte Repo}{35}{subsection.6.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Clienti.java}{35}{section*.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{GetUsers.java}{36}{section*.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{GetWorkers.java}{36}{section*.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Project\_creator.java}{37}{section*.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{classe che non mi ricordo, se c'era}{37}{section*.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}lato estetico}{37}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.1}risultati raggiunti}{37}{subsection.6.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Il modulo tema}{39}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}scopo del modulo}{39}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Realizzazione}{39}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{39}{section*.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{40}{section*.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}File aggiunti nel modulo}{40}{subsection.7.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{File di funzionalit\IeC {\`a}}{40}{section*.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{File di stile}{40}{section*.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Lato estetico}{40}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}Risultati ottenuti}{40}{subsection.7.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Conclusioni}{41}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Prospettive future}{41}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Difficolt\IeC {\`a} e limiti riscontrati}{41}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Considerazioni personali}{42}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Glossary}{43}{section*.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{45}{section*.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{47}{appendix*.50}
