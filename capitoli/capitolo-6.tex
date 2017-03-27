@@ -110,7 +110,7 @@ Il CSS è invece situato nel file \texttt{/AIOProject-share-amp/src/main/amp/web
 \begin{itemize}
 \item \texttt{setup()}, chiamata al window.onload, che si occupa di fare la chiamata AJAX per ottenere il contenuto della tabella progetti, che è una stringa nella quale il contenuto delle celle è separato dai caratteri  “\#\#\#,” mentre le righe sono separate tramite i caratteri “\#\#\#;” la stringa verrà poi trasformata in codice HTML tramite la funzione
 \item \texttt{parse(response)} che si occupa di ritrasformare in un array di array la stringa passata dalla funzione di setup, e di tradurre i dati contenuti in codice HTML  più leggibile e chiaro.
-\item \texttt{TODO:aggiungere funzione per mail} che si occupa di generare un piccolissimo form JQuery per l'inserimento del testo della mail e di fare una chiamata AJAX al servizio TODO:inserire nome per mandare la mail al gruppo a cui è stato assegnato il progetto;
+\item \texttt{manda_mail(destinatari)} che si occupa di generare un piccolo form JQuery per l'inserimento del testo della mail e di fare una chiamata AJAX al servizio SendMails per mandare la mail al gruppo a cui è stato assegnato il progetto;
 \end{itemize}
 
 \subsection{Pagina di inserimento di un progetto}
@@ -139,7 +139,7 @@ Il JavaScript utilizza le variabili globali  \texttt{buttons\_unassigned} \textt
 In questo modulo, rispetto a quello precedente descritto e come già accennato, si è cercato di ridurre il carico nella parte repo per spostare le computazioni relative alla generazione del codice nel JavaScript.
 Tuttavia è stata necessaria l’implementazione di quattro classi Java:
 \emph{è importante ricordarsi, se si utilizza la response per ritornare codice HTML o stringhe qualsiasi, di includere il seguente codice per settare la response correttamente}:
-\begin{lstlisting}
+\begin{lstlisting}[language=Java]
 res.setContentType("text/html; charset=UTF-8");
 res.setContentEncoding("UTF-8");
 \end{lstlisting}
@@ -185,7 +185,13 @@ Essa si compone delle seguenti funzioni:
 \item \texttt{private void execute(Connection con, String query)}, che esegue l’inserimento del record nelle tabelle relative agli impiegati e ai progetti.
 \item \texttt{private void create\_folder\_tree(String ID, String descr, String[] workers)}, che crea iterativamente l’albero della cartellatura assegnando i permessi di default e invocando \texttt{give\_permissions} alla creazione della cartella relativa alla documentazione tecnica.
 \end{itemize}
-\subsubsection{classe che non mi ricordo, se c'era}
+\subsubsection{SendMails.java}, che si occupa di mandare un messaggio a tutte le mail di una lista, entrambe date in input alla chiamata del servizio. Questa funzione una le API di alfresco, nello specifico il mailAction, che viene istanziato con le seguenti righe:
+\begin{lstlisting}[language=Java]
+ ActionService actionService = serviceRegistry.getActionService();
+ Action mailAction = actionService.createAction(MailActionExecuter.NAME);
+\end{lstlisting}
+Dal servizio si possono configurare numerosi parametri quali il mittente, il CC, il CCN e praticamente tutti i parametri di una normale mail.
+La classe è composta solo dalla funzione \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)}, che è quella chiamata automaticamente quando si richiede il servizio e che si occupa di gestire l'aggiunta dei vari destinatari e dei parametri della mail, oltre ovviamente al suo invio.
 \section{lato estetico}
 dato che il sistema non è stato ancora dotato delle funzionalità di upload e delete, non si è ritenuto di procedere ad allinearlo con il tema Coral Tree per il momento, quindi non sono stati prodotti mockup. È stato chiesto però di rendere gradevole la presentazione
 \subsection{risultati raggiunti}

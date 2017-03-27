@@ -18,8 +18,70 @@ Purtroppo, se si cambia tema, a causa del suo sistema di caching, gli utenti che
 \paragraph{}visto quanto esposto, si è reso necessario un refactoring del modulo tema e dei due moduli, uno che implementa il tema e il login, e l'altro che implementa la funzionalità di recupero password già presenti nel sistema e realizzati precedentemente, per allinearli a quanto prima esposto. Si sono quindi portati tutti i css custom nei fai del tema, denominato tema Ennova, al fianco del quale si sono implementati i file del nuovo tema, chiamato tema Coral Tree. Si è dovuto quindi togliere dai moduli i riferimenti ai fogli di stile specifici, che altrimenti avrebbero sovrascritto i CSS di tema, e si sono dovuti accorpare i CSS di quei fogli nel tema principale.
 \paragraph{} Siccome le modifiche son avvenute anche riutilizzando il materiale precedente, a seguito si mostrerà solo quanto aggiunto e si trascureranno i file già presenti.
 \subsection{File aggiunti nel modulo}
+è stato innanzitutto aggiunto il file CoralTreeTheme.xml, che serve a registrare il tema
+\begin{lstlisting}[language=XML]
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+    <title>Coral Tree Theme</title>
+    <title-id>theme.CoralTreeTheme</title-id>
+    <css-tokens>
+        <less-variables>
+            <!-- Only for Alfresco 5.x onwards and latest Aikau version -->
+        </less-variables>
+    </css-tokens>
+</theme>
+\end{lstlisting}
 \subsubsection{File di funzionalità}
+innanzitutto è stato creato aggiornato il file layout.js, che si occupa di gestire il tema selezionato:
+\begin{lstlisting}[language=JavaScript]
+$( window ).load(function() {
+    /** CoralTreeTheme **/
+    if (Alfresco.constants.THEME == "CoralTreeTheme") {
+        document.getElementById("HEADER_SEARCHBOX_FORM_FIELD").setAttribute("placeholder","Chi cerca, trova!");
+        var arrayLink = ['/share/res/themes/CoralTreeTheme/dashboard/header/header.css', '/share/res/themes/CoralTreeTheme/dashboard/footer/footer.css'];
+        for (i = 0; i < arrayLink.length; i++) {
+            var link = document.createElement("link");
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = arrayLink[i];
+            document.querySelector("head").appendChild(link);
+        }
+        var arrayScript = ['/share/res/js/CoralTreeTheme/dashboard/header/header.js', '/share/res/js/CoralTreeTheme/dashboard/footer/footer.js'];
+        for (i = 0; i < arrayScript.length; i++) {
+            var script = document.createElement("script");
+            script.type= "text/javascript";
+            script.src = arrayScript[i];
+            document.querySelector("head").appendChild(script);
+        }
+        $(".yui-skin-CoralTreeTheme").css({"display":"block"});
+    } else if (Alfresco.constants.THEME == "ennovaTheme") {
+        var arrayLink = ['/share/res/themes/ennovaTheme/dashboard/header/header.css', '/share/res/themes/ennovaTheme/dashboard/footer/footer.css'];
+        for (i = 0; i < arrayLink.length; i++) {
+            var link = document.createElement("link");
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = arrayLink[i];
+            document.querySelector("head").appendChild(link);
+        }
+        var arrayScript = ['/share/res/js/ennovaTheme/dashboard/header/header.js', '/share/res/js/ennovaTheme/dashboard/footer/footer.js'];
+        for (i = 0; i < arrayScript.length; i++) {
+            var script = document.createElement("script");
+            script.type= "text/javascript";
+            script.src = arrayScript[i];
+            document.querySelector("head").appendChild(script);
+        }
+        $(".yui-skin-ennovaTheme").css({"display":"block"});
+    }
+});
+\end{lstlisting}
 \subsubsection{File di stile}
+\begin{itemize}
+\item \texttt{\themes\theme\src\main\resources\META-INF\resources\themes\CoralTreeTheme\dashboard\footer\footer.css}
+\item \texttt{\themes\theme\src\main\resources\META-INF\resources\themes\CoralTreeTheme\dashboard\header\header.css}
+C:\themes\theme\src\main\resources\META-INF\resources\themes\CoralTreeTheme\images
+C:\themes\theme\src\main\resources\META-INF\resources\themes\CoralTreeTheme\presentation.css
+C:\themes\theme\src\main\resources\META-INF\resources\themes\CoralTreeTheme\yui\assets
+\end{itemize}
 \section{Lato estetico}
 Per il lato estetico ci si è ancora una volta dovuti rivolgere al team di grafici che lavorano presso l'azienda per ottenere un mockup. Sono stati utilizzati quelli già prodotti nel passato al momento della presentazione del progetto e della creazione dei primi moduli.
 \subsection{Risultati ottenuti}

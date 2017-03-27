@@ -2145,6 +2145,3 @@
     <bcf:datasource type="file" datatype="bibtex">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="0">*</bcf:citekey>
-  </bcf:section>
-</bcf:controlfile>

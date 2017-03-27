@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  26 MAR 2017 22:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.3.16)  27 MAR 2017 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -551,7 +551,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip46
 )
 (c:/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2017/02/03 v5.2a context-sensitive quotations (JAW)
+Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
 \csq@reset=\count110
 \csq@gtype=\count111
 \csq@glevel=\count112
@@ -561,7 +561,7 @@ Package: csquotes 2017/02/03 v5.2a context-sensitive quotations (JAW)
 \csq@ltx@everypar=\toks17
 
 (c:/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2017/02/03 v5.2a csquotes generic definitions (JAW)
+File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
@@ -1302,7 +1302,8 @@ Package biblatex Info: ... file 'english.lbx' found.
 
 (c:/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
-) (.\/tesi.aux)
+)
+No file tesi.aux.
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
@@ -1331,7 +1332,6 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
-
 (c:/texlive/2016/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
@@ -1424,11 +1424,11 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `tesi.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'tesi.bbl' found.
- (.\/tesi.bbl)
+Package biblatex Info: ... file 'tesi.bbl' not found.
+
+No file tesi.bbl.
 Package biblatex Info: Reference section=0 on input line 112.
 Package biblatex Info: Reference segment=0 on input line 112.
-
 (./inizio-fine/frontespizio.tex
 <immagini/logo-unipd.png, id=4, 943.525pt x 949.5475pt>
 File: immagini/logo-unipd.png Graphic file (type png)
@@ -1460,26 +1460,22 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 ] [4
 
 ]
-(.\/tesi.toc [5
-
-])
 \tf@toc=\write8
 \openout8 = `tesi.toc'.
 
- [6] (.\/tesi.lof)
+ [5
+
+]
 \tf@lof=\write9
 \openout9 = `tesi.lof'.
 
- (.\/tesi.lot)
 \tf@lot=\write10
 \openout10 = `tesi.lot'.
 
- [7
 
-] [8
+[6
 
-])
-(./capitoli/capitolo-1.tex
+]) (./capitoli/capitolo-1.tex
 Capitolo 1.
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 11.
 (c:/texlive/2016/texmf-dist/tex/latex/base/t1cmss.fd
@@ -1490,14 +1486,44 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
+
+LaTeX Warning: Hyper reference `cap:descrizione-stage' on page 1 undefined on i
+nput line 45.
+
+
 Underfull \vbox (badness 2197) has occurred while \output is active []
 
  [1
 
 
 
-])
-(./capitoli/capitolo-2.tex [2]
+
+]
+
+LaTeX Warning: Hyper reference `cap:tecnologie-strumenti' on page 2 undefined o
+n input line 46.
+
+
+LaTeX Warning: Hyper reference `cap:architettura' on page 2 undefined on input 
+line 47.
+
+
+LaTeX Warning: Hyper reference `cap:modulo-tema' on page 2 undefined on input l
+ine 52.
+
+
+LaTeX Warning: Hyper reference `cap:modulo-clienti' on page 2 undefined on inpu
+t line 53.
+
+
+LaTeX Warning: Hyper reference `cap:modulo-progetti' on page 2 undefined on inp
+ut line 54.
+
+
+LaTeX Warning: Hyper reference `cap:conclusioni' on page 2 undefined on input l
+ine 56.
+
+) (./capitoli/capitolo-2.tex [2]
 Capitolo 2.
 [3
 
@@ -1513,7 +1539,11 @@ Underfull \vbox (badness 1014) has occurred while \output is active []
 
 ]
 Capitolo 4.
-<immagini//architettura/architettura3.png, id=280, 603.25375pt x 681.54625pt>
+
+LaTeX Warning: Reference `fig:architettura-generale' on page 11 undefined on in
+put line 95.
+
+<immagini//architettura/architettura3.png, id=155, 603.25375pt x 681.54625pt>
 File: immagini//architettura/architettura3.png Graphic file (type png)
 
 <use immagini//architettura/architettura3.png>
@@ -1521,15 +1551,32 @@ Package pdftex.def Info: immagini//architettura/architettura3.png used on input
  line 98.
 (pdftex.def)             Requested size: 372.0pt x 420.27681pt.
  [11]
-<immagini//architettura/architettura2.png, id=288, 838.13126pt x 722.7pt>
+
+LaTeX Warning: Reference `fig:architettura-estesa' on page 12 undefined on inpu
+t line 113.
+
+<immagini//architettura/architettura2.png, id=163, 838.13126pt x 722.7pt>
 File: immagini//architettura/architettura2.png Graphic file (type png)
 
 <use immagini//architettura/architettura2.png>
 Package pdftex.def Info: immagini//architettura/architettura2.png used on input
  line 117.
 (pdftex.def)             Requested size: 372.0pt x 320.76791pt.
- [12 <./immagini//architettura/architettura3.png>]
-<immagini//architettura/dev-extensions-share-architecture.png, id=300, 1353.055
+
+
+LaTeX Warning: Reference `fig:dev-platform-integration-architecture.png' on pag
+e 12 undefined on input line 125.
+
+
+LaTeX Warning: Reference `fig:dev-extensions-share-architecture' on page 12 und
+efined on input line 126.
+
+
+LaTeX Warning: Reference `fig:dev-repo-extension-points.png' on page 12 undefin
+ed on input line 127.
+
+[12 <./immagini//architettura/architettura3.png>]
+<immagini//architettura/dev-extensions-share-architecture.png, id=172, 1353.055
 pt x 714.67pt>
 File: immagini//architettura/dev-extensions-share-architecture.png Graphic file
  (type png)
@@ -1539,7 +1586,7 @@ Package pdftex.def Info: immagini//architettura/dev-extensions-share-architectu
 re.png used on input line 134.
 (pdftex.def)             Requested size: 372.0pt x 196.48578pt.
 
-<immagini//architettura/dev-platform-integration-architecture.png, id=301, 1405
+<immagini//architettura/dev-platform-integration-architecture.png, id=173, 1405
 .25pt x 913.4125pt>
 File: immagini//architettura/dev-platform-integration-architecture.png Graphic 
 file (type png)
@@ -1549,7 +1596,7 @@ Package pdftex.def Info: immagini//architettura/dev-platform-integration-archit
 ecture.png used on input line 139.
 (pdftex.def)             Requested size: 372.0pt x 241.80228pt.
 
-<immagini//architettura/dev-repo-extension-points.png, id=302, 1412.27625pt x 8
+<immagini//architettura/dev-repo-extension-points.png, id=174, 1412.27625pt x 8
 43.15pt>
 File: immagini//architettura/dev-repo-extension-points.png Graphic file (type p
 ng)
@@ -1586,10 +1633,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Capitolo 5.
-[21] [22] [23] (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+[21] [22]
+
+LaTeX Warning: Hyper reference `cap:architettura' on page 23 undefined on input
+ line 127.
+
+
+LaTeX Warning: Hyper reference `cap:architettura' on page 23 undefined on input
+ line 137.
+
+[23] (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-[24] [25] [26] [27] [28] [29]) (./capitoli/capitolo-6.tex [30]
+) [24] [25]
+[26] [27] [28] [29]) (./capitoli/capitolo-6.tex [30]
 Capitolo 6.
 [31
 
@@ -1612,88 +1668,27 @@ n/site-webscripts/com/dipendenti/pages/dipendenti.get.js
  []
 
 [33]
-Overfull \hbox (287.57007pt too wide) in paragraph at lines 120--121
-\T1/cmtt/m/n/10 /AIOProject-share-amp/src/main/amp/config/alfresco/web-extensio
-n/site-webscripts/com/progetti/pages/progetti.get.desc.xml 
- []
+! Missing $ inserted.
+<inserted text> 
+                $
+l.113 \item \texttt{manda_mail(destinatari)}
+                                             che si occupa di generare un pi...
 
+? 
+! Emergency stop.
+<inserted text> 
+                $
+l.113 \item \texttt{manda_mail(destinatari)}
+                                             che si occupa di generare un pi...
+End of file on the terminal!
 
-Overfull \hbox (287.57007pt too wide) in paragraph at lines 121--122
-\T1/cmtt/m/n/10 /AIOProject-share-amp/src/main/amp/config/alfresco/web-extensio
-n/site-webscripts/com/progetti/pages/progetti.get.html.ftl 
- []
-
-
-Overfull \hbox (256.07776pt too wide) in paragraph at lines 122--123
-\T1/cmtt/m/n/10 /AIOProject-share-amp/src/main/amp/config/alfresco/web-extensio
-n/site-webscripts/com/progetti/pages/progetti.get.js 
- []
-
-[34] [35] [36]) (./capitoli/capitolo-6b.tex [37] [38
-
-]
-Capitolo 7.
-[39]) (./capitoli/capitolo-7.tex [40]
-Capitolo 8.
-[41
-
-]) (./capitoli/capitolo-A.tex) [42] (.\/tesi.gls) (.\/tesi.acr [43
-
-
-
-] [44
-
-])
-(./inizio-fine/bibliografia.tex [45
-
-] [46
-
-]) [47
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
- (.\/tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 146.
-Package logreq Info: Writing requests to 'tesi.run.xml'.
-\openout1 = `tesi.run.xml'.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 28182 strings out of 493013
- 461210 string characters out of 6136993
- 1188276 words of memory out of 5000000
- 30718 multiletter control sequences out of 15000+600000
- 29345 words of font info for 117 fonts, out of 8000000 for 9000
+ 27984 strings out of 493013
+ 458647 string characters out of 6136993
+ 1187409 words of memory out of 5000000
+ 30612 multiletter control sequences out of 15000+600000
+ 28869 words of font info for 113 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,7n,122p,1931b,2744s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive/2016/texmf-dist/
-fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2016/texmf-dist/fonts/type
-1/public/cm-super/sfbx0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/c
-m-super/sfbx1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
-bx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
-><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texli
-ve/2016/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2016/te
-xmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2016/texmf-dist/f
-onts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1
-/public/cm-super/sfcc1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm
--super/sfcc1440.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfr
-m0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-<c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texliv
-e/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2016/tex
-mf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2016/texmf-dist/fo
-nts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
-public/cm-super/sfti1000.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-
-super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt
-0900.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on .\/tesi.pdf (55 pages, 1038600 bytes).
-PDF statistics:
- 1020 PDF objects out of 1200 (max. 8388607)
- 912 compressed objects within 10 object streams
- 330 named destinations out of 1000 (max. 500000)
- 34343 words of extra memory for PDF output out of 35830 (max. 10000000)
-
+!  ==> Fatal error occurred, no output PDF file produced!
