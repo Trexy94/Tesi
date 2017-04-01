@@ -2145,3 +2145,11 @@
     <bcf:datasource type="file" datatype="bibtex">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">site:alfresco-prerequisites</bcf:citekey>
+    <bcf:citekey order="2">site:alfresco-rad</bcf:citekey>
+    <bcf:citekey order="3">site:alfresco-jdbc</bcf:citekey>
+    <bcf:citekey order="4">site:alfresco-bean</bcf:citekey>
+    <bcf:citekey order="5">site:alfresco-doclib</bcf:citekey>
+    <bcf:citekey order="0">*</bcf:citekey>
+  </bcf:section>
+</bcf:controlfile>

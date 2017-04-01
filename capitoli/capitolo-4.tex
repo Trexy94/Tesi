@@ -88,19 +88,19 @@
 \label{cap:architettura}
 %**************************************************************
 
-\intro{In questo capitolo sarà esposto come creare un modulo e accenni all'architettura di Alfresco}\\
+\intro{In questo capitolo viene esposto come creare un modulo e accenni all'architettura di Alfresco}\\
 
 %**************************************************************
 \section{Architettura di Alfresco}
-Al cuore di Alfresco c'è un repository che fornisce uno spazio per i contenuti, e un ampio spettro di servizi che possono essere utilizzati dalle applicazioni per manipolare il suo contenuto.il diagramma \ref{fig:architettura-generale} a seguito mostra l'idea alla base di Alfresco, che può essere considerato consistente di tre principali componenti: la piattaforma (Platform), la User Interface (UI), e la componente di ricerca (Search), basata su Apache Lucene. Queste componenti sono implementate come applicazioni web separate.
+Al cuore di Alfresco c'è un repository che fornisce uno spazio per i contenuti, e un ampio spettro di servizi che possono essere utilizzati dalle applicazioni per manipolare il suo contenuto. Il diagramma \ref{fig:architettura-generale} mostra l'idea alla base di Alfresco, che può essere considerato formato da tre principali componenti: la piattaforma (Platform), la User Interface (UI), e la componente di ricerca (Search), basata su Apache Lucene. Queste componenti sono implementate come applicazioni web separate.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth]{/architettura/architettura3.png}
 \caption{architettura generale}
 \label{fig:architettura-generale}
 \end{figure}
-Il principale componente è chiamato Platform ed è implementato nella web application alfresco.war. Essa fornisce il repository dove i file sono tenuti in memoria oltre a tutti i servizi di accesso e gestione collegati. Alfresco Share fornisce una interfaccia web (UI) per il repository ed è implementata nella web application share.war. Share nasce per facilitare agli utenti la gestione dei loro siti, documenti, utenti e così via.
-la funzionalità di ricerca è implementata su Apache Solr 4 e fornisce una indicizzazione di tutti i contenuti, che rende possibile una potente funzionalità di ricerca. Oltre ai web client che accedono al repository via Share ci sono anche i dispositivi mobile che possono accedervi tramite le APIs REST fornite dalla piattaforma.
+Il principale componente è chiamato Platform ed è implementato nella web application alfresco.war. Essa fornisce il repository dove i file sono tenuti in memoria oltre a tutti i servizi di accesso e gestione collegati. Alfresco Share fornisce una interfaccia web (UI) per il repository ed è implementata nella web application share.war. Share nasce per facilitare agli utenti la gestione dei loro siti, documenti, utenti e così via.\\
+La funzionalità di ricerca è implementata su Apache Solr 4 e fornisce una indicizzazione di tutti i contenuti, che rende possibile una potente funzionalità di ricerca. Oltre ai web client che accedono al repository via Share ci sono anche i dispositivi mobile che possono accedervi tramite le APIs REST fornite dalla piattaforma.
 
 Se si approfondisce il componente Platform (contenuto nell'alfresco.war) vedremo che esso supporta i workflow nella forma dell'integrato Activiti Workflow Engine. La piattaforma di solito, come anche nell'azienda in cui è stato svolto lo stage, viene integrata con un Directory Server (LDAP), per essere in grado di sincronizzare i gruppi e gli utenti con Alfresco Community Edition. La maggior parte delle installazioni, compresa quella di Ennova, integrano Alfresco anche con un server SMTP così il componente Platform può mandare E-mail, come ad esempio, ma non solo, inviti ai siti.
 
@@ -180,47 +180,48 @@ Questo archetipo presenta caratteristiche ulteriori:
 \end{itemize}
 \subsection{Share AMP archetype}
 Alfresco Share AMP Archetype genera un progetto esempio per gestire le estensioni e
-le personalizzazioni di Alfresco Share. Questo tipo di archetipo dovrebbe essere utilizzato:
+le personalizzazioni di Alfresco Share. Questo tipo di archetipo dovrebbe essere utilizzato per:
 \begin{itemize}
-\item Realizzare un modulo Share per poi includerlo all’interno di un progetto all-in-one.
-\item Costruire un Add-On, componente, modulo da distribuire separatamente.
-\item per poter spezzare il lavoro, per esempio per delegare a team diversi il lato front-end e il lato back-end
-\item per creare temi e personalizzazioni che coinvolgano il solo lato UI.
+\item realizzare un modulo Share per poi includerlo all’interno di un progetto all-in-one;
+\item costruire un Add-On, componente, modulo da distribuire separatamente;
+\item poter spezzare il lavoro, per esempio per delegare a team diversi il lato front-end e il lato back-end;
+\item creare temi e personalizzazioni che coinvolgano il solo lato UI.
 \end{itemize}
 Anche questo modulo presenta alcune caratteristiche particolari:
 \begin{itemize}
-\item Sono presenti alcuni componenti di esempio per facilitare la creazione di nuove funzionalità
+\item sono presenti alcuni componenti di esempio per facilitare la creazione di nuove funzionalità
 \item può interfacciarsi con qualsiasi componente repo di Alfresco, previa configurazione; questo permette di poter provare in sicurezza tutte le modifiche alla UI apportate direttamente in un ambiente molto vicino a quello di produzione.
 \end{itemize}
 \subsection{All-in-One archetype}
 All-in-One archetype è un progetto multi-modulo per personalizzare ed estendere la
 Share e la Repository di Alfresco.Questo tipo di archetipo dovrebbe essere utilizzato per:
 \begin{itemize}
-\item Realizzare un progetto che permetta la personalizzazione in contemporanea e in un singolo modulo della Share e della
+\item realizzare un progetto che permetta la personalizzazione in contemporanea e in un singolo modulo della Share e della
 Repository;
-\item Accedere alla suite completa dei test di regressione per la Alfresco Share UI;
-\item Accedere ai test funzionali basati sulla libreria Alfresco Share Page Object (PO).
+\item accedere alla suite completa dei test di regressione per la Alfresco Share UI;
+\item accedere ai test funzionali basati sulla libreria Alfresco Share Page Object (PO).
 \end{itemize}
 Le principali caratteristiche di questo archetipo sono:
 \begin{itemize}
-\item Inclusione semplice degli AMPs extra;
-\item Il supporto ad estensioni Out-of-the-box come la gestione dei records, il protocollo SharePoint, la
+\item inclusione semplice degli AMPs extra;
+\item il supporto ad estensioni Out-of-the-box come la gestione dei records, il protocollo SharePoint, la
 gestione dei Media;
-\item Possibilità di personalizzare i test funzionali;
-\item La replicazione di un'intera distribuzione di Alfresco, che funziona autonomamente e non ha bisogno di dipendenze aggiuntive.
+\item la possibilità di personalizzare i test funzionali;
+\item la replicazione di un'intera distribuzione di Alfresco, che funziona autonomamente e non ha bisogno di dipendenze aggiuntive.
 \end{itemize}
 Ovviamente questo archetipo è il più pesante, e il suo completo deploy richiede una quantità di tempo non indifferente, per cui andrebbe usato solo se vi è reale necessità di utilizzare tutte le caratteristiche uniche che esso fornisce
 \section{Gestione dei moduli}
-\subsection{creazione}
-Bisogna innanzitutto rispondere ai prerequisiti descritti in  \href{http://docs.alfresco.com/sdk2.1/concepts/alfresco-sdk-installing-prerequisite-software.html}{questa pagina}.
-Fatto questo il progetto può essere importato in un IDE, ad esempio per Eclipse in \href{http://docs.alfresco.com/sdk2.1/concepts/alfresco-sdk-rad.html}{questo sito}
-Le cartelle su cui andremo a sviluppare saranno la repo-amp e la share-amp. La share-amp verrà utilizzata per sviluppare l’interfaccia grafica del modulo mentre la parte di repo-amp  per lo sviluppo del “back-end”, le altre folder create servono per replicare l’ambiente di Alfresco in fase di esecuzione del modulo, e quindi non ha senso lavorare su di esse.
-è necessario installare il driver jdbc se si intende  lavorare nell’SDK interagendo con database terzi, e dato che non è incluso nell'SDK anche se presente nell'ambiente finale, va incluso seguendo quanto detto in  \href{https://community.alfresco.com/thread/213317-sdk-21-including-third-party-jar-libraries}{questo luogo} . 
-Una volta fatto questo, bisogna aprire nell’IDE o anche a mano all’indirizzo, partendo dalla cartella di installazione (sono riportati gli indirizzi utilizzando i nomi dell’esempio sopra citato: \texttt{/ alfresco-extension / acme-cms-poc / acme-cms-poc-share-amp / src / main / amp / config / alfresco / web-extension / site-webscripts / com / example / pages}
- (questo porta a dove è situata la pagina dimostrativa). È sufficiente fermarsi due o tre livelli sopra se l’intenzione è quella di mettere la gerarchia per una pagina custom (come fatto in questo progetto).
+\subsection{Creazione}
+Per poter utilizzare l'SDK è necessario sottostare ai prerequisiti descritti nella pagina dei prerequisiti di installazione di Alfresco\footcite{site:alfresco-prerequisites}.
+Fatto questo il progetto può essere importato in un IDE, ad esempio im Eclipse, seguendo le apposite guide nella documentazione di Alfresco\footcite{site:alfresco-rad}
+Le cartelle su cui andremo a sviluppare saranno la repo-amp e la share-amp. La share-amp verrà utilizzata per sviluppare l’interfaccia grafica del modulo mentre la parte di repo-amp  per lo sviluppo del “back-end”, le altre folder create servono per replicare l’ambiente di Alfresco in fase di esecuzione del modulo, e quindi non ha senso lavorare su di esse.\\
+È necessario installare il driver jdbc se si intende  lavorare nell’SDK interagendo con database terzi, e dato che non è incluso nell'SDK anche se presente nell'ambiente finale, va incluso seguendo quanto descritto nel forum di Alfresco \footcite{site:alfresco-jdbc}. 
+Una volta fatto questo, bisogna aprire nell’IDE o anche a mano i vari file di Alfresco, seguendo quanto descritto nelle guide già citate, la cartella contenente la parte che verrà utilizzata per registrare la pagina in Alfresco share, nella cartella contenente le estensioni web e più nello specifico i webscript. %partendo dalla cartella di installazione (sono riportati gli indirizzi utilizzando i nomi dell’esempio sopra citato: %\texttt{/ alfresco-extension / acme-cms-poc / acme-cms-poc-share-amp / src / main / amp / config / alfresco / web-extension / site-webscripts / com / example / pages}
+% (questo porta a dove è situata la pagina dimostrativa). È sufficiente fermarsi due o tre livelli sopra se l’intenzione è quella di mettere la gerarchia per una pagina custom (come fatto in questo progetto).
 Una pagina fatta in alfresco share è composta da tre file, per semplicità prendiamo in considerazione la pagina di esempio già fornita:
-un file .xml, che descrive i dati essenziali della pagina:
-\begin{lstlisting}[language=XML]
+\begin{itemize}
+\item un file .xml, che descrive i dati essenziali della pagina, come quello riportato come esempio nel listato \ref{lst:codesempio}
+\begin{lstlisting}[language=XML, caption=codice di una pagina di esempio, label=lst:codesempio]
 <webscript>
     <shortname>Simple Page</shortname>
     <description>Simple page definition</description>
@@ -230,13 +231,14 @@ un file .xml, che descrive i dati essenziali della pagina:
 </webscript>
 \end{lstlisting}
 molto importanti sono il tag authentication, che specifica il livello di autenticazione necessario per accedere alla pagina, e il tag url, dal momento che definisce l’indirizzo della pagina, che sarà \texttt{<ip>:port/share/page/hdp/ws<url>} (hdp genera la pagina con header e footer, dp la pagina grezza).
-Vi è poi il file .html che si comporta proprio come il body di una pagina html.
-Vi è infine un file .js, che serve per applicare delle modifiche via json al model.
+\item un file .html che si comporta proprio come il body di una pagina html.
+\item un file .js, che serve per applicare delle modifiche via json al model.
+\end{itemize}
 Quanto detto è sufficiente per creare una pagina che non necessiti di interazioni con Java.
 
-Per quanto riguarda una pagina che invece fa uso delle api di Alfresco il procedimento è più complicato: la pagina che verrà mostrata all’utente è collocata nella cartella \texttt{alfresco-extension /acme-cms-poc /acme-cms-poc-repo / amp / src / main / amp / config / alfresco / extension /templates / webscripts}.
+Per quanto riguarda una pagina che invece fa uso delle api di Alfresco il procedimento è più complicato: la pagina che verrà mostrata all’utente è collocata nella cartella contenente i template per i webscripts.
 La pagina generata è situata all’indirizzo \texttt{<ip>:<porta>/alfresco/service<url>}.
-È inoltre necessario creare un bean che fa da collegamento tra il codice java, situato in \texttt{alfresco-extension / acme-cms-poc / acme-cms-poc-repo-amp / src / main / java / <package>}, e la pagina che verrà generata. Per farlo seguire quanto descritto in \href{http://docs.alfresco.com/community/tasks/bean-config.html}{questo sito}.
+È inoltre necessario creare un bean che fa da collegamento tra il codice java, situato appunto in una cartella specifica che contiene le classi java, e la pagina che verrà generata. Per farlo seguire quanto descritto nelle guide per la configurazione di Alfresco \footcite{site:alfresco-bean}.
 
 \subsection{Manutenzione}
 Nel momento in cui si vorrà ad andare a modificare un modulo per evenienze riguardanti aspetti grafici o logici indiretti, bisognerà aprire il modulo con un IDE a piacere, e applicare le modifiche desiderate sui file. Il risultato delle modifiche effettuate è visionabile lanciando il comando \texttt{./run.sh} una volta posizionti all’interno della folder del modulo su linux, \texttt{run.bat} su windows, in alternativa al comando \texttt{mvn install -Prun}  o  \texttt{mvn clean install -Prun}, se è necessario anche svuotare la cache; avviato il server basterà
@@ -247,4 +249,4 @@ Attenzione
 L’installazione dei moduli comporta un deploy che sovrascriverà il contenuto delle cartelle
 \texttt{tomcat/webapps/share} e \texttt{tomcat/webapps/alfresco}. Di conseguenza nel momento in cui si è andati ad effettuare delle estensioni direttamente all’interno di queste cartelle il contenuto andrà perso. Quindi prima di effettuare questa operazione è necessario fare il backup delle cartelle indicate precedentemente.
 
-\emph{Per comodità d’ora in poi il nome del progetto sarà indicato come AIOProject}.
+%\emph{Per comodità d’ora in poi il nome del progetto sarà indicato come AIOProject}.

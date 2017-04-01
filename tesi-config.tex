@@ -45,8 +45,12 @@
 \DeclareBibliographyCategory{opere}
 \DeclareBibliographyCategory{web}
 
-\addtocategory{opere}{womak:lean-thinking}
-\addtocategory{web}{site:agile-manifesto}
+%\addtocategory{opere}{womak:lean-thinking}
+\addtocategory{web}{site:alfresco-prerequisites}
+\addtocategory{web}{site:alfresco-rad}
+\addtocategory{web}{site:alfresco-jdbc}
+\addtocategory{web}{site:alfresco-bean}
+\addtocategory{web}{site:alfresco-doclib}
 
 \defbibheading{opere}{\section*{Riferimenti bibliografici}}
 \defbibheading{web}{\section*{Siti Web consultati}}
@@ -218,7 +222,39 @@
 }{
     \medskip
 }
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
 
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   backgroundcolor=\color{lightgray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
 \newcommand{\usecasename}{UC}
 
 \newcommand{\usecaseactors}[1]{\textbf{\\Attori Principali:} #1. \vspace{4pt}}

@@ -52,20 +52,27 @@
 \intro{In questo capitolo verrà esposta l'implementazione e le fasi che hanno portato la creazione del modulo clienti}\\
 
 \section{scopo del modulo} il modulo clienti si pone come scopo quello di creare un semplice sistema di CRUD in un database. In questo caso è stato implementato in un database Postgres, che è quello che viene incluso di default con la distribuzione di Alfresco Community, ma è stata esplicita richiesta dell'azienda che fosse possibile una configurazione su ambienti simili ma che non fossero esclusivamente Postgres.
+\section{Presentazione generale del modulo}
+Nella figura \ref{fig:cartelle-clienti} si illustra in generale quanto è stato prodotto per questo modulo. In seguito, nella descrizione di dettaglio, si indicheranno i nomi specifici di tutti i file creati
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{/diagrammi_cartelle/FolderClienti.png}
+\caption{descrizione generale di quanto creato per il modulo relativo ai clienti\label{fig:cartelle-clienti}}
+\end{figure}
 \section{implementazione delle funzionalità}
-Preparazione del DB
+\subsection{Preparazione del DB}
 Per preparare il DB bisogna innanzitutto creare un nuovo database.
 
-Nel caso del progetto da me sviluppato si è usato PostgreSQL
+Nel caso del progetto da me sviluppato si è usato PostgreSQL, per i motivi già esposti.
 
-Basta quindi spostarsi nella cartella di PostgreSQL tramite dos e digitare il comando
+Basta quindi spostarsi nella cartella di PostgreSQL tramite DOS e digitare il comando
 
-createdb -h localhost -p <porta> -U postgres <nome del db>
+\texttt{createdb -h localhost -p <porta> -U postgres <nome del db>}
 
-Bisogna quindi creare una tabella, che verrà chiamata per comodità da adesso clienti.
+È necessario quindi creare una tabella, che verrà chiamata per comodità da adesso clienti.
 
-La tabella ha la seguente struttura 
-\begin{lstlisting}
+La tabella ha la struttura che viene generata dal codice riportato nel listato \ref{lst:clienti-table}
+\begin{lstlisting}[caption=codice per la creazione della cartella clienti, label=lst:clienti-table]
 CREATE TABLE clienti
 (
   identificativo text NOT NULL,
@@ -89,8 +96,8 @@ In particolare si è scelto di tenere le date in formato testuale per rendere il
 
 È quindi stato necessario creare le pagine share e le pagine repo, oltre ai bean di collegamento per poter rendere accessibile il webscript. Si è adottato il metodo POST in tutti quante le invocazioni, in quanto è più sicuro e permette lo scambio di una maggiore quantità di dati.
 
-Si è aggiunta innanzitutto una nuova voce di menu aggiungendo il file \texttt{/ AIOProject-share-amp / src / main / amp / config / alfresco / web-extension / site-data / extensions / add-create-menuitem-doclib-extension-modules.xml}
-\begin{lstlisting}[language=XML]
+Si è aggiunta innanzitutto una nuova voce di menu aggiungendo il file \texttt{add-create-menuitem-doclib-extension-modules.xml}, il cui contenuto è riportato nel listato \ref{lst:doclib}
+\begin{lstlisting}[language=XML,caption=add-create-menuitem-doclib-extension-modules.xml, label=lst:doclib]
 <extension>
     <modules>
         <!-- This module is dependent on the custom content model setup in the repo-amp module -->
@@ -112,10 +119,10 @@ Si è aggiunta innanzitutto una nuova voce di menu aggiungendo il file \texttt{/
 </extension>
 \end{lstlisting}
 
-Per ulteriore documentazione si faccia riferimento a al \href{http://docs.alfresco.com/5.0/tasks/dev-extensions-share-tutorials-add-menuitem-create-menu.html}{relativo capitolo nella documentazione di alfresco}
+Per ulteriore documentazione si faccia riferimento a al relativo capitolo nella documentazione di Alfresco \footcite{site:alfresco-doclib}
 
-Le pagine includono inoltre nell’HTML la richiesta di JQuery, mediante le linee
-\begin{lstlisting}
+Le pagine includono inoltre nell’HTML la richiesta di JQuery, mediante le linee descritte nel listato \ref{JQuery}
+\begin{lstlisting}[language=HTML, caption=inclusione JQuery, label=JQuery]
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 \end{lstlisting}
 
@@ -124,21 +131,21 @@ Le pagine includono inoltre nell’HTML la richiesta di JQuery, mediante le line
 È la pagina di inserimento di un nuovo cliente ed è composta da un semplice form.
 È composta dai seguenti file:
 \begin{itemize}
-\item \texttt{/ AIOProject-share-amp / src / main / amp / config / alfresco / web-extension / site-webscripts / com / clienti / pages / clienti.get.desc.xml}, implementato come descritto nel \hyperref[cap:architettura]{ quarto  capitolo}
-\item\texttt{/ AIOProject-share-amp / src / main / amp / config / alfresco / web-extension / site-webscripts / com / clienti / pages / clienti.get.html.ftl }che contiene il codice html necessario a generare il form.
-\item\texttt{/ AIOProject-share-amp / src / main / amp / config / alfresco / web-extension / site-webscripts / com / clienti/ pages / clienti.get.js} che contiene le istruzioni necessarie a generare l’header. È necessario includere nell’html la linea <@processJsonModel group="share"/>.
-\item \texttt{/AIOProject-share-amp/src/main/amp/web/js/clienti/clienti.js,} incluso con la linea \texttt{<script src="\${url.context} / js / clienti / clienti.js"></script>}, che effettua i controlli javascript della pagina. In particolare alla pressione del pulsante di conferma viene fatto il controllo sui dati inseriti, cioè sulla correttezza della partita iva, sul fatto che i campi obbligatori siano definiti, sul fatto che la data di fine sia successiva alla data di inizio. Inoltre si occupa di inoltrare la richiesta AJAX al webscript \texttt{query\_processor.java} che sarà trattato successivamente. Se il webscript riporta uno stato anomalo viene segnalato e così viene anche gestito il caso di inserimento di un identificativo già esistente.
+\item \texttt{clienti.get.desc.xml}, implementato come descritto nel \hyperref[cap:architettura]{ quarto  capitolo}
+\item\texttt{clienti.get.html.ftl }che contiene il codice html necessario a generare il form.
+\item\texttt{clienti.get.js} che contiene le istruzioni necessarie a generare l’header. È necessario includere nell’html la linea <@processJsonModel group="share"/>.
+\item \texttt{clienti.js,} incluso con la linea \texttt{<script src="\${url.context} / js / clienti / clienti.js"></script>}, che effettua i controlli javascript della pagina. In particolare alla pressione del pulsante di conferma viene fatto il controllo sui dati inseriti, cioè sulla correttezza della partita iva, sul fatto che i campi obbligatori siano definiti, sul fatto che la data di fine sia successiva alla data di inizio. Inoltre si occupa di inoltrare la richiesta AJAX al webscript \texttt{query\_processor.java} che sarà trattato successivamente. Se il webscript riporta uno stato anomalo viene segnalato e così viene anche gestito il caso di inserimento di un identificativo già esistente.
 \end{itemize}
 
 \subsubsection{Pagina vis\_clienti}
 
 La pagina vis\_clienti è la pagina di gestione dei clienti, ed è suddivisa nei file:
 \begin{itemize}
-\item \texttt{/ AIOProject-share-amp / src / main / amp / config / alfresco / web-extension / site-webscripts / com / visualizza\_clienti / pages / vis\_clienti.get.desc.xml} che funziona come descritto nel \hyperref[cap:architettura]{ quarto  capitolo}.
-\item \texttt{/ AIOProject-share-amp / src / main / amp / config / alfresco / web-extension / site-webscripts / com / visualizza\_clienti / pages / vis\_clienti.get.html.ftl} che fornisce lo scheletro della pagina, che verrà poi popolata tramite richieste AJAX delle parti dinamiche.
-\item \texttt{/ AIOProject-share-amp / src / main / amp / config / alfresco / web-extension / site-webscripts / com  /visualizza\_clienti / pages / vis\_clienti.get.js}, che funziona come descritto prima.
-\item \texttt{/ AIOProject-share-amp / src / main / amp / web / css / vis\_clienti / vis\_clienti.css}, incluso in maniera analoga al javascript come descritto prima e che definisce il CSS della pagina.
-\item \texttt{/ AIOProject-share-amp / src / main / amp / web / js / vis\_clienti / vis\_clienti.js}, incluso come descritto prima
+\item \texttt{vis\_clienti.get.desc.xml} che funziona come descritto nel \hyperref[cap:architettura]{ quarto  capitolo}.
+\item \texttt{vis\_clienti.get.html.ftl} che fornisce lo scheletro della pagina, che verrà poi popolata tramite richieste AJAX delle parti dinamiche.
+\item \texttt{vis\_clienti.get.js}, che funziona come descritto prima.
+\item \texttt{vis\_clienti.css}, incluso in maniera analoga al javascript come descritto prima e che definisce il CSS della pagina.
+\item \texttt{vis\_clienti.js}, incluso come descritto prima
 \end{itemize}
 In particolare la pagina nella sua parte principale offre la lista degli identificativi dei clienti attivi e non, che è anche il nome con cui sono stati salvati nella cartellatura di Alfresco. Si è scelto questa rappresentazione in quanto è logicamente vicina alla struttura di Alfresco e sarà più facile in futuro implementare funzionalità quali la visualizzazione dei progetti del cliente.  I pulsanti dei clienti attivi e inattivi sono generati rispettivamente da \texttt{clients.java}  e  \texttt{inactive.java}  chiamati all’avvio della pagina tramite \texttt{window.onload} che si occupano di definire anche i giusti parametri che verranno poi utilizzati per popolare il form che consente l’aggiornamento dei dati di un particolare cliente. Il form è già presente nella pagina ma viene fatto mostrare da una opportuna funzione javascript che si occupa anche di popolare la tabella sottostante tramite una chiamata AJAX al webscript \texttt{TablePageGenerator.java}, che si occupa di fornire la tabella e di iniettare il pulsante cancella e il pulsante  per definire  la data di fine del rapporto  con il corretto id. I pulsanti sono collegati a loro volta a \texttt{delete.java} e \texttt{update.java}, chiamati tramite opportune chiamate AJAX.
 
@@ -162,8 +169,8 @@ Sono presenti altre funzioni che svolgono compiti banali quale la codifica e dec
 
 \subsection{Creazione della parte repo}
 \subsubsection{Creazione delle variabili del modulo}
-Per rendere possibile la modifica di alcune configurazioni anche dopo che il modulo è stato installato in alfresco, si è provveduto a creare un file in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / module / AIOProject-repo-amp / config / configModule.properties}, Accessibile da java aggiungendo al codice le linee:
-\begin{lstlisting}[language=Java]
+Per rendere possibile la modifica di alcune configurazioni anche dopo che il modulo è stato installato in alfresco, si è provveduto a creare un file in \texttt{configModule.properties}, Accessibile da Java aggiungendo al codice le linee mostrate nel listato \ref{lst:properties}
+\begin{lstlisting}[language=Java, caption= inclusione delle properties, label=lst:properties]
 private static Properties properties=new Properties();
 
 public static final String getValue(String value) {
@@ -172,8 +179,8 @@ public static final String getValue(String value) {
 	
 properties.load(getClass().getResourceAsStream("/alfresco/module/AIOProject-repo-amp/config/configModule.properties"));
 \end{lstlisting}
-Questo permette quindi di recuperare le variabili, che si è cercato di documentare direttamente sul codice tramite nomi significativi e una breve descrizione:
-\begin{lstlisting}
+Questo permette quindi di recuperare le variabili, che si è cercato di documentare direttamente sul codice tramite nomi significativi e una breve descrizione. Il codice è riportato nel listato \ref{lst:clienti-properties}
+\begin{lstlisting}[caption=contenuto di configModule.properties,label=lst:clienti-properties]
 #query configuration
 queryselection=select id,name, piva, datainizio, datafine, descr from clienti where identificativo='param1' order by id
 querylastversion=select * from clienti where id = (select max(id) from clienti where identificativo='param1')
@@ -209,19 +216,19 @@ Come si vede dove necessario si è cercato di parametrizzare le funzioni.
 
 
 \subsubsection{Creazione dei webscript}
-Come già accennato, le pagine in share per il loro completo funzionamento necessitano di webscript di supporto, per interrogare il database e generare le tabelle contenenti i dati.  Tutti quanti estendono la classe AbstractWebScript, sono contattabili tramite POST e fanno uso del JDBC per contattare il server remoto dove è presente la tabella. Il file .properties descritto prima permette di cambiare secondo le necessità la configurazione della connessione, definita nella riga
-\begin{lstlisting}
+Come già accennato, le pagine in share per il loro completo funzionamento necessitano di webscript di supporto, per interrogare il database e generare le tabelle contenenti i dati.  Tutti quanti estendono la classe AbstractWebScript, sono contattabili tramite POST e fanno uso del JDBC per contattare il server remoto dove è presente la tabella. Il file .properties descritto prima permette di cambiare secondo le necessità la configurazione della connessione, definita nella riga riportata nel listato \ref{lst:java-jdbc}
+\begin{lstlisting}[language=Java, caption=connesione tramite JDBC, label=lst:java-jdbc]
 connection=DriverManager.getConnection((connector+":"+type+"://"+ip+":"+port+"/"+server),id,password);
 \end{lstlisting}
 Che sono i parametri definiti nel paragrafo query configuration del .properties
 
-I WebScript sono poi registrati nel file \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / module / AIOProject-repo-amp / context / webscript-context.xml} secondo le modalità già descritte.
+I WebScript sono poi registrati nel file \texttt{webscript-context.xml} secondo le modalità già descritte.
 
 Per comodità nella chiamata l’indirizzo è stato settato con lo stesso nome della funzione java ad esso corrispondente. Inoltre alcuni  accettano parametri in JSON definiti in coppie \texttt{{key:value}} in un JSonObject
 
 Passiamo ora in rassegna i vari webscript implementati, in ordine alfabetico.
 \paragraph{clients.java}
-Questo webscript, situato in \texttt{/ AIOProject-repo-amp / src / main / java / clients.java} e dalla pagina definita in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts / clients.post.desc.xml} e in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts / clients.post.html.ftl}, si occupa di generare i pulsanti necessari a visualizzare poi la pagina di dettaglio per un utente attivo. Si occupa quindi di interrogare il database e di definire di conseguenza i parametri dei pulsanti e il loro nome, che chiamano uno la funzione \texttt{detail(id,nome,pi,descr,datainizio,datafine)},e l’altro la funzione \texttt{vai(name)}. Si appoggia sulla query definita in queryselectactive per selezionare gli utenti attivi, percorrendo poi il result set per di volta in volta assegnare i parametri.
+Questo webscript, situato in \texttt{clients.java} e dalla pagina definita in \texttt{clients.post.desc.xml} e in \texttt{clients.post.html.ftl}, si occupa di generare i pulsanti necessari a visualizzare poi la pagina di dettaglio per un utente attivo. Si occupa quindi di interrogare il database e di definire di conseguenza i parametri dei pulsanti e il loro nome, che chiamano uno la funzione \texttt{detail(id,nome,pi,descr,datainizio,datafine)},e l’altro la funzione \texttt{vai(name)}. Si appoggia sulla query definita in queryselectactive per selezionare gli utenti attivi, percorrendo poi il result set per di volta in volta assegnare i parametri.
 Viene chiamato senza parametri.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
@@ -232,7 +239,7 @@ La classe si compone delle seguenti funzioni:
 \item \texttt{writedata(ResultSet rs, String result, Connection con)}, metodo che si occupa di ritornare il codice html necessario a generare i pulsanti dei clienti attivi
 \end{itemize}
 \paragraph{delete.java}
-Questo webscript, situato in \texttt{/ AIOProject-repo-amp / src / main / java / delete.java} e dalla pagina definita in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts / delete.post.desc.xml} e in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts  /delete.post.html.ftl}  si occupa semplicemente di cancellare un elemento che abbia un determinato id, fornito come parametro della chiamata. Si appoggia sulla query definita alla voce querydelete.
+Questo webscript, situato in \texttt{delete.java} e dalla pagina definita in \texttt{delete.post.desc.xml} e in \texttt{delete.post.html.ftl}  si occupa semplicemente di cancellare un elemento che abbia un determinato id, fornito come parametro della chiamata. Si appoggia sulla query definita alla voce querydelete.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
 \item \texttt{getValue(String value)}, che recupera una property con una data value
@@ -241,7 +248,7 @@ La classe si compone delle seguenti funzioni:
 \item \texttt{execute(Connection con, String query)}, metodo che esegue la query di delete di un dato record del database.
 \end{itemize}
 \paragraph{inactive.java}
-Questo webscript, situato in \texttt{/ AIOProject-repo-amp/src/main/java/inactive.java} e dalla pagina definita in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts / inactive.post.desc.xml} e in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts / inactive.post.html.ftl} si occupa di generare i pulsanti necessari a visualizzare poi la pagina di dettaglio per un utente non più attivo. Si occupa quindi di interrogare il database e di definire di conseguenza i parametri del pulsante e il suo nome, che chiama la funzione \texttt{detail(id,nome,pi,descr,datainizio,datafine)}. Si appoggia sulla query definita in queryselectnotactive per selezionare gli utenti non attivi. Percorrendo poi il result set per di volta in volta assegnare i parametri.
+Questo webscript, situato in \texttt{inactive.java} e dalla pagina definita in \texttt{inactive.post.desc.xml} e in \texttt{inactive.post.html.ftl} si occupa di generare i pulsanti necessari a visualizzare poi la pagina di dettaglio per un utente non più attivo. Si occupa quindi di interrogare il database e di definire di conseguenza i parametri del pulsante e il suo nome, che chiama la funzione \texttt{detail(id,nome,pi,descr,datainizio,datafine)}. Si appoggia sulla query definita in queryselectnotactive per selezionare gli utenti non attivi. Percorrendo poi il result set per di volta in volta assegnare i parametri.
 Viene chiamato senza parametri.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
@@ -253,7 +260,7 @@ La classe si compone delle seguenti funzioni:
 \end{itemize}
 Si è deciso di renderla autonoma rispetto a clients per consentire una migliore estensione ad ulteriori eventuali funzionalità.
 \paragraph{query\_processor.java}
-Questo webscript, situato in \texttt{/ AIOProject-repo-amp / src / main / java / query\_processor.java} e dalla pagina definita in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts / query\_processor.post.desc.xml} e in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts / query\_processor.post.html.ftl} . Si occupa di inserire un oggetto nel database, utilizzando la query definita in  queryinsertion e deve essere chiamato con i seguenti parametri:
+Questo webscript, situato in \texttt{query\_processor.java} e dalla pagina definita in \texttt{query\_processor.post.desc.xml} e in \texttt{query\_processor.post.html.ftl} . Si occupa di inserire un oggetto nel database, utilizzando la query definita in  queryinsertion e deve essere chiamato con i seguenti parametri:
 \begin{itemize}
 \item ID:l’identificativo del cliente,
 \item Nome:il nome esteso del cliente,
@@ -271,14 +278,14 @@ Questo webscript, situato in \texttt{/ AIOProject-repo-amp / src / main / java /
 Lo script si appoggia, oltre al JDBC per l’inserimento nel database, sulla API di Alfresco 
 FileFolderService per creare la gerarchia di cartelle corrispondente, di permissionservice per settare i permessi di accesso alle cartelle (per il momento codificati nel Java e non configurabili dopo l’installazione se non mediante l’editor dei permessi di Alfresco)
 E di nodeservice per settare la descrizione della cartella principale.
-Per includere il serviceregisty, necessario per accedere alla API di Alfresco, è necessario, oltre a specificare  nel bean, il cui funzionamento è stato già descritto, tramite le righe
-\begin{lstlisting}[language=XML]
+Per includere il serviceregisty, necessario per accedere alla API di Alfresco, è necessario, oltre a specificare  nel bean, il cui funzionamento è stato già descritto, tramite le righe mostrate nel listato \ref{lst:service-registry}
+\begin{lstlisting}[language=XML,label=lst:service-registry,caption=inclusione del service registry nel bean]
         <property name="serviceRegistry">
           <ref bean="ServiceRegistry" />
       </property>
 \end{lstlisting}
-E poi nel codice java con l’aggiunta di
-\begin{lstlisting}[language=Java]
+E poi nel codice java con l’aggiunta di quanto mostrato alla figura \ref{lst:service-registry-java}
+\begin{lstlisting}[language=Java,label=lst:service-registry-java,caption=inclusione del service registry nel bean]
 import org.alfresco.service.ServiceRegistry;
 
 private ServiceRegistry serviceRegistry;
@@ -298,7 +305,7 @@ La classe si compone delle seguenti funzioni:
 \item \texttt{create\_folder\_tree(String ID, String descr,Boolean box1, Boolean box2, Boolean box3, Boolean box4, Boolean box5)}, metodo che si occupa di creare la cartellatura di un nuovo cliente, di settare i permessi alle cartelle e di settare la descrizione della cartella padre.
 \end{itemize}
 \paragraph{TablePageGenerator.java}
-Questo webscript, situato in \texttt{/ AIOProject-repo-amp / src / main / java / TablePageGenerator.java} e dalla pagina definita in \texttt{/AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts / TablePageGenerator.post.desc.xml} e in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts / TablePageGenerator.post.html.ftl}  si occupa di generare la tabella dello storico di un determinato codice cliente, fornito come parametro della chiamata AJAX. Si appoggia sulla query definita alla voce queryselection.
+Questo webscript, situato in \texttt{TablePageGenerator.java} e dalla pagina definita in \texttt{TablePageGenerator.post.desc.xml} e in \texttt{TablePageGenerator.post.html.ftl}  si occupa di generare la tabella dello storico di un determinato codice cliente, fornito come parametro della chiamata AJAX. Si appoggia sulla query definita alla voce queryselection.
 Il webscript si occupa di generare il codice della tabella e di iniettare i giusti parametri nel pulsante per cancellare, e, nel caso la data di fine non sia stata settata, anche di generare il pulsante per la modifica della data di fine rapporto.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
@@ -309,7 +316,7 @@ La classe si compone delle seguenti funzioni:
 \item \texttt{dumpData(ResultSet rs, String result)}, metodo che si occupa di ritornare il codice html necessario a generare la tabella dello storico di un cliente.
 \end{itemize}
 \paragraph{update.java}
-Questo webscript, situato in \texttt{/ AIOProject-repo-amp / src / main / java / update.java} e dalla pagina definita in \texttt{/ AIOProject-repo-amp / src / main / amp / config / alfresco / extension / templates / webscripts / update.post.desc.xml} e in \texttt{/ AIOProject-repo-amp / src / main /amp / config / alfresco / extension / templates / webscripts / update.post.html.ftl}  si occupa semplicemente di cancellare un elemento che abbia un determinato id, un campo da aggiornare e un valore con cui aggiornarlo,  forniti come parametro della chiamata. Si appoggia sulla query definita alla voce queryupdate.
+Questo webscript, situato in \texttt{update.java} e dalla pagina definita in \texttt{update.post.desc.xml} e in \texttt{update.post.html.ftl}  si occupa semplicemente di cancellare un elemento che abbia un determinato id, un campo da aggiornare e un valore con cui aggiornarlo,  forniti come parametro della chiamata. Si appoggia sulla query definita alla voce queryupdate.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
 \item \texttt{getValue(String value)}, che recupera una property con una data value
