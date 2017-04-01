@@ -241,12 +241,12 @@ La pagina generata è situata all’indirizzo \texttt{<ip>:<porta>/alfresco/serv
 È inoltre necessario creare un bean che fa da collegamento tra il codice java, situato appunto in una cartella specifica che contiene le classi java, e la pagina che verrà generata. Per farlo seguire quanto descritto nelle guide per la configurazione di Alfresco \footcite{site:alfresco-bean}.
 
 \subsection{Manutenzione}
-Nel momento in cui si vorrà ad andare a modificare un modulo per evenienze riguardanti aspetti grafici o logici indiretti, bisognerà aprire il modulo con un IDE a piacere, e applicare le modifiche desiderate sui file. Il risultato delle modifiche effettuate è visionabile lanciando il comando \texttt{./run.sh} una volta posizionti all’interno della folder del modulo su linux, \texttt{run.bat} su windows, in alternativa al comando \texttt{mvn install -Prun}  o  \texttt{mvn clean install -Prun}, se è necessario anche svuotare la cache; avviato il server basterà
+Nel momento in cui si ha l'intenzione di modificare un modulo per evenienze riguardanti aspetti grafici o logici indiretti, si dovrà aprire il modulo con un IDE a piacere, e applicare le modifiche desiderate sui file.\\
+ Il risultato delle modifiche effettuate è visionabile lanciando il comando \texttt{./run.sh} una volta posizionati all’interno della cartella del modulo su linux, \texttt{run.bat} su windows, in alternativa al comando \texttt{mvn install -Prun}  o  \texttt{mvn clean install -Prun}, se è necessario anche svuotare la cache; avviato il server basterà
 aprire il browser e digitare l’url : \texttt{<ip>:8080/share/page}.
 Per quanto riguarda l’importazione dei moduli nell'ambiente di Alfresco vero e proprio, si dovrà lanciare il comando \texttt{mvn clean install} all'interno sempre del folder del modulo e all’interno della cartella target delle rispettive cartelle repo-amp e share-amp si creeranno un repo-amp file e uno share-amp file. Questi dovranno essere inseriti rispettivamente nelle cartelle amps e amps\_share nell'ambiente dell'Alfresco di produzione.
-Per installare il modulo  è necessario lanciare il file \texttt{alfresco-community/bin/apply\_amps.bat}, oppure lanciandolo tramite il flag \texttt{-force} se si ha già un modulo con lo stesso nome che si vuole sovrascrivere.
-Attenzione
-L’installazione dei moduli comporta un deploy che sovrascriverà il contenuto delle cartelle
+Per installare il modulo  è necessario lanciare il file \texttt{alfresco-community/bin/apply\_amps.bat}, oppure lanciandolo tramite il flag \texttt{-force} se si ha già un modulo con lo stesso nome che si vuole sovrascrivere.\\
+\emph{Attenzione:}L’installazione dei moduli comporta un deploy che sovrascrive il contenuto delle cartelle
 \texttt{tomcat/webapps/share} e \texttt{tomcat/webapps/alfresco}. Di conseguenza nel momento in cui si è andati ad effettuare delle estensioni direttamente all’interno di queste cartelle il contenuto andrà perso. Quindi prima di effettuare questa operazione è necessario fare il backup delle cartelle indicate precedentemente.
 
 %\emph{Per comodità d’ora in poi il nome del progetto sarà indicato come AIOProject}.

@@ -15,11 +15,18 @@ Era desiderabile, ma non è stato possibile, che ogni utente potesse scegliere u
 \section{Realizzazione}
 Nella implementazione dei due temi in una unica AMP è stato sfruttato il fatto, che nell'implementazione del tema precedente non era stato tenuto conto, che tutti i file di CSS del tema vengono automaticamente caricati assieme alla pagina share, quindi definendo lo stile con classi e ID (anche nuovi e non del tema) nei file principali del tema e non in file specifici per la pagina come nell'implementazione precedente, è possibile poter cambiare il CSS e le immagini importate e mostrate.
 Purtroppo, se si cambia tema, a causa del suo sistema di caching, gli utenti che non hanno effettuato il cambiamento non vedranno sostituito il loro tema fino a un riavvio della componente Share di Alfresco.
-\paragraph{}visto quanto esposto, si è reso necessario un refactoring del modulo tema e dei due moduli, uno che implementa il tema e il login, e l'altro che implementa la funzionalità di recupero password già presenti nel sistema e realizzati precedentemente, per allinearli a quanto prima esposto. Si sono quindi portati tutti i css custom nei fai del tema, denominato tema Ennova, al fianco del quale si sono implementati i file del nuovo tema, chiamato tema Coral Tree. Si è dovuto quindi togliere dai moduli i riferimenti ai fogli di stile specifici, che altrimenti avrebbero sovrascritto i CSS di tema, e si sono dovuti accorpare i CSS di quei fogli nel tema principale.
+\paragraph{}Visto quanto esposto, si è reso necessario un refactoring del modulo tema e dei due moduli, uno che implementa il tema e il login, e l'altro che implementa la funzionalità di recupero password già presenti nel sistema e realizzati precedentemente, per allinearli a quanto prima esposto. Si sono quindi portati tutti i css custom nei fai del tema, denominato tema Ennova, al fianco del quale si sono implementati i file del nuovo tema, chiamato tema Coral Tree. Si è dovuto quindi togliere dai moduli i riferimenti ai fogli di stile specifici, che altrimenti avrebbero sovrascritto i CSS di tema, e si sono dovuti accorpare i CSS di quei fogli nel tema principale.
 \paragraph{} Siccome le modifiche son avvenute anche riutilizzando il materiale precedente, a seguito si mostrerà solo quanto aggiunto e si trascureranno i file già presenti.
 \subsection{File aggiunti nel modulo}
-è stato innanzitutto aggiunto il file CoralTreeTheme.xml, che serve a registrare il tema
-\begin{lstlisting}[language=XML]
+\subsubsection{Diagramma delle cartelle}
+Nella figura \ref{fig:cartelle-tema} si illustra in generale quanto è stato prodotto di nuovo per questo modulo. In seguito, nella descrizione di dettaglio, si indicheranno i nomi specifici dei file più importanti che sono stati creati o m
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{/diagrammi_cartelle/FolderClienti.png}
+\caption{descrizione generale di quanto creato per il modulo relativo ai progetti\label{fig:cartelle-tema}}
+\end{figure}
+è stato innanzitutto aggiunto il file CoralTreeTheme.xml, il cui contenuto è riportato nel listato \ref{theme-declaration} che serve a registrare il tema
+\begin{lstlisting}[language=XML, caption=XML della dichiarazione del tema, label=lst:theme-declaration]
 <?xml version='1.0' encoding='UTF-8'?>
 <theme>
     <title>Coral Tree Theme</title>
@@ -32,8 +39,8 @@ Purtroppo, se si cambia tema, a causa del suo sistema di caching, gli utenti che
 </theme>
 \end{lstlisting}
 \subsubsection{File di funzionalità}
-innanzitutto è stato creato aggiornato il file layout.js, che si occupa di gestire il tema selezionato:
-\begin{lstlisting}[language=JavaScript]
+innanzitutto è stato creato aggiornato il file layout.js, che si occupa di gestire il tema selezionato, e il cui testo integrale è riportato nel listato \ref{code-layout}. Come si vede si controlla nelle costanti di Alfresco quale è il tema attivo e in base a quello si inietta il codice per importare i file corretti.
+\begin{lstlisting}[language=JavaScript, caption=codice di layout.js, label=code-layout]
 $( window ).load(function() {
     /** CoralTreeTheme **/
     if (Alfresco.constants.THEME == "CoralTreeTheme") {
@@ -77,11 +84,11 @@ $( window ).load(function() {
 \subsubsection{File di stile}
 Per realizzare il tema si sono seguite le linee guida di Alfresco, che dicono di copiare i file di uno dei tema base e di lavorare su quelli, aggiungendo gli stili desiderati. Si hanno quindi:
 \begin{itemize}
-\item \texttt{/themes/theme/src/mainesources/META-INF/resources/themes/CoralTreeTheme/dashboard/footer/footer.css}, che contiene il CSS specifico per il footer
-\item \texttt{/themes/theme/src/main/resources/META-INF/resources/themes/CoralTreeTheme/dashboard/header/header.css}, che contiene il CSS specifico per l'header.
-\item la cartella \texttt{/themes/theme/src/main/resources/META-INF/resources/themes/CoralTreeTheme/images}, che contiene le immagini che sono usate dal tema
-\item \texttt{/themes/theme/src/main/resources/META-INF/resources/themes/CoralTreeTheme/presentation.css} che è il css principale del tema
-\item la cartella\texttt{/themes/theme/src/main/resources/META-INF/resources/themes/CoralTreeTheme/yui/assets}, che contiene il css e i file necessari per i componenti yui utilizzati da Alfresco
+\item \texttt{footer.css}, che contiene il CSS specifico per il footer
+\item \texttt{header.css}, che contiene il CSS specifico per l'header.
+\item la cartella \texttt{images}, che contiene le immagini che sono usate dal tema
+\item \texttt{presentation.css} che è il css principale del tema
+\item la cartella\texttt{assets}, che contiene il css e i file necessari per i componenti yui utilizzati da Alfresco
 \end{itemize}
 \section{Lato estetico}
 Per il lato estetico ci si è ancora una volta dovuti rivolgere al team di grafici che lavorano presso l'azienda per ottenere un mockup. Sono stati utilizzati quelli già prodotti nel passato al momento della presentazione del progetto e della creazione dei primi moduli.

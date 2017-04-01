@@ -63,13 +63,13 @@ Nella figura \ref{fig:cartelle-clienti} si illustra in generale quanto è stato 
 \subsection{Preparazione del DB}
 Per preparare il DB bisogna innanzitutto creare un nuovo database.
 
-Nel caso del progetto da me sviluppato si è usato PostgreSQL, per i motivi già esposti.
+Nel caso del progetto sviluppato in questo stage si è usato PostgreSQL, per i motivi già esposti.
 
-Basta quindi spostarsi nella cartella di PostgreSQL tramite DOS e digitare il comando
+È necessario quindi, per creare il database, spostarsi nella cartella di PostgreSQL tramite DOS e digitare il comando
 
 \texttt{createdb -h localhost -p <porta> -U postgres <nome del db>}
 
-È necessario quindi creare una tabella, che verrà chiamata per comodità da adesso clienti.
+Il passo successivo è quindi quello di crearvi una tabella, che verrà chiamata per comodità da adesso clienti.
 
 La tabella ha la struttura che viene generata dal codice riportato nel listato \ref{lst:clienti-table}
 \begin{lstlisting}[caption=codice per la creazione della cartella clienti, label=lst:clienti-table]
@@ -133,8 +133,8 @@ Le pagine includono inoltre nell’HTML la richiesta di JQuery, mediante le line
 \begin{itemize}
 \item \texttt{clienti.get.desc.xml}, implementato come descritto nel \hyperref[cap:architettura]{ quarto  capitolo}
 \item\texttt{clienti.get.html.ftl }che contiene il codice html necessario a generare il form.
-\item\texttt{clienti.get.js} che contiene le istruzioni necessarie a generare l’header. È necessario includere nell’html la linea <@processJsonModel group="share"/>.
-\item \texttt{clienti.js,} incluso con la linea \texttt{<script src="\${url.context} / js / clienti / clienti.js"></script>}, che effettua i controlli javascript della pagina. In particolare alla pressione del pulsante di conferma viene fatto il controllo sui dati inseriti, cioè sulla correttezza della partita iva, sul fatto che i campi obbligatori siano definiti, sul fatto che la data di fine sia successiva alla data di inizio. Inoltre si occupa di inoltrare la richiesta AJAX al webscript \texttt{query\_processor.java} che sarà trattato successivamente. Se il webscript riporta uno stato anomalo viene segnalato e così viene anche gestito il caso di inserimento di un identificativo già esistente.
+\item\texttt{clienti.get.js} che contiene le istruzioni necessarie a generare l’header. È necessario includere nell’html la linea \texttt{<@processJsonModel group="share"/>}.
+\item \texttt{clienti.js,} incluso con la linea \texttt{<script src="\${url.context} / js / clienti / clienti.js"></script>}, che effettua i controlli javascript della pagina. In particolare alla pressione del pulsante di conferma viene fatto il controllo sui dati inseriti, cioè sulla correttezza della partita IVA, sul fatto che i campi obbligatori siano definiti, sul fatto che la data di fine sia successiva alla data di inizio. Inoltre si occupa di inoltrare la richiesta AJAX al webscript \texttt{query\_processor.java} che sarà trattato successivamente. Se il webscript riporta uno stato anomalo viene segnalato e così viene anche gestito il caso di inserimento di un identificativo già esistente.
 \end{itemize}
 
 \subsubsection{Pagina vis\_clienti}
@@ -147,7 +147,7 @@ La pagina vis\_clienti è la pagina di gestione dei clienti, ed è suddivisa nei
 \item \texttt{vis\_clienti.css}, incluso in maniera analoga al javascript come descritto prima e che definisce il CSS della pagina.
 \item \texttt{vis\_clienti.js}, incluso come descritto prima
 \end{itemize}
-In particolare la pagina nella sua parte principale offre la lista degli identificativi dei clienti attivi e non, che è anche il nome con cui sono stati salvati nella cartellatura di Alfresco. Si è scelto questa rappresentazione in quanto è logicamente vicina alla struttura di Alfresco e sarà più facile in futuro implementare funzionalità quali la visualizzazione dei progetti del cliente.  I pulsanti dei clienti attivi e inattivi sono generati rispettivamente da \texttt{clients.java}  e  \texttt{inactive.java}  chiamati all’avvio della pagina tramite \texttt{window.onload} che si occupano di definire anche i giusti parametri che verranno poi utilizzati per popolare il form che consente l’aggiornamento dei dati di un particolare cliente. Il form è già presente nella pagina ma viene fatto mostrare da una opportuna funzione javascript che si occupa anche di popolare la tabella sottostante tramite una chiamata AJAX al webscript \texttt{TablePageGenerator.java}, che si occupa di fornire la tabella e di iniettare il pulsante cancella e il pulsante  per definire  la data di fine del rapporto  con il corretto id. I pulsanti sono collegati a loro volta a \texttt{delete.java} e \texttt{update.java}, chiamati tramite opportune chiamate AJAX.
+In particolare la pagina nella sua parte principale offre la lista degli identificativi dei clienti attivi e non, che è anche il nome con cui sono stati salvati nella cartellatura di Alfresco. Si è scelto questa rappresentazione in quanto è logicamente vicina alla struttura di Alfresco e sarà più facile in futuro implementare funzionalità quali la visualizzazione dei progetti del cliente.  I pulsanti dei clienti attivi e inattivi sono generati rispettivamente da \texttt{clients.java}  e  \texttt{inactive.java}  chiamati all’avvio della pagina tramite \texttt{window.onload} che si occupano di definire anche i giusti parametri che verranno poi utilizzati per popolare il form che consente l’aggiornamento dei dati di un particolare cliente. Il form è già presente nella pagina ma viene reso visibile da una opportuna funzione javascript che si occupa anche di popolare la tabella sottostante tramite una chiamata AJAX al webscript \texttt{TablePageGenerator.java}, che si occupa di fornire la tabella e di iniettare il pulsante cancella e il pulsante  per definire  la data di fine del rapporto  con il corretto id. I pulsanti sono collegati a loro volta a \texttt{delete.java} e \texttt{update.java}, chiamati tramite opportune chiamate AJAX.
 
 I messaggi di errore e di conferma sono gestiti dove possibile in JavaScript e dove non possibile, poiché la risposta dipende dal database o dal repository, tramite la risposta della chiamata AJAX
 
@@ -277,7 +277,7 @@ Questo webscript, situato in \texttt{query\_processor.java} e dalla pagina defin
 \end{itemize}
 Lo script si appoggia, oltre al JDBC per l’inserimento nel database, sulla API di Alfresco 
 FileFolderService per creare la gerarchia di cartelle corrispondente, di permissionservice per settare i permessi di accesso alle cartelle (per il momento codificati nel Java e non configurabili dopo l’installazione se non mediante l’editor dei permessi di Alfresco)
-E di nodeservice per settare la descrizione della cartella principale.
+E fa utilizzo anche nodeservice, un altro elemento dell'API, per settare la descrizione della cartella principale.
 Per includere il serviceregisty, necessario per accedere alla API di Alfresco, è necessario, oltre a specificare  nel bean, il cui funzionamento è stato già descritto, tramite le righe mostrate nel listato \ref{lst:service-registry}
 \begin{lstlisting}[language=XML,label=lst:service-registry,caption=inclusione del service registry nel bean]
         <property name="serviceRegistry">
@@ -325,7 +325,7 @@ La classe si compone delle seguenti funzioni:
 \item \texttt{executeupdate(Connection con, String query)}, metodo che esegue la query di update della data di fine di un dato record del database.
 \end{itemize}
 
-\section{lato estetico}
+\section{Aspetto estetico}
 Per il lato estetico si è reso necessario contattare il team di grafici che lavora presso l'azienda per ottenere un aspetto gradevole e che si allineasse con quanto già presente in Alfresco. Sono stati quindi forniti dei mockup delle varie componenti ed è stato chiesto allo stagista di riprodurre tale aspetto in Alfresco.
 \subsection{risultati raggiunti}
 TODO:qui le immagini
