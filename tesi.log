@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  1 APR 2017 18:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  2 APR 2017 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1501,35 +1501,57 @@ Underfull \vbox (badness 2197) has occurred while \output is active []
 Capitolo 2.
 [3
 
-]) (./capitoli/capitolo-3.tex [4]
-Capitolo 3.
-[5
+]
+Underfull \vbox (badness 1694) has occurred while \output is active []
 
-] [6]
+ [4]
+Overfull \hbox (36.0pt too wide) in alignment at lines 58--100
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 100
+ []
+
+
+Overfull \hbox (36.0pt too wide) in alignment at lines 100--140
+ [] [] [] 
+ []
+
+[5]
+Overfull \hbox (36.0pt too wide) in alignment at lines 140--157
+ [] [] [] 
+ []
+
+[6] [7]) (./capitoli/capitolo-3.tex [8]
+Capitolo 3.
+[9
+
+] [10]
 Underfull \vbox (badness 1014) has occurred while \output is active []
 
- [7])
-(./capitoli/capitolo-4.tex [8] [9] [10
+ [11])
+(./capitoli/capitolo-4.tex [12] [13] [14
 
 ]
 Capitolo 4.
-<immagini//architettura/architettura3.png, id=290, 603.25375pt x 681.54625pt>
+<immagini//architettura/architettura3.png, id=317, 603.25375pt x 681.54625pt>
 File: immagini//architettura/architettura3.png Graphic file (type png)
 
 <use immagini//architettura/architettura3.png>
 Package pdftex.def Info: immagini//architettura/architettura3.png used on input
  line 98.
 (pdftex.def)             Requested size: 372.0pt x 420.27681pt.
- [11]
-<immagini//architettura/architettura2.png, id=298, 838.13126pt x 722.7pt>
+ [15]
+<immagini//architettura/architettura2.png, id=324, 838.13126pt x 722.7pt>
 File: immagini//architettura/architettura2.png Graphic file (type png)
 
 <use immagini//architettura/architettura2.png>
 Package pdftex.def Info: immagini//architettura/architettura2.png used on input
  line 117.
 (pdftex.def)             Requested size: 372.0pt x 320.76791pt.
- [12 <./immagini//architettura/architettura3.png>]
-<immagini//architettura/dev-extensions-share-architecture.png, id=310, 1353.055
+ [16 <./immagini//architettura/architettura3.png>]
+<immagini//architettura/dev-extensions-share-architecture.png, id=333, 1353.055
 pt x 714.67pt>
 File: immagini//architettura/dev-extensions-share-architecture.png Graphic file
  (type png)
@@ -1539,7 +1561,7 @@ Package pdftex.def Info: immagini//architettura/dev-extensions-share-architectu
 re.png used on input line 134.
 (pdftex.def)             Requested size: 372.0pt x 196.48578pt.
 
-<immagini//architettura/dev-platform-integration-architecture.png, id=311, 1405
+<immagini//architettura/dev-platform-integration-architecture.png, id=334, 1405
 .25pt x 913.4125pt>
 File: immagini//architettura/dev-platform-integration-architecture.png Graphic 
 file (type png)
@@ -1549,7 +1571,7 @@ Package pdftex.def Info: immagini//architettura/dev-platform-integration-archit
 ecture.png used on input line 139.
 (pdftex.def)             Requested size: 372.0pt x 241.80228pt.
 
-<immagini//architettura/dev-repo-extension-points.png, id=312, 1412.27625pt x 8
+<immagini//architettura/dev-repo-extension-points.png, id=335, 1412.27625pt x 8
 43.15pt>
 File: immagini//architettura/dev-repo-extension-points.png Graphic file (type p
 ng)
@@ -1557,10 +1579,10 @@ ng)
 Package pdftex.def Info: immagini//architettura/dev-repo-extension-points.png u
 sed on input line 144.
 (pdftex.def)             Requested size: 372.0pt x 222.08281pt.
- [13 <./immagini//architettura/architettura2.png>] [14 <./immagini//architettur
+ [17 <./immagini//architettura/architettura2.png>] [18 <./immagini//architettur
 a/dev-extensions-share-architecture.png> <./immagini//architettura/dev-platform
--integration-architecture.png>] [15 <./immagini//architettura/dev-repo-extensio
-n-points.png>] [16
+-integration-architecture.png>] [19 <./immagini//architettura/dev-repo-extensio
+n-points.png>] [20
 
 ]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 215.
@@ -1572,7 +1594,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [17]
+ [21]
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1581,76 +1603,77 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 224.
- [18])
-(./capitoli/capitolo-5.tex [19] [20
+ [22])
+(./capitoli/capitolo-5.tex [23] [24
 
 ]
 Capitolo 5.
 
-<immagini//diagrammi_cartelle/FolderClienti.png, id=388, 4013.99625pt x 4118.38
+<immagini//diagrammi_cartelle/FolderClienti.png, id=412, 4013.99625pt x 4118.38
 625pt>
 File: immagini//diagrammi_cartelle/FolderClienti.png Graphic file (type png)
  <use immagini//diagrammi_cartelle/FolderClienti.png>
 Package pdftex.def Info: immagini//diagrammi_cartelle/FolderClienti.png used on
  input line 59.
 (pdftex.def)             Requested size: 372.0pt x 381.63602pt.
- [21] [22 <./immagini//diagrammi_cartelle/FolderClienti.png>] [23]
+ [25] [26 <./immagini//diagrammi_cartelle/FolderClienti.png>] [27]
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [24]
+) [28]
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [25]
+) [29]
 Underfull \vbox (badness 2409) has occurred while \output is active []
 
- [26]
-[27] [28] [29]) (./capitoli/capitolo-6.tex [30] [31] [32
+ [30]
+[31] [32] [33]) (./capitoli/capitolo-6.tex [34] [35] [36
 
 ]
 Capitolo 6.
-File: immagini//diagrammi_cartelle/FolderClienti.png Graphic file (type png)
-<use immagini//diagrammi_cartelle/FolderClienti.png>
-Package pdftex.def Info: immagini//diagrammi_cartelle/FolderClienti.png used on
- input line 26.
-(pdftex.def)             Requested size: 372.0pt x 381.63602pt.
- [33]
+
+<immagini//diagrammi_cartelle/progettifolder.png, id=581, 4013.99625pt x 3996.9
+325pt>
+File: immagini//diagrammi_cartelle/progettifolder.png Graphic file (type png)
+ <use immagini//diagrammi_cartelle/progettifolder.png>
+Package pdftex.def Info: immagini//diagrammi_cartelle/progettifolder.png used o
+n input line 26.
+(pdftex.def)             Requested size: 372.0pt x 370.38135pt.
+ [37]
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [34] [35] [36]
-[37] [38] [39]) (./capitoli/capitolo-6b.tex [40]
+) [38 <./immagini//diagrammi_cartelle/progettifolder.png>] [39] [40] [41] [42] 
+[43])
+(./capitoli/capitolo-6b.tex [44]
 Capitolo 7.
-[41
-
-]
-File: immagini//diagrammi_cartelle/FolderClienti.png Graphic file (type png)
- <use immagini//diagrammi_cartelle/FolderClienti.png>
-Package pdftex.def Info: immagini//diagrammi_cartelle/FolderClienti.png used on
- input line 25.
-(pdftex.def)             Requested size: 372.0pt x 381.63602pt.
-
-
-LaTeX Warning: Reference `theme-declaration' on page 42 undefined on input line
- 28.
-
-[42]
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 44.
- [43]) (./capitoli/capitolo-7.tex [44]
-Capitolo 8.
 [45
 
-]) (./capitoli/capitolo-A.tex) [46] (.\/tesi.gls) (.\/tesi.acr [47
+]
+<immagini//diagrammi_cartelle/temifolder.png, id=697, 4013.99625pt x 5394.1525p
+t>
+File: immagini//diagrammi_cartelle/temifolder.png Graphic file (type png)
+ <use immagini//diagrammi_cartelle/temifolder.png>
+Package pdftex.def Info: immagini//diagrammi_cartelle/temifolder.png used on in
+put line 25.
+(pdftex.def)             Requested size: 372.0pt x 499.85669pt.
+ [46] [47 <./immagini//diagrammi_cartelle/temifolder.png>]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 45.
+ [48]) (./capitoli/capitolo-7.tex [49] [50
+
+]
+Capitolo 8.
+[51]) (./capitoli/capitolo-A.tex) [52] (.\/tesi.gls) (.\/tesi.acr [53
 
 
 
-] [48
+] [54
 
 ])
-(./inizio-fine/bibliografia.tex [49
+(./inizio-fine/bibliografia.tex [55
 
-] [50
+] [56
 
-]) [51
+]) [57
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
@@ -1658,22 +1681,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
  (.\/tesi.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 146.
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29028 strings out of 493013
- 473794 string characters out of 6136993
- 1258716 words of memory out of 5000000
- 31447 multiletter control sequences out of 15000+600000
- 34025 words of font info for 133 fonts, out of 8000000 for 9000
+ 29056 strings out of 493013
+ 474429 string characters out of 6136993
+ 1239855 words of memory out of 5000000
+ 31466 multiletter control sequences out of 15000+600000
+ 33906 words of font info for 132 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 61i,8n,122p,1931b,3845s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,9n,122p,1931b,3845s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2016/texmf-dist
@@ -1701,10 +1720,10 @@ c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive
 f-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1000.pfb>
-Output written on .\/tesi.pdf (59 pages, 1802757 bytes).
+Output written on .\/tesi.pdf (65 pages, 2810471 bytes).
 PDF statistics:
- 1209 PDF objects out of 1440 (max. 8388607)
- 1089 compressed objects within 11 object streams
- 413 named destinations out of 1000 (max. 500000)
- 41532 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1255 PDF objects out of 1440 (max. 8388607)
+ 1124 compressed objects within 12 object streams
+ 422 named destinations out of 1000 (max. 500000)
+ 41558 words of extra memory for PDF output out of 42996 (max. 10000000)
 

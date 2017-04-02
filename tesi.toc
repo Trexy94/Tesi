@@ -26,176 +26,180 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Vincoli}{4}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}tecnologie e strumenti utilizzati}{5}{chapter.3}
+\contentsline {section}{\numberline {2.3}Metodologia di sviluppo}{4}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Tecnologie utilizzate}{5}{section.3.1}
+\contentsline {section}{\numberline {2.4}Requisiti funzionali}{5}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Linguaggi di Programmazione}{5}{subsection.3.1.1}
+\contentsline {chapter}{\numberline {3}tecnologie e strumenti utilizzati}{9}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Java}{5}{section*.10}
+\contentsline {section}{\numberline {3.1}Tecnologie utilizzate}{9}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Javascript}{5}{section*.11}
+\contentsline {subsection}{\numberline {3.1.1}Linguaggi di Programmazione}{9}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Formato per l\IeC {\textquoteright }interscambio di dati}{6}{subsection.3.1.2}
+\contentsline {subsubsection}{Java}{9}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{JSON}{6}{section*.12}
+\contentsline {subsubsection}{Javascript}{9}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Tecnica per l\IeC {\textquoteright }interscambio di dati}{6}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.2}Formato per l\IeC {\textquoteright }interscambio di dati}{10}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{AJAX}{6}{section*.13}
+\contentsline {subsubsection}{JSON}{10}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Framework}{6}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.3}Tecnica per l\IeC {\textquoteright }interscambio di dati}{10}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Spring}{6}{section*.14}
+\contentsline {subsubsection}{AJAX}{10}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{JQuery}{7}{section*.15}
+\contentsline {subsection}{\numberline {3.1.4}Framework}{10}{subsection.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Alfresco Surf}{7}{section*.16}
+\contentsline {subsubsection}{Spring}{10}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Protocolli di servizi}{7}{subsection.3.1.5}
+\contentsline {subsubsection}{JQuery}{11}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{LDAP}{7}{section*.17}
+\contentsline {subsubsection}{Alfresco Surf}{11}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.6}Data Base Management System}{7}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.5}Protocolli di servizi}{11}{subsection.3.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PostgreSQL}{7}{section*.18}
+\contentsline {subsubsection}{LDAP}{11}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Strumenti utilizzati}{8}{section.3.2}
+\contentsline {subsection}{\numberline {3.1.6}Data Base Management System}{11}{subsection.3.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Strumenti di supporto all\IeC {\textquoteright }attivit\IeC {\`a} di Codifica}{8}{subsection.3.2.1}
+\contentsline {subsubsection}{PostgreSQL}{11}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Eclipse}{8}{section*.19}
+\contentsline {section}{\numberline {3.2}Strumenti utilizzati}{12}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Strumenti per il versionamento}{8}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.1}Strumenti di supporto all\IeC {\textquoteright }attivit\IeC {\`a} di Codifica}{12}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Git}{8}{section*.20}
+\contentsline {subsubsection}{Eclipse}{12}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Strumenti per \emph {build automation}}{8}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.2}Strumenti per il versionamento}{12}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Apache Maven}{8}{section*.21}
+\contentsline {subsubsection}{Git}{12}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Accenni al funzionamento di Alfresco}{11}{chapter.4}
+\contentsline {subsection}{\numberline {3.2.3}Strumenti per \emph {build automation}}{12}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Architettura di Alfresco}{11}{section.4.1}
+\contentsline {subsubsection}{Apache Maven}{12}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}SDK}{16}{section.4.2}
+\contentsline {chapter}{\numberline {4}Accenni al funzionamento di Alfresco}{15}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Repository AMP archetype}{16}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.1}Architettura di Alfresco}{15}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Share AMP archetype}{17}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.2}SDK}{20}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}All-in-One archetype}{17}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.1}Repository AMP archetype}{20}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Gestione dei moduli}{18}{section.4.3}
+\contentsline {subsection}{\numberline {4.2.2}Share AMP archetype}{21}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Creazione}{18}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.2.3}All-in-One archetype}{21}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Manutenzione}{19}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.3}Gestione dei moduli}{22}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Il modulo clienti}{21}{chapter.5}
+\contentsline {subsection}{\numberline {4.3.1}Creazione}{22}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}scopo del modulo}{21}{section.5.1}
+\contentsline {subsection}{\numberline {4.3.2}Manutenzione}{23}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Presentazione generale del modulo}{21}{section.5.2}
+\contentsline {chapter}{\numberline {5}Il modulo clienti}{25}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}implementazione delle funzionalit\IeC {\`a}}{22}{section.5.3}
+\contentsline {section}{\numberline {5.1}Scopo del modulo}{25}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Preparazione del DB}{22}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.2}Presentazione generale del modulo}{25}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Creazione della parte share}{23}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.3}implementazione delle funzionalit\IeC {\`a}}{26}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{pagina Clienti}{24}{section*.28}
+\contentsline {subsection}{\numberline {5.3.1}Preparazione del DB}{26}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pagina vis\_clienti}{24}{section*.29}
+\contentsline {subsection}{\numberline {5.3.2}Creazione della parte share}{27}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Creazione della parte repo}{25}{subsection.5.3.3}
+\contentsline {subsubsection}{pagina Clienti}{28}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Creazione delle variabili del modulo}{25}{section*.30}
+\contentsline {subsubsection}{Pagina vis\_clienti}{28}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Creazione dei webscript}{27}{section*.31}
+\contentsline {subsection}{\numberline {5.3.3}Creazione della parte repo}{29}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{clients.java}{27}{section*.32}
+\contentsline {subsubsection}{Creazione delle variabili del modulo}{29}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{delete.java}{27}{section*.33}
+\contentsline {subsubsection}{Creazione dei webscript}{31}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{inactive.java}{28}{section*.34}
+\contentsline {paragraph}{clients.java}{31}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{query\_processor.java}{28}{section*.35}
+\contentsline {paragraph}{delete.java}{31}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{TablePageGenerator.java}{30}{section*.36}
+\contentsline {paragraph}{inactive.java}{32}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{update.java}{30}{section*.37}
+\contentsline {paragraph}{query\_processor.java}{32}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Aspetto estetico}{30}{section.5.4}
+\contentsline {paragraph}{TablePageGenerator.java}{34}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}risultati raggiunti}{31}{subsection.5.4.1}
+\contentsline {paragraph}{update.java}{34}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Il modulo progetti}{33}{chapter.6}
+\contentsline {section}{\numberline {5.4}Aspetto estetico}{34}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}scopo del modulo}{33}{section.6.1}
+\contentsline {subsection}{\numberline {5.4.1}risultati raggiunti}{35}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Presentazione generale del modulo}{33}{section.6.2}
+\contentsline {chapter}{\numberline {6}Il modulo progetti}{37}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}implementazione delle funzionalit\IeC {\`a}}{34}{section.6.3}
+\contentsline {section}{\numberline {6.1}Scopo del modulo}{37}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Aggiunte al DB}{34}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.2}Presentazione generale del modulo}{37}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}Definizione delle properties}{35}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.3}implementazione delle funzionalit\IeC {\`a}}{38}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.3}Parte share}{36}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.1}Aggiunte al DB}{38}{subsection.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pagina di visualizzazione dei progetti}{36}{section*.39}
+\contentsline {subsection}{\numberline {6.3.2}Definizione delle properties}{39}{subsection.6.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pagina di inserimento di un progetto}{37}{section*.40}
+\contentsline {subsection}{\numberline {6.3.3}Parte share}{40}{subsection.6.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parte Repo}{38}{section*.41}
+\contentsline {subsubsection}{Pagina di visualizzazione dei progetti}{40}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Clienti.java}{38}{section*.42}
+\contentsline {subsubsection}{Pagina di inserimento di un progetto}{41}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{GetUsers.java}{38}{section*.43}
+\contentsline {subsubsection}{Parte Repo}{42}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{GetWorkers.java}{39}{section*.44}
+\contentsline {paragraph}{Clienti.java}{42}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Project\_creator.java}{39}{section*.45}
+\contentsline {paragraph}{GetUsers.java}{42}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{SendMails.java}{40}{section*.46}
+\contentsline {paragraph}{GetWorkers.java}{43}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Aspetto estetico}{40}{section.6.4}
+\contentsline {paragraph}{Project\_creator.java}{43}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.1}risultati raggiunti}{40}{subsection.6.4.1}
+\contentsline {paragraph}{SendMails.java}{44}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Il modulo tema}{41}{chapter.7}
+\contentsline {section}{\numberline {6.4}Aspetto estetico}{44}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}scopo del modulo}{41}{section.7.1}
+\contentsline {subsection}{\numberline {6.4.1}risultati raggiunti}{44}{subsection.6.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Realizzazione}{41}{section.7.2}
+\contentsline {chapter}{\numberline {7}Il modulo tema}{45}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{41}{section*.47}
+\contentsline {section}{\numberline {7.1}Scopo del modulo}{45}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{42}{section*.48}
+\contentsline {section}{\numberline {7.2}Realizzazione}{45}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}File aggiunti nel modulo}{42}{subsection.7.2.1}
+\contentsline {paragraph}{}{45}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Diagramma delle cartelle}{42}{section*.49}
+\contentsline {paragraph}{}{46}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{File di funzionalit\IeC {\`a}}{43}{section*.51}
+\contentsline {subsection}{\numberline {7.2.1}File aggiunti nel modulo}{46}{subsection.7.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{File di stile}{44}{section*.52}
+\contentsline {subsubsection}{Diagramma delle cartelle}{46}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Lato estetico}{44}{section.7.3}
+\contentsline {subsubsection}{File di funzionalit\IeC {\`a}}{48}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}Risultati ottenuti}{44}{subsection.7.3.1}
+\contentsline {subsubsection}{File di stile}{49}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusioni}{45}{chapter.8}
+\contentsline {section}{\numberline {7.3}Lato estetico}{49}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Prospettive future}{45}{section.8.1}
+\contentsline {subsection}{\numberline {7.3.1}Risultati ottenuti}{49}{subsection.7.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Difficolt\IeC {\`a} e limiti riscontrati}{45}{section.8.2}
+\contentsline {chapter}{\numberline {8}Conclusioni}{51}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Considerazioni personali}{46}{section.8.3}
+\contentsline {section}{\numberline {8.1}Prospettive future}{51}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossary}{47}{section*.53}
+\contentsline {section}{\numberline {8.2}Difficolt\IeC {\`a} e limiti riscontrati}{51}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{49}{section*.55}
+\contentsline {section}{\numberline {8.3}Considerazioni personali}{52}{section.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{51}{appendix*.57}
+\contentsline {chapter}{Glossary}{53}{section*.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{55}{section*.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{57}{appendix*.57}

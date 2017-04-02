@@ -34,4 +34,132 @@ In seguito, si sono analizzate le richieste poste dall'azienda in merito alle fu
 \subsection{Ambiente di test}
 Assieme allo sviluppo dei vari moduli, è proceduta a pari passo anche la creazione e il mantenimento di un ambiente di test dove poter testare i moduli in maniera sicura prima di portarli in produzione e applicare i moduli nel \gls{KMS} aziendale. Ciò è stato espressamente richiesto dall'azienda e quindi i moduli prodotti, non appena la loro installazione era possibile, sono stati caricati e provati nel \gls{KMS} di test che replicava quello dell'azienda, e successivamente, prima del rilascio finale, in una copia esatta del software del \gls{KMS} di produzione.
 \section{Vincoli}
-per quanto riguarda l'implementazione, non sono stati imposti allo stagista vincoli stringenti per quanto riguarda i dettagli implementativi e accessibilità, anche se è stato esplicitato che il codice doveva essere facile da manutenere e che tutti i parametri e le stringhe utilizzate dovevano essere collocate in opportuni file di properties, in maniera da rendere facile configurazione e localizzazione.
+per quanto riguarda l'implementazione, non sono stati imposti allo stagista vincoli stringenti per quanto riguarda i dettagli implementativi e accessibilità, anche se è stato esplicitato che il codice doveva essere facile da manutenere e che tutti i parametri e le stringhe utilizzate dovevano essere collocate in opportuni file di properties, in maniera da rendere facile configurazione e localizzazione. Non sono stati specificati requisiti di qualità, in quanto è stato indicato di rispettare gli standard aziendali.
+\section{Metodologia di sviluppo}
+Per lo sviluppo si è ricorsi al framework agile scrum, che è quello utilizzato dall'azienda, eseguendo ovviamente daily scrum quotidianamente per fare il punto sulla situazione e facendo sprint di durata di una/due settimane.
+\section{Requisiti funzionali}
+tenuto conto dei vincoli elencati nei punti precedenti, per prima cosa si è eseguita una analisi relativa ai requisiti funzionali.
+Per rendere più chiare le priorità nello sviluppo è stata adottata una simbologia di
+classificazione dei requisiti.
+Ad ogni Requisito Funzionale è associato un codice del tipo R.X.Y dove:
+\begin{itemize}
+\item R è l’abbreviazione di Requisito
+\item X è una lettera tra:
+\begin{itemize}
+	\item O per Requisito Obbligatorio
+	\item F per Requisito Facoltativo
+	\item D per Requisito Desiderabile
+\end{itemize}
+\item Y è il numero identificativo del Requisito
+\end{itemize}
+Anche se la realizzazione ha comportato la realizzazione di tre moduli diversi, nella tabella \ref{tab:requisiti-funzionali} i requisiti verranno presentati assieme e nella loro forma completa.
+\begingroup
+\renewcommand\arraystretch{2}
+\begin{longtable}{p{.20\textwidth} p{.60\textwidth} p{.20\textwidth}}
+\hline\hline
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
+\hline
+\hline
+R.O.1    & L'applicazione deve permettere il CRUD dei clienti & Completato \\
+\hline
+R.O.1.1  & Deve essere possibile creare un cliente & Completato \\
+\hline
+R.O.1.1.1  & Deve essere possibile assegnare un nome ad un cliente & Completato \\
+\hline
+R.O.1.1.2  & Deve essere possibile assegnare la partita IVA o il codice fiscale ad un cliente & Completato \\
+\hline
+R.O.1.1.3  & Deve essere possibile assegnare una descrizione ad un cliente & Completato \\
+\hline
+R.O.1.1.4  & Deve essere possibile assegnare la data di inizio del rapporto di un cliente & Completato \\
+\hline
+R.O.1.1.5  & Deve essere possibile assegnare la data di fine del rapporto con un cliente & Completato \\
+\hline
+R.O.1.1.6  & Deve essere possibile assegnare un identificativo ad un cliente & Completato \\
+\hline
+R.O.1.1.7  & Deve essere possibile creare una cartella per un cliente & Completato \\
+\hline
+R.O.1.1.7.1  & Le cartelle dei clienti devono avere lo stesso nome definito nell'identificativo & Completato \\
+\hline
+R.O.1.1.7.2  & Le cartelle dei clienti devono avere la descrizione inserita in fase di creazione del cliente & Completato \\
+\hline
+R.O.1.1.7.3  & Le cartelle dei clienti devono avere gli opportuni permessi di visibilità & Completato \\
+\hline
+R.O.1.1.7.4  & Deve essere possibile scegliere quali sottocartelle si vogliono creare per un cliente & Completato \\
+\hline
+R.O.1.2  & Deve essere possibile visualizzare i dati di un cliente & Completato \\
+\hline
+R.O.1.2.1  & Deve essere raggiungere la cartella relativa ad un cliente & Completato \\
+\hline
+R.O.1.3  & Deve essere possibile modificare i dati di un cliente & Completato \\
+\hline
+R.O.1.3.2  & Gli aggiornamenti di un cliente non devono essere retroattivi su eventuali attributi ad essi assegnati & Completato \\
+\hline
+R.O.1.3.3  & Devono essere mantenuti sia i dati precedenti alla modifica sia quelli aggiornati & Completato \\
+\hline
+R.O.1.4  & Deve essere possibile cancellare i dati di un cliente & Completato \\
+\hline
+R.O.1.4.1  & La cancellazione di un cliente deve essere opportunamente preceduta da un messaggio di allarme & Completato \\
+\hline
+R.O.1.5  & Si deve poter accedere all'inserimento di un cliente tramite un'aggiunta alla voce delle azioni possibili & Completato \\
+\hline
+R.O.1.6    & Il CRUD dei clienti deve essere possibile solo per gli amministratori & Completato \\
+\hline
+R.D.2    & L'applicazione deve permettere il CRUD dei progetti & Non completato \\
+\hline
+R.D.2.1    & Deve essere possibile creare un progetto & Completato \\
+\hline
+R.D.2.1.1    & Deve essere assegnare un nome ad un progetto & Completato \\
+\hline
+R.D.2.1.2    & Deve essere assegnare una descrizione ad un progetto & Completato \\
+\hline
+R.D.2.1.3    & Deve essere assegnare dei lavoratori ad un progetto & Completato \\
+\hline
+R.F.2.1.3.1    & Deve essere possibile ottenere i lavoratori dalla piattaforma LDAP & Completato \\
+\hline
+R.F.2.1.3.2   & Deve essere possibile mandare una mail a coloro ai quali è stato assegnato un determinato progetto & Completato \\
+\hline
+R.F.2.1.3.2.1   & Deve essere possibile scrivere il testo della mail & Completato \\
+\hline
+R.D.2.1.4  & La creazione di un progetto deve generare anche le relative cartelle & Completato \\
+\hline
+R.D.2.1.4.1  & Deve essere possibile specificare quali sottocartelle si vogliono creare & Completato \\
+\hline
+R.F.2.1.4.2  & Le cartelle devono essere visibili solo agli amministratori e a coloro ai quali è stato assegnato un progetto & Completato \\
+\hline
+R.D.2.1.4  & Deve essere assegnare un cliente un progetto & Completato \\
+\hline
+R.D.2.2    & Deve essere possibile visualizzare i dati di un progetto &Completato \\
+\hline
+R.F.2.2    & Deve essere possibile modificare i dati di un progetto & Non completato \\
+\hline
+R.F.2.3    & Deve essere possibile cancellare un progetto & Non completato \\
+\hline
+R.D.2.4    & Il CRUD dei progetti deve essere possibile solo per gli amministratori & Completato \\
+\hline
+R.O.3  & Deve essere creato un modulo per il nuovo tema & Completato \\
+\hline
+R.O.3.1  & Il nuovo tema deve poter convivere con i moduli già esistenti in azienda & Completato \\
+\hline
+R.O.3.2  & Deve essere possibile cambiare il tema & Completato \\
+\hline
+R.O.3.3  & Il tema deve essere il più simile possibile a quello specificato nel mockup & Completato \\
+\hline
+R.F.3.4  & Deve essere possibile per ogni utente poter scegliere il proprio tema & Non Completato \\
+\hline
+R.O.4    & Deve essere possibile configurare i parametri utilizzati dai moduli & Completato \\
+\hline
+R.O.4.1    & Deve essere possibile configurare le query utilizzate & Completato \\
+\hline
+R.O.4.2    & Deve essere possibile configurare i nomi delle cartelle create & Completato \\
+\hline
+\caption{Tabella del tracciamento dei requisti funzionali}
+\label{tab:requisiti-funzionali}
+\end{longtable}
+\endgroup
+
+Per riassumere, sono stati realizzati:
+\begin{itemize}
+\item il 100\% dei requisiti obbligatori (29/29)
+\item il  90\% dei requisiti desiderabili (8/9)
+\item il 	50\% dei requisiti facoltativi (3/6)
+\end{itemize}
