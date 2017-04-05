@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  2 APR 2017 21:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  5 APR 2017 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1543,7 +1543,7 @@ Package pdftex.def Info: immagini//architettura/architettura3.png used on input
  line 98.
 (pdftex.def)             Requested size: 372.0pt x 420.27681pt.
  [15]
-<immagini//architettura/architettura2.png, id=324, 838.13126pt x 722.7pt>
+<immagini//architettura/architettura2.png, id=326, 838.13126pt x 722.7pt>
 File: immagini//architettura/architettura2.png Graphic file (type png)
 
 <use immagini//architettura/architettura2.png>
@@ -1551,7 +1551,7 @@ Package pdftex.def Info: immagini//architettura/architettura2.png used on input
  line 117.
 (pdftex.def)             Requested size: 372.0pt x 320.76791pt.
  [16 <./immagini//architettura/architettura3.png>]
-<immagini//architettura/dev-extensions-share-architecture.png, id=333, 1353.055
+<immagini//architettura/dev-extensions-share-architecture.png, id=335, 1353.055
 pt x 714.67pt>
 File: immagini//architettura/dev-extensions-share-architecture.png Graphic file
  (type png)
@@ -1561,7 +1561,7 @@ Package pdftex.def Info: immagini//architettura/dev-extensions-share-architectu
 re.png used on input line 134.
 (pdftex.def)             Requested size: 372.0pt x 196.48578pt.
 
-<immagini//architettura/dev-platform-integration-architecture.png, id=334, 1405
+<immagini//architettura/dev-platform-integration-architecture.png, id=336, 1405
 .25pt x 913.4125pt>
 File: immagini//architettura/dev-platform-integration-architecture.png Graphic 
 file (type png)
@@ -1571,7 +1571,7 @@ Package pdftex.def Info: immagini//architettura/dev-platform-integration-archit
 ecture.png used on input line 139.
 (pdftex.def)             Requested size: 372.0pt x 241.80228pt.
 
-<immagini//architettura/dev-repo-extension-points.png, id=335, 1412.27625pt x 8
+<immagini//architettura/dev-repo-extension-points.png, id=337, 1412.27625pt x 8
 43.15pt>
 File: immagini//architettura/dev-repo-extension-points.png Graphic file (type p
 ng)
@@ -1609,7 +1609,7 @@ nput line 224.
 ]
 Capitolo 5.
 
-<immagini//diagrammi_cartelle/FolderClienti.png, id=412, 4013.99625pt x 4118.38
+<immagini//diagrammi_cartelle/FolderClienti.png, id=414, 4013.99625pt x 4118.38
 625pt>
 File: immagini//diagrammi_cartelle/FolderClienti.png Graphic file (type png)
  <use immagini//diagrammi_cartelle/FolderClienti.png>
@@ -1631,7 +1631,7 @@ Underfull \vbox (badness 2409) has occurred while \output is active []
 ]
 Capitolo 6.
 
-<immagini//diagrammi_cartelle/progettifolder.png, id=581, 4013.99625pt x 3996.9
+<immagini//diagrammi_cartelle/progettifolder.png, id=583, 4013.99625pt x 3996.9
 325pt>
 File: immagini//diagrammi_cartelle/progettifolder.png Graphic file (type png)
  <use immagini//diagrammi_cartelle/progettifolder.png>
@@ -1648,7 +1648,7 @@ Capitolo 7.
 [45
 
 ]
-<immagini//diagrammi_cartelle/temifolder.png, id=697, 4013.99625pt x 5394.1525p
+<immagini//diagrammi_cartelle/temifolder.png, id=699, 4013.99625pt x 5394.1525p
 t>
 File: immagini//diagrammi_cartelle/temifolder.png Graphic file (type png)
  <use immagini//diagrammi_cartelle/temifolder.png>
@@ -1662,14 +1662,13 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
 
 ]
 Capitolo 8.
-[51]) (./capitoli/capitolo-A.tex) [52] (.\/tesi.gls) (.\/tesi.acr [53
+[51]) (./capitoli/capitolo-A.tex) [52] (.\/tesi.gls [53
 
 
 
-] [54
-
-])
+]) (.\/tesi.acr [54])
 (./inizio-fine/bibliografia.tex [55
+
 
 ] [56
 
@@ -1686,11 +1685,11 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29056 strings out of 493013
- 474429 string characters out of 6136993
- 1239855 words of memory out of 5000000
- 31466 multiletter control sequences out of 15000+600000
- 33906 words of font info for 132 fonts, out of 8000000 for 9000
+ 29151 strings out of 493013
+ 476413 string characters out of 6136993
+ 1243450 words of memory out of 5000000
+ 31556 multiletter control sequences out of 15000+600000
+ 34025 words of font info for 133 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,9n,122p,1931b,3845s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
@@ -1720,10 +1719,10 @@ c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive
 f-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1000.pfb>
-Output written on .\/tesi.pdf (65 pages, 2810471 bytes).
+Output written on .\/tesi.pdf (65 pages, 2813636 bytes).
 PDF statistics:
- 1255 PDF objects out of 1440 (max. 8388607)
- 1124 compressed objects within 12 object streams
- 422 named destinations out of 1000 (max. 500000)
+ 1266 PDF objects out of 1440 (max. 8388607)
+ 1134 compressed objects within 12 object streams
+ 425 named destinations out of 1000 (max. 500000)
  41558 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -302,7 +302,7 @@ La classe si compone delle seguenti funzioni:
 \item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties.
 \item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del webscript e che contiene le istruzioni per gestirla.
 \item \texttt{execute(Connection con, String query)}, metodo che esegue la query.
-\item \texttt{create\_folder\_tree(String ID, String descr,Boolean box1, Boolean box2, Boolean box3, Boolean box4, Boolean box5)}, metodo che si occupa di creare la cartellatura di un nuovo cliente, di settare i permessi alle cartelle e di settare la descrizione della cartella padre.
+\item \texttt{create\_folder\_tree(String ID, String descr,Boolean box1, Boolean box2, Boolean box3, Boolean box4, Boolean box5)}, metodo che si occupa di creare le cartelle relative ad un nuovo cliente, di settarne i permessi e di settare la descrizione della cartella padre.
 \end{itemize}
 \paragraph{TablePageGenerator.java}
 Questo webscript, situato in \texttt{TablePageGenerator.java} e dalla pagina definita in \texttt{TablePageGenerator.post.desc.xml} e in \texttt{TablePageGenerator.post.html.ftl}  si occupa di generare la tabella dello storico di un determinato codice cliente, fornito come parametro della chiamata AJAX. Si appoggia sulla query definita alla voce queryselection.

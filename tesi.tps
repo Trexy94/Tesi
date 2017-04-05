@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
-Class=BibTeXView
-Document=bibliografia.bib
+NormalPos.right=1017
+NormalPos.bottom=319
+Class=LaTeXView
+Document=capitoli\capitolo-4.tex
 
 [Frame0_View0,0]
-TopLine=0
-Cursor=960
+TopLine=124
+Cursor=5710
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=tesi-config.tex
+Document=inizio-fine\ringraziamenti.tex
 
 [Frame1_View0,0]
-TopLine=41
-Cursor=2293
+TopLine=0
+Cursor=104
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=inizio-fine\sommario.tex
+Document=capitoli\capitolo-7.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=262
+TopLine=45
+Cursor=3345
 
 [Frame3]
 Flags=0
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=capitoli\capitolo-A.tex
+Document=glossario.tex
 
 [Frame3_View0,0]
-TopLine=0
-Cursor=306
+TopLine=98
+Cursor=5703
 
 [Frame4]
 Flags=0
@@ -83,14 +83,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=inizio-fine\dedica.tex
+Document=capitoli\capitolo-1.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=347
+TopLine=28
+Cursor=3819
 
 [Frame5]
 Flags=0
@@ -101,14 +101,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=inizio-fine\bibliografia.tex
+Document=tesi.tex
 
 [Frame5_View0,0]
-TopLine=0
-Cursor=301
+TopLine=123
+Cursor=6079
 
 [Frame6]
 Flags=0
@@ -119,14 +119,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=capitoli\capitolo-6.tex
+Document=capitoli\capitolo-6b.tex
 
 [Frame6_View0,0]
-TopLine=246
-Cursor=573
+TopLine=115
+Cursor=7266
 
 [Frame7]
 Flags=0
@@ -137,14 +137,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=capitoli\capitolo-2.tex
+Document=capitoli\capitolo-6.tex
 
 [Frame7_View0,0]
-TopLine=172
-Cursor=11408
+TopLine=298
+Cursor=20593
 
 [Frame8]
 Flags=0
@@ -155,14 +155,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=capitoli\capitolo-4.tex
+Document=capitoli\capitolo-2.tex
 
 [Frame8_View0,0]
-TopLine=78
-Cursor=3084
+TopLine=56
+Cursor=4378
 
 [Frame9]
 Flags=0
@@ -173,14 +173,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=capitoli\capitolo-1.tex
+Document=capitoli\capitolo-5.tex
 
 [Frame9_View0,0]
-TopLine=29
-Cursor=3819
+TopLine=430
+Cursor=23369
 
 [Frame10]
 Flags=0
@@ -191,14 +191,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=capitoli\capitolo-5.tex
+Document=inizio-fine\bibliografia.tex
 
 [Frame10_View0,0]
-TopLine=375
-Cursor=9035
+TopLine=0
+Cursor=301
 
 [Frame11]
 Flags=0
@@ -209,14 +209,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=capitoli\capitolo-6b.tex
+Document=inizio-fine\dedica.tex
 
 [Frame11_View0,0]
-TopLine=32
-Cursor=1792
+TopLine=0
+Cursor=347
 
 [Frame12]
 Flags=0
@@ -227,14 +227,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=capitoli\capitolo-7.tex
+Document=capitoli\capitolo-A.tex
 
 [Frame12_View0,0]
-TopLine=29
-Cursor=3157
+TopLine=0
+Cursor=306
 
 [Frame13]
 Flags=0
@@ -245,14 +245,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=capitoli\capitolo-3.tex
+Document=inizio-fine\sommario.tex
 
 [Frame13_View0,0]
-TopLine=0
-Cursor=2678
+TopLine=6
+Cursor=262
 
 [Frame14]
 Flags=0
@@ -263,14 +263,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
+NormalPos.right=1017
+NormalPos.bottom=319
 Class=LaTeXView
-Document=inizio-fine\ringraziamenti.tex
+Document=tesi-config.tex
 
 [Frame14_View0,0]
-TopLine=0
-Cursor=541
+TopLine=42
+Cursor=2293
 
 [Frame15]
 Flags=0
@@ -281,18 +281,18 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1167
-NormalPos.bottom=556
-Class=LaTeXView
-Document=tesi.tex
+NormalPos.right=1017
+NormalPos.bottom=319
+Class=BibTeXView
+Document=bibliografia.bib
 
 [Frame15_View0,0]
-TopLine=3
-Cursor=6079
+TopLine=0
+Cursor=960
 
 [SessionInfo]
 FrameCount=16
-ActiveFrame=7
+ActiveFrame=3
 
 [Bookmarks]
 glossario.tex=13 

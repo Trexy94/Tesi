@@ -13,9 +13,9 @@
 
 \intro{In questo capitolo verrà esposta l'implementazione e le fasi che hanno portato la creazione del modulo progetti}\\
 
-\section{Scopo del modulo} il modulo progetti, come quello clienti, si pone come scopo quello di creare un semplice sistema di CRUD in un database. Anche in questo caso valgono le considerazioni fatte riguardo al DB e in più è stata richiesta la possibilità di inviare mail a coloro i quali è stato assegnato il progetto e la assegnazione intelligente dei permessi di visualizzazione delle cartelle create a coloro i quali è stato assegnato un progetto.\\
+\section{Scopo del modulo} Il modulo progetti, come quello clienti, si pone come scopo quello di creare un semplice sistema di CRUD in un database. Anche in questo caso valgono le considerazioni fatte riguardo al DB e in più è stata richiesta la possibilità di inviare mail a coloro i quali è stato assegnato il progetto e la assegnazione intelligente dei permessi di visualizzazione delle cartelle create a coloro i quali è stato assegnato un progetto.\\
 
-Questo modulo si basa fortemente sulle tecniche e le funzioni già implementate e descritte durante l'esposizione del precedente modulo, tuttavia si è cercato di eseguire la  maggior parte del lavoro di composizione delle pagine tramite >JavaScript, per testare la velocità di questa soluzione rispetto a quella adottata prima sia in termini di prestazioni che di tempi di sviluppo. Inoltre è stata inserita una integrazione con LDAP.
+Questo modulo si basa fortemente sulle tecniche e le funzioni già implementate e descritte durante l'esposizione del precedente modulo, tuttavia si è cercato di eseguire la  maggior parte del lavoro di composizione delle pagine tramite JavaScript, per testare la velocità di questa soluzione rispetto a quella adottata prima sia in termini di prestazioni che di tempi di sviluppo. Inoltre è stata inserita una integrazione con LDAP.
 
 Il progetto punta a sfruttare il modulo di inserimento dei clienti per aggiungere nuove funzionalità.
 A tale scopo, anche il modulo riguardante i clienti andrebbe aggiornato, per sfruttare tutte le funzionalità introdotte. Tuttavia il modulo clienti è completamente funzionante anche stand alone, mentre il modulo di un nuovo progetto è pensato per funzionare in abbinamento con il modulo della gestione dei clienti e necessita di esso.
@@ -118,7 +118,7 @@ Il CSS è invece situato nel file \texttt{workers.css}  e il JavaScript nel file
 \end{itemize}
 
 \subsubsection{Pagina di inserimento di un progetto}
-La pagina si occupa di inserire i dati relativi al progetto, a coloro ai quali è assegnato e a creare la cartellatura desiderata assegnando i permessi di visione alla sola cartella tecnica a coloro ai quali è stata assegnato il progetto.
+La pagina si occupa di inserire i dati relativi al progetto, a coloro ai quali è assegnato e a creare l'insieme delle cartelle desiderate assegnando i permessi di visione alla sola cartella tecnica a coloro ai quali è stata assegnato il progetto.
 La pagina che si occupa di inserire un progetto e dove è possibile assegnare utenti (viene fornita una lista di quelli presenti nell’LDAP) ad un determinato progetto è definita nella sua parte statica dai file
 \begin{itemize}
 \item \texttt{progetti.get.desc.xml}
@@ -140,14 +140,14 @@ Il JavaScript utilizza le variabili globali  \texttt{buttons\_unassigned},\textt
 \end{itemize}
 
 \subsubsection{Parte Repo}
-In questo modulo, rispetto a quello precedente descritto e come già accennato, si è cercato di ridurre il carico nella parte repo per spostare le computazioni relative alla generazione del codice nel JavaScript.
+In questo modulo, rispetto a quello precedentemente descritto, si è cercato di ridurre il carico nella parte repo per spostare le operazioni relative alla generazione del codice HTML necessarie per generare il codice delle tabelle nel JavaScript.\\
 Tuttavia è stata necessaria l’implementazione di cinque classi Java, necessarie a interfacciarsi con i vari componenti del backend, che verranno elencate a seguito (verranno omesse le pagine e i file di configurazione dei webscript, in quanto l'implementazione, a parte il nome, è speculare a quanto già presentato nel capitolo precedente).\\
-\emph{È importante ricordarsi, se si utilizza la response per ritornare codice HTML o stringhe qualsiasi, di includere il codice riportato al listato \ref{lst:fix} per settare la response correttamente}
+\emph{È importante ricordarsi, se si utilizza la response per ritornare codice HTML o stringhe qualsiasi, di includere il codice riportato al listato \ref{lst:fix} per settare la response correttamente}.
 \begin{lstlisting}[language=Java, caption=set dell'encoding,label=lst:fix]
 res.setContentType("text/html; charset=UTF-8");
 res.setContentEncoding("UTF-8");
 \end{lstlisting}
-Altrimenti la codifica dei caratteri non riesce in maniera corretta.
+ Altrimenti la codifica dei caratteri non riesce in maniera corretta.
 \paragraph{Clienti.java}
 Questa pagina è chiamata senza parametri tramite richiesta POST al webscript “clienti” dalla funzione “setup()” della pagina “progetti”, e si occupa di ritornare il codice HTML necessario a generare un select con i clienti, recuperati dal database, tra le varie option.
 Si compone delle seguenti funzioni:
@@ -168,7 +168,7 @@ Questa pagina è chiamata senza parametri tramite richiesta POST al webscript �
 \item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)}, metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata AAJAX del webscript e che contiene le istruzioni per gestirla.
 \end{itemize}
 \paragraph{GetWorkers.java}
-Questa pagina è chiamata senza parametri tramite richies\_ta POST al webscript “GetWorkers” dalla funzione “setup()” della pagina “dipendenti”. Essa si occupa di ritornare il risultato dell’interrogazione della tabella lavoratori, con il valore delle varie celle separati da un opportuno separatore e le righe separate da un diverso separatore. Ciò permette in seguito al codice JavaScript di ricomporla in un array di array di stringhe  che è possibile iterare.
+Questa pagina è chiamata senza parametri tramite richiesta POST al webscript “GetWorkers” dalla funzione “setup()” della pagina “dipendenti”. Essa si occupa di ritornare il risultato dell’interrogazione della tabella lavoratori, con il valore delle varie celle separati da un opportuno separatore e le righe separate da un diverso separatore. Ciò permette in seguito al codice JavaScript di ricomporla in un array di array di stringhe  che è possibile iterare.
 Esso si compone delle seguenti funzioni:
 \begin{itemize}
 \item \texttt{getValue(String value)}, che recupera una property con una data value
@@ -178,18 +178,18 @@ Esso si compone delle seguenti funzioni:
 \item \texttt{writedata(ResultSet rs, String result, Connection con)}, metodo che si occupa di formare la stringa di risposta che corrisponde ai criteri descritti prima.
 \end{itemize}
 \paragraph{Project\_creator.java}
-Questa pagina è chiamata con svariati parametri tramite richiesta POST al webscript “project\_creator” dalla funzione “sendRequest()” della pagina “progetti”. È la classe più corposa implementata in tutto il progetto. In quanto si occupa di gestire l’inserimento di un nuovo progetto nel DB e di crearne la cartellatura corrispondente, assegnando nel mentre i permessi di accesso e modifica alla sola cartella di documentazione tecnica (e suoi figli) a coloro ai quali è stato assegnato il progetto, in addizione ai gruppi ai quali i permessi vengono invece dati di default.
+Questa pagina è chiamata con svariati parametri tramite richiesta POST al webscript “project\_creator” dalla funzione “sendRequest()” della pagina “progetti”. È la classe più corposa implementata in tutto il progetto. In quanto si occupa di gestire l’inserimento di un nuovo progetto nel DB e di creare le cartelle corrispondenti, assegnando nel mentre i permessi di accesso e modifica alla sola cartella di documentazione tecnica (e suoi figli) a coloro ai quali è stato assegnato il progetto, in addizione ai gruppi ai quali i permessi vengono invece dati di default.
 Essa si compone delle seguenti funzioni:
 \begin{itemize}
 \item \texttt{private void inizialize\_values()} che inizializza i valori dei vari parametri ottenuti dalle properties.
 \item \texttt{public static final String getValue(String value)} che ritorna il valore della property passata come argomento alla funzione.
 \item \texttt{public void give\_permissions(String[]users, String permission,NodeRef nodeRef, PermissionService permissionService)} che è usata per dare i permessi all’array di stringhe contenente la lista degli utenti a cui è stato assegnato il progetto.\\
-\emph{Dato che è possibile inserire utenti non LDAP e non di Alfresco, può succedere che l’utente a cui si danno i permessi non sia registrato da nessuna parte. Ciò non rompe nulla in quanto Alfresco lo rappresenta nella lista dei permessi con uno spazio bianco fino al momento in cui non viene definito un utente con quello username. In quel momento comparirà il nome. Ciò è stato verificato provandolo effettivamente nell’Alfresco di test. Quindi il seguente caso è tollerato, anche se non è consigliabile ricorrere a questa pratica.}
+\emph{Dato che è possibile inserire utenti non LDAP e non di Alfresco, può succedere che l’utente a cui si danno i permessi non sia registrato da nessuna parte. Ciò non provoca problemi nel sistema in quanto Alfresco lo rappresenta nella lista dei permessi con uno spazio bianco fino al momento in cui non viene definito un utente con quello username. In quel momento comparirà il nome. Ciò è stato verificato provandolo effettivamente nell’Alfresco di test. Quindi il seguente caso è tollerato, anche se non è consigliabile ricorrere a questa pratica.}
 \item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)}, che viene invocato alla chiamata AJAX e si occupa di invocare e gestire le varie operazioni compiute.
 \item \texttt{private void execute(Connection con, String query)}, che esegue l’inserimento del record nelle tabelle relative agli impiegati e ai progetti.
-\item \texttt{private void create\_folder\_tree(String ID, String descr, String[] workers)}, che crea iterativamente l’albero della cartellatura assegnando i permessi di default e invocando \texttt{give\_permissions} alla creazione della cartella relativa alla documentazione tecnica.
+\item \texttt{private void create\_folder\_tree(String ID, String descr, String[] workers)}, che crea iterativamente l’albero delle cartelle da istanziare assegnando i permessi di default e invocando \texttt{give\_permissions} alla creazione della cartella relativa alla documentazione tecnica.
 \end{itemize}
-\paragraph{SendMails.java}, che si occupa di mandare un messaggio a tutte le mail di una lista, entrambe date in input alla chiamata del servizio. Questa funzione una le API di Alfresco, nello specifico il mailAction, che viene istanziato con il codice visibile al listato \ref{lst:mail}
+\paragraph{SendMails.java} che si occupa di mandare un messaggio a tutte le mail di una lista, entrambe date in input alla chiamata del servizio. Questa funzione usa le API di Alfresco, nello specifico il mailAction, che viene istanziato con il codice visibile al listato \ref{lst:mail}
 \begin{lstlisting}[language=Java,caption=set dell'actionservice per le mail,label=lst:mail]
  ActionService actionService = serviceRegistry.getActionService();
  Action mailAction = actionService.createAction(MailActionExecuter.NAME);
@@ -197,6 +197,6 @@ Essa si compone delle seguenti funzioni:
 Dal servizio si possono configurare numerosi parametri quali il mittente, il CC, il CCN e praticamente tutti i parametri di una normale mail.
 La classe è composta solo dalla funzione \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)}, che è quella chiamata automaticamente quando si richiede il servizio e che si occupa di gestire l'aggiunta dei vari destinatari e dei parametri della mail, oltre ovviamente al suo invio.
 \section{Aspetto estetico}
-dato che il sistema non è stato ancora dotato delle funzionalità di update e delete, non si è ritenuto di procedere ad allinearlo con il tema Coral Tree per il momento, quindi non sono stati prodotti mockup. È stato chiesto però di rendere gradevole la presentazione
+Dato che il sistema non è stato ancora dotato delle funzionalità di update e delete, non si è ritenuto di procedere ad allinearlo con il tema Coral Tree per il momento, quindi non sono stati prodotti mockup. È stato chiesto però di rendere gradevole la presentazione
 \subsection{risultati raggiunti}
 TODO:immagini
