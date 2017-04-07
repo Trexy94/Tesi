@@ -26,7 +26,7 @@ Nella figura \ref{fig:cartelle-progetti} si illustra in generale quanto è stato
 \includegraphics[width=\textwidth]{/diagrammi_cartelle/progettifolder.png}
 \caption{descrizione generale di quanto creato per il modulo relativo ai progetti\label{fig:cartelle-progetti}}
 \end{figure}
-\section{implementazione delle funzionalità}
+\section{Implementazione delle funzionalità}
 \subsection{Aggiunte al DB}
 Per il corretto funzionamento del modulo è stato necessario aggiungere le tabelle, il cui codice necessario per la loro generazione è riportato nei listati \ref{lst:table-progetti} e \ref{lst:table-lavoratori}
 \begin{lstlisting}[language=SQL,caption=codice per la tabella progetti, label=lst:table-progetti]
@@ -198,5 +198,5 @@ Dal servizio si possono configurare numerosi parametri quali il mittente, il CC,
 La classe è composta solo dalla funzione \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)}, che è quella chiamata automaticamente quando si richiede il servizio e che si occupa di gestire l'aggiunta dei vari destinatari e dei parametri della mail, oltre ovviamente al suo invio.
 \section{Aspetto estetico}
 Dato che il sistema non è stato ancora dotato delle funzionalità di update e delete, non si è ritenuto di procedere ad allinearlo con il tema Coral Tree per il momento, quindi non sono stati prodotti mockup. È stato chiesto però di rendere gradevole la presentazione
-\subsection{risultati raggiunti}
+\subsection{Risultati raggiunti}
 TODO:immagini
