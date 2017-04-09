@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  9 APR 2017 19:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  9 APR 2017 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1808,11 +1808,11 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29275 strings out of 493013
- 479767 string characters out of 6136993
- 1244740 words of memory out of 5000000
+ 29273 strings out of 493013
+ 479745 string characters out of 6136993
+ 1244715 words of memory out of 5000000
  31634 multiletter control sequences out of 15000+600000
- 34263 words of font info for 135 fonts, out of 8000000 for 9000
+ 34144 words of font info for 134 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,9n,122p,1931b,3845s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
@@ -1842,7 +1842,7 @@ c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive
 f-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1000.pfb>
-Output written on .\/tesi.pdf (73 pages, 6831803 bytes).
+Output written on .\/tesi.pdf (73 pages, 6831780 bytes).
 PDF statistics:
  1370 PDF objects out of 1440 (max. 8388607)
  1215 compressed objects within 13 object streams
