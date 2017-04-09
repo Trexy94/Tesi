@@ -6,7 +6,7 @@ Version=4
 MainFile=tesi.tex
 UseBibTeX=0
 UseMakeIndex=0
-ActiveProfile=
+ActiveProfile=LaTeX ⇨ DVI ⇨ PDF
 ProjectLanguage=it
 ProjectDialect=IT
 

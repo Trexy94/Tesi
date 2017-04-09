@@ -102,13 +102,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Presentazione generale del modulo}{25}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}implementazione delle funzionalit\IeC {\`a}}{26}{section.5.3}
+\contentsline {section}{\numberline {5.3}Implementazione delle funzionalit\IeC {\`a}}{26}{section.5.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.1}Preparazione del DB}{26}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.2}Creazione della parte share}{27}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{pagina Clienti}{28}{section*.28}
+\contentsline {subsubsection}{Pagina clienti}{28}{section*.28}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Pagina vis\_clienti}{28}{section*.29}
 \defcounter {refsection}{0}\relax 
@@ -132,7 +132,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.4}Aspetto estetico}{34}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}risultati raggiunti}{35}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.1}Risultati raggiunti}{35}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Il modulo progetti}{37}{chapter.6}
 \defcounter {refsection}{0}\relax 
@@ -140,7 +140,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.2}Presentazione generale del modulo}{37}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}implementazione delle funzionalit\IeC {\`a}}{38}{section.6.3}
+\contentsline {section}{\numberline {6.3}Implementazione delle funzionalit\IeC {\`a}}{38}{section.6.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.3.1}Aggiunte al DB}{38}{subsection.6.3.1}
 \defcounter {refsection}{0}\relax 
@@ -148,58 +148,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.3.3}Parte share}{40}{subsection.6.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pagina di visualizzazione dei progetti}{40}{section*.39}
+\contentsline {subsubsection}{Pagina di visualizzazione dei progetti}{40}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pagina di inserimento di un progetto}{41}{section*.40}
+\contentsline {subsubsection}{Pagina di inserimento di un progetto}{41}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parte Repo}{42}{section*.41}
+\contentsline {subsubsection}{Parte Repo}{42}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Clienti.java}{42}{section*.42}
+\contentsline {paragraph}{Clienti.java}{42}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{GetUsers.java}{42}{section*.43}
+\contentsline {paragraph}{GetUsers.java}{42}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{GetWorkers.java}{43}{section*.44}
+\contentsline {paragraph}{GetWorkers.java}{43}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Project\_creator.java}{43}{section*.45}
+\contentsline {paragraph}{Project\_creator.java}{43}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{SendMails.java}{44}{section*.46}
+\contentsline {paragraph}{SendMails.java}{44}{section*.49}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.4}Aspetto estetico}{44}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.1}risultati raggiunti}{44}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.1}Risultati raggiunti}{44}{subsection.6.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Il modulo tema}{45}{chapter.7}
+\contentsline {chapter}{\numberline {7}Il modulo tema}{47}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Scopo del modulo}{45}{section.7.1}
+\contentsline {section}{\numberline {7.1}Scopo del modulo}{47}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Realizzazione}{45}{section.7.2}
+\contentsline {section}{\numberline {7.2}Realizzazione}{47}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{45}{section*.47}
+\contentsline {paragraph}{}{47}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{46}{section*.48}
+\contentsline {paragraph}{}{48}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}File aggiunti nel modulo}{46}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.1}File aggiunti nel modulo}{48}{subsection.7.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Diagramma delle cartelle}{46}{section*.49}
+\contentsline {subsubsection}{Diagramma delle cartelle}{48}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{File di funzionalit\IeC {\`a}}{48}{section*.51}
+\contentsline {subsubsection}{File di funzionalit\IeC {\`a}}{50}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{File di stile}{49}{section*.52}
+\contentsline {subsubsection}{File di stile}{51}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Lato estetico}{49}{section.7.3}
+\contentsline {section}{\numberline {7.3}Aspetto estetico}{51}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}Risultati ottenuti}{49}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.1}Risultati raggiunti}{51}{subsection.7.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusioni}{51}{chapter.8}
+\contentsline {chapter}{\numberline {8}Conclusioni}{57}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Prospettive future}{51}{section.8.1}
+\contentsline {section}{\numberline {8.1}Prospettive future}{57}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Difficolt\IeC {\`a} e limiti riscontrati}{51}{section.8.2}
+\contentsline {section}{\numberline {8.2}Difficolt\IeC {\`a} e limiti riscontrati}{57}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Considerazioni personali}{52}{section.8.3}
+\contentsline {section}{\numberline {8.3}Considerazioni personali}{58}{section.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossary}{53}{section*.53}
+\contentsline {chapter}{Glossary}{59}{section*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{55}{section*.55}
+\contentsline {chapter}{Acronyms}{61}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{57}{appendix*.57}
+\contentsline {chapter}{Bibliografia}{63}{appendix*.71}
