@@ -189,7 +189,7 @@ Essa si compone delle seguenti funzioni:
 \item \texttt{private void execute(Connection con, String query)}, che esegue l’inserimento del record nelle tabelle relative agli impiegati e ai progetti.
 \item \texttt{private void create\_folder\_tree(String ID, String descr, String[] workers)}, che crea iterativamente l’albero delle cartelle da istanziare assegnando i permessi di default e invocando \texttt{give\_permissions} alla creazione della cartella relativa alla documentazione tecnica.
 \end{itemize}
-\paragraph{SendMails.java} che si occupa di mandare un messaggio a tutte le mail di una lista, entrambe date in input alla chiamata del servizio. Questa funzione usa le API di Alfresco, nello specifico il mailAction, che viene istanziato con il codice visibile al listato \ref{lst:mail}
+\paragraph{SendMails.java} che si occupa di mandare un messaggio a tutte le mail di una lista, entrambe date in input alla chiamata del servizio. Questa funzione usa le \gls{API} di Alfresco, nello specifico il mailAction, che viene istanziato con il codice visibile al listato \ref{lst:mail}
 \begin{lstlisting}[language=Java,caption=set dell'actionservice per le mail,label=lst:mail]
  ActionService actionService = serviceRegistry.getActionService();
  Action mailAction = actionService.createAction(MailActionExecuter.NAME);
