@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  9 APR 2017 21:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  9 APR 2017 22:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1493,7 +1493,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \vbox (badness 2197) has occurred while \output is active []
+Underfull \vbox (badness 6220) has occurred while \output is active []
 
  [1
 
@@ -1539,7 +1539,7 @@ Underfull \vbox (badness 1014) has occurred while \output is active []
 
 ]
 Capitolo 4.
-<immagini//architettura/architettura3.png, id=359, 603.25375pt x 681.54625pt>
+<immagini//architettura/architettura3.png, id=360, 603.25375pt x 681.54625pt>
 File: immagini//architettura/architettura3.png Graphic file (type png)
 
 <use immagini//architettura/architettura3.png>
@@ -1547,18 +1547,15 @@ Package pdftex.def Info: immagini//architettura/architettura3.png used on input
  line 98.
 (pdftex.def)             Requested size: 372.0pt x 420.27681pt.
  [15]
-<immagini//architettura/architettura2.png, id=371, 838.13126pt x 722.7pt>
+<immagini//architettura/architettura2.png, id=372, 838.13126pt x 722.7pt>
 File: immagini//architettura/architettura2.png Graphic file (type png)
 
 <use immagini//architettura/architettura2.png>
 Package pdftex.def Info: immagini//architettura/architettura2.png used on input
  line 117.
 (pdftex.def)             Requested size: 372.0pt x 320.76791pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [16 <./immagini//architettura/architettura3.png>]
-<immagini//architettura/dev-extensions-share-architecture.png, id=381, 1353.055
+<immagini//architettura/dev-extensions-share-architecture.png, id=382, 1353.055
 pt x 714.67pt>
 File: immagini//architettura/dev-extensions-share-architecture.png Graphic file
  (type png)
@@ -1568,7 +1565,7 @@ Package pdftex.def Info: immagini//architettura/dev-extensions-share-architectu
 re.png used on input line 134.
 (pdftex.def)             Requested size: 372.0pt x 196.48578pt.
 
-<immagini//architettura/dev-platform-integration-architecture.png, id=382, 1405
+<immagini//architettura/dev-platform-integration-architecture.png, id=383, 1405
 .25pt x 913.4125pt>
 File: immagini//architettura/dev-platform-integration-architecture.png Graphic 
 file (type png)
@@ -1578,7 +1575,7 @@ Package pdftex.def Info: immagini//architettura/dev-platform-integration-archit
 ecture.png used on input line 139.
 (pdftex.def)             Requested size: 372.0pt x 241.80228pt.
 
-<immagini//architettura/dev-repo-extension-points.png, id=383, 1412.27625pt x 8
+<immagini//architettura/dev-repo-extension-points.png, id=384, 1412.27625pt x 8
 43.15pt>
 File: immagini//architettura/dev-repo-extension-points.png Graphic file (type p
 ng)
@@ -1616,7 +1613,7 @@ nput line 224.
 ]
 Capitolo 5.
 
-<immagini//diagrammi_cartelle/FolderClienti.png, id=461, 4013.99625pt x 4118.38
+<immagini//diagrammi_cartelle/FolderClienti.png, id=462, 4013.99625pt x 4118.38
 625pt>
 File: immagini//diagrammi_cartelle/FolderClienti.png Graphic file (type png)
  <use immagini//diagrammi_cartelle/FolderClienti.png>
@@ -1633,15 +1630,15 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 Underfull \vbox (badness 2409) has occurred while \output is active []
 
  [30]
-[31] [32] [33] [34]
-<immagini/nuove_immagini/cliente-insert.jpg, id=628, 1347.0325pt x 623.32875pt>
+[31] [32] [33]
+<immagini/nuove_immagini/cliente-insert.jpg, id=621, 1347.0325pt x 623.32875pt>
 File: immagini/nuove_immagini/cliente-insert.jpg Graphic file (type jpg)
 <use immagini/nuove_immagini/cliente-insert.jpg>
 Package pdftex.def Info: immagini/nuove_immagini/cliente-insert.jpg used on inp
 ut line 334.
 (pdftex.def)             Requested size: 372.0pt x 172.14354pt.
 
-<immagini/nuove_immagini/clienti-lista.jpg, id=629, 1355.0625pt x 229.85875pt>
+<immagini/nuove_immagini/clienti-lista.jpg, id=622, 1355.0625pt x 229.85875pt>
 File: immagini/nuove_immagini/clienti-lista.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/clienti-lista.jpg>
@@ -1649,7 +1646,7 @@ Package pdftex.def Info: immagini/nuove_immagini/clienti-lista.jpg used on inpu
 t line 339.
 (pdftex.def)             Requested size: 372.0pt x 63.10086pt.
 
-<immagini/nuove_immagini/cliente-detail.jpg, id=630, 1333.98375pt x 627.34375pt
+<immagini/nuove_immagini/cliente-detail.jpg, id=623, 1333.98375pt x 627.34375pt
 >
 File: immagini/nuove_immagini/cliente-detail.jpg Graphic file (type jpg)
  <use immagini/nuove_immagini/cliente-detail.jpg>
@@ -1657,25 +1654,25 @@ Package pdftex.def Info: immagini/nuove_immagini/cliente-detail.jpg used on inp
 ut line 344.
 (pdftex.def)             Requested size: 372.0pt x 174.9371pt.
 ) (./capitoli/capitolo-6.tex
-[35 <./immagini/nuove_immagini/cliente-insert.jpg> <./immagini/nuove_immagini/c
-lienti-lista.jpg>] [36 <./immagini/nuove_immagini/cliente-detail.jpg>]
+[34] [35 <./immagini/nuove_immagini/cliente-insert.jpg> <./immagini/nuove_immag
+ini/clienti-lista.jpg> <./immagini/nuove_immagini/cliente-detail.jpg>] [36
+
+]
 Capitolo 6.
 
-<immagini//diagrammi_cartelle/progettifolder.png, id=640, 4013.99625pt x 3996.9
+<immagini//diagrammi_cartelle/progettifolder.png, id=639, 4013.99625pt x 3996.9
 325pt>
 File: immagini//diagrammi_cartelle/progettifolder.png Graphic file (type png)
  <use immagini//diagrammi_cartelle/progettifolder.png>
 Package pdftex.def Info: immagini//diagrammi_cartelle/progettifolder.png used o
 n input line 26.
 (pdftex.def)             Requested size: 372.0pt x 370.38135pt.
- [37
-
-]
+ [37]
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) [38 <./immagini//diagrammi_cartelle/progettifolder.png>] [39] [40] [41] [42] 
 [43]
-<immagini/nuove_immagini/progetti-sopra.jpg, id=746, 1349.04pt x 605.26125pt>
+<immagini/nuove_immagini/progetti-sopra.jpg, id=744, 1349.04pt x 605.26125pt>
 File: immagini/nuove_immagini/progetti-sopra.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/progetti-sopra.jpg>
@@ -1683,7 +1680,7 @@ Package pdftex.def Info: immagini/nuove_immagini/progetti-sopra.jpg used on inp
 ut line 205.
 (pdftex.def)             Requested size: 372.0pt x 166.89526pt.
 
-<immagini/nuove_immagini/progetti-sotto.jpg, id=747, 1346.02875pt x 650.43pt>
+<immagini/nuove_immagini/progetti-sotto.jpg, id=745, 1346.02875pt x 650.43pt>
 File: immagini/nuove_immagini/progetti-sotto.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/progetti-sotto.jpg>
@@ -1691,7 +1688,7 @@ Package pdftex.def Info: immagini/nuove_immagini/progetti-sotto.jpg used on inp
 ut line 210.
 (pdftex.def)             Requested size: 372.0pt x 179.75706pt.
 
-<immagini/nuove_immagini/workers.jpg, id=748, 1354.05875pt x 624.3325pt>
+<immagini/nuove_immagini/workers.jpg, id=746, 1354.05875pt x 624.3325pt>
 File: immagini/nuove_immagini/workers.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/workers.jpg>
@@ -1700,12 +1697,12 @@ Package pdftex.def Info: immagini/nuove_immagini/workers.jpg used on input line
 (pdftex.def)             Requested size: 372.0pt x 171.52525pt.
 ) (./capitoli/capitolo-6b.tex [44]
 [45 <./immagini/nuove_immagini/progetti-sopra.jpg> <./immagini/nuove_immagini/p
-rogetti-sotto.jpg> <./immagini/nuove_immagini/workers.jpg>] [46
+rogetti-sotto.jpg>] [46 <./immagini/nuove_immagini/workers.jpg>]
+Capitolo 7.
+[47
 
 ]
-Capitolo 7.
-[47]
-<immagini//diagrammi_cartelle/temifolder.png, id=775, 4013.99625pt x 5394.1525p
+<immagini//diagrammi_cartelle/temifolder.png, id=772, 4013.99625pt x 5394.1525p
 t>
 File: immagini//diagrammi_cartelle/temifolder.png Graphic file (type png)
  <use immagini//diagrammi_cartelle/temifolder.png>
@@ -1716,7 +1713,7 @@ put line 25.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 45.
  [50]
-<immagini/nuove_immagini/login.jpg, id=844, 1368.11125pt x 664.4825pt>
+<immagini/nuove_immagini/login.jpg, id=841, 1368.11125pt x 664.4825pt>
 File: immagini/nuove_immagini/login.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/login.jpg>
@@ -1724,7 +1721,7 @@ Package pdftex.def Info: immagini/nuove_immagini/login.jpg used on input line 1
 00.
 (pdftex.def)             Requested size: 372.0pt x 180.66992pt.
 
-<immagini/nuove_immagini/forgotpwd.jpg, id=845, 1370.11874pt x 657.45625pt>
+<immagini/nuove_immagini/forgotpwd.jpg, id=842, 1370.11874pt x 657.45625pt>
 File: immagini/nuove_immagini/forgotpwd.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/forgotpwd.jpg>
@@ -1732,7 +1729,7 @@ Package pdftex.def Info: immagini/nuove_immagini/forgotpwd.jpg used on input li
 ne 105.
 (pdftex.def)             Requested size: 372.0pt x 178.49869pt.
 
-<immagini/nuove_immagini/old-home.jpg, id=846, 1666.225pt x 944.52875pt>
+<immagini/nuove_immagini/old-home.jpg, id=843, 1666.225pt x 944.52875pt>
 File: immagini/nuove_immagini/old-home.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/old-home.jpg>
@@ -1740,7 +1737,7 @@ Package pdftex.def Info: immagini/nuove_immagini/old-home.jpg used on input lin
 e 110.
 (pdftex.def)             Requested size: 372.0pt x 210.86679pt.
 
-<immagini/nuove_immagini/home.jpg, id=847, 1349.04pt x 653.44125pt>
+<immagini/nuove_immagini/home.jpg, id=844, 1349.04pt x 653.44125pt>
 File: immagini/nuove_immagini/home.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/home.jpg>
@@ -1748,7 +1745,7 @@ Package pdftex.def Info: immagini/nuove_immagini/home.jpg used on input line 11
 5.
 (pdftex.def)             Requested size: 372.0pt x 180.18047pt.
 
-<immagini/nuove_immagini/old-site-home.jpg, id=848, 1668.2325pt x 945.5325pt>
+<immagini/nuove_immagini/old-site-home.jpg, id=845, 1668.2325pt x 945.5325pt>
 File: immagini/nuove_immagini/old-site-home.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/old-site-home.jpg>
@@ -1756,7 +1753,7 @@ Package pdftex.def Info: immagini/nuove_immagini/old-site-home.jpg used on inpu
 t line 120.
 (pdftex.def)             Requested size: 372.0pt x 210.84561pt.
 
-<immagini/nuove_immagini/site-home.jpg, id=849, 1352.05125pt x 654.445pt>
+<immagini/nuove_immagini/site-home.jpg, id=846, 1352.05125pt x 654.445pt>
 File: immagini/nuove_immagini/site-home.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/site-home.jpg>
@@ -1764,7 +1761,7 @@ Package pdftex.def Info: immagini/nuove_immagini/site-home.jpg used on input li
 ne 125.
 (pdftex.def)             Requested size: 372.0pt x 180.05782pt.
 
-<immagini/nuove_immagini/old-raccolta.jpg, id=850, 1670.24pt x 946.53625pt>
+<immagini/nuove_immagini/old-raccolta.jpg, id=847, 1670.24pt x 946.53625pt>
 File: immagini/nuove_immagini/old-raccolta.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/old-raccolta.jpg>
@@ -1772,7 +1769,7 @@ Package pdftex.def Info: immagini/nuove_immagini/old-raccolta.jpg used on input
  line 130.
 (pdftex.def)             Requested size: 372.0pt x 210.80946pt.
 
-<immagini/nuove_immagini/raccolta.jpg, id=851, 1350.04375pt x 628.3475pt>
+<immagini/nuove_immagini/raccolta.jpg, id=848, 1350.04375pt x 628.3475pt>
 File: immagini/nuove_immagini/raccolta.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/raccolta.jpg>
@@ -1811,10 +1808,10 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29273 strings out of 493013
- 479745 string characters out of 6136993
- 1244715 words of memory out of 5000000
- 31634 multiletter control sequences out of 15000+600000
+ 29274 strings out of 493013
+ 479756 string characters out of 6136993
+ 1244611 words of memory out of 5000000
+ 31635 multiletter control sequences out of 15000+600000
  34144 words of font info for 134 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,9n,122p,1931b,3845s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1845,10 +1842,10 @@ c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive
 f-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1000.pfb>
-Output written on .\/tesi.pdf (73 pages, 6832720 bytes).
+Output written on .\/tesi.pdf (73 pages, 6832766 bytes).
 PDF statistics:
  1393 PDF objects out of 1440 (max. 8388607)
  1238 compressed objects within 13 object streams
  450 named destinations out of 1000 (max. 500000)
- 41636 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 41644 words of extra memory for PDF output out of 42996 (max. 10000000)
 

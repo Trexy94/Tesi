@@ -139,7 +139,7 @@ Il JavaScript utilizza le variabili globali  \texttt{buttons\_unassigned},\textt
 \item \texttt{aggiungi()}, che si occupa di gestire il popup per il pulsante di aggiunta di un nuovo utente assegnatario del progetto, invocando poi la funzione \texttt{assign(mail)} per generarne il codice HTML corrispondente al relativo pulsante
 \end{itemize}
 
-\subsubsection{Parte Repo}
+\subsection{Parte Repo}
 In questo modulo, rispetto a quello precedentemente descritto, si è cercato di ridurre il carico nella parte repo per spostare le operazioni relative alla generazione del codice HTML necessarie per generare il codice delle tabelle nel JavaScript.\\
 Tuttavia è stata necessaria l’implementazione di cinque classi Java, necessarie a interfacciarsi con i vari componenti del backend, che verranno elencate a seguito (verranno omesse le pagine e i file di configurazione dei webscript, in quanto l'implementazione, a parte il nome, è speculare a quanto già presentato nel capitolo precedente).\\
 \emph{È importante ricordarsi, se si utilizza la response per ritornare codice HTML o stringhe qualsiasi, di includere il codice riportato al listato \ref{lst:fix} per settare la response correttamente}.
@@ -148,7 +148,7 @@ res.setContentType("text/html; charset=UTF-8");
 res.setContentEncoding("UTF-8");
 \end{lstlisting}
  Altrimenti la codifica dei caratteri non riesce in maniera corretta.
-\paragraph{Clienti.java}
+\subsubsection{Clienti.java}
 Questa pagina è chiamata senza parametri tramite richiesta POST al webscript “clienti” dalla funzione “setup()” della pagina “progetti”, e si occupa di ritornare il codice HTML necessario a generare un select con i clienti, recuperati dal database, tra le varie option.
 Si compone delle seguenti funzioni:
 \begin{itemize}
@@ -158,7 +158,7 @@ Si compone delle seguenti funzioni:
 \item \texttt{execute(Connection con, String query, WebScriptResponse res)}, metodo che esegue la query.
 \item \texttt{writedata(ResultSet rs, String result, Connection con)}, metodo che si occupa di ritornare il codice html necessario per generare il select e le option iterando il result set risultato dell’interrogazione del database.
 \end{itemize}
-\paragraph{GetUsers.java}
+\subsubsection{GetUsers.java}
 Questa pagina è chiamata senza parametri tramite richiesta POST al webscript “GetUsers” dalla funzione “setup()” della pagina “progetti”, e si occupa di interrogare l’LDAP al fine di ottenere una lista di tutti gli utenti che sono registrati nell’LDAP. La lista è ritornata tramite una stringa con tutti i record separati con una serie di caratteri “sentinella” che fanno da separatori e che poi il Javascript si occupa di rimuovere e di riorganizzare. Esso è composto dalle seguenti funzioni:
 \begin{itemize}
 \item \texttt{public static DirContext ldapContext()}, che fa da costruttore senza parametri di un ldap context. Viene seguito da
@@ -167,7 +167,7 @@ Questa pagina è chiamata senza parametri tramite richiesta POST al webscript �
 \item \texttt{public static String getcontextFactory()} e \texttt{public static DirContext getLdapcontext()} che  semplicemente ritornano il valore degli omonimi  parametri.
 \item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)}, metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata AJAX del webscript e che contiene le istruzioni per gestirla.
 \end{itemize}
-\paragraph{GetWorkers.java}
+\subsubsection{GetWorkers.java}
 Questa pagina è chiamata senza parametri tramite richiesta POST al webscript “GetWorkers” dalla funzione “setup()” della pagina “dipendenti”. Essa si occupa di ritornare il risultato dell’interrogazione della tabella lavoratori, con il valore delle varie celle separati da un opportuno separatore e le righe separate da un diverso separatore. Ciò permette in seguito al codice JavaScript di ricomporla in un array di array di stringhe  che è possibile iterare.
 Esso si compone delle seguenti funzioni:
 \begin{itemize}
@@ -177,7 +177,7 @@ Esso si compone delle seguenti funzioni:
 \item \texttt{execute(Connection con, String query, WebScriptResponse res)}, metodo che esegue la query.
 \item \texttt{writedata(ResultSet rs, String result, Connection con)}, metodo che si occupa di formare la stringa di risposta che corrisponde ai criteri descritti prima.
 \end{itemize}
-\paragraph{Project\_creator.java}
+\subsubsection{Project\_creator.java}
 Questa pagina è chiamata con svariati parametri tramite richiesta POST al webscript “project\_creator” dalla funzione “sendRequest()” della pagina “progetti”. È la classe più corposa implementata in tutto il progetto. In quanto si occupa di gestire l’inserimento di un nuovo progetto nel DB e di creare le cartelle corrispondenti, assegnando nel mentre i permessi di accesso e modifica alla sola cartella di documentazione tecnica (e suoi figli) a coloro ai quali è stato assegnato il progetto, in addizione ai gruppi ai quali i permessi vengono invece dati di default.
 Essa si compone delle seguenti funzioni:
 \begin{itemize}
@@ -189,7 +189,7 @@ Essa si compone delle seguenti funzioni:
 \item \texttt{private void execute(Connection con, String query)}, che esegue l’inserimento del record nelle tabelle relative agli impiegati e ai progetti.
 \item \texttt{private void create\_folder\_tree(String ID, String descr, String[] workers)}, che crea iterativamente l’albero delle cartelle da istanziare assegnando i permessi di default e invocando \texttt{give\_permissions} alla creazione della cartella relativa alla documentazione tecnica.
 \end{itemize}
-\paragraph{SendMails.java} che si occupa di mandare un messaggio a tutte le mail di una lista, entrambe date in input alla chiamata del servizio. Questa funzione usa le \gls{API} di Alfresco, nello specifico il mailAction, che viene istanziato con il codice visibile al listato \ref{lst:mail}
+\subsubsection{SendMails.java} che si occupa di mandare un messaggio a tutte le mail di una lista, entrambe date in input alla chiamata del servizio. Questa funzione usa le \gls{API} di Alfresco, nello specifico il mailAction, che viene istanziato con il codice visibile al listato \ref{lst:mail}
 \begin{lstlisting}[language=Java,caption=set dell'actionservice per le mail,label=lst:mail]
  ActionService actionService = serviceRegistry.getActionService();
  Action mailAction = actionService.createAction(MailActionExecuter.NAME);
@@ -199,7 +199,7 @@ La classe è composta solo dalla funzione \texttt{public void execute(WebScriptR
 \section{Aspetto estetico}
 Dato che il sistema non è stato ancora dotato delle funzionalità di update e delete, non si è ritenuto di procedere ad allinearlo con il tema Coral Tree per il momento, quindi non sono stati prodotti mockup. È stato chiesto però di rendere gradevole la presentazione
 \subsection{Risultati raggiunti}
-Nelle figure \ref{fig:progetti-sopra} e \ref{fig:progetti-sopra} si può vedere l'aspetto della pagina di inserimento di un nuovo progetto, mentre nella figura \ref{fig:workers} vi è la pagina dedicata alla visualizzazione dei progetti. L'aggiunta del testo per la mail avviene tramite un pop-up JQuery.
+Nelle figure \ref{fig:progetti-sopra} e \ref{fig:progetti-sotto} si può vedere l'aspetto della pagina di inserimento di un nuovo progetto, mentre nella figura \ref{fig:workers} vi è la pagina dedicata alla visualizzazione dei progetti. L'aggiunta del testo per la mail avviene tramite un pop-up JQuery.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth]{nuove_immagini/progetti-sopra}
