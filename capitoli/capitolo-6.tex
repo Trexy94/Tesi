@@ -99,11 +99,11 @@ folder.child.two.two.four=04 - Invoices
 Come si nota sono configurabili, oltre ai parametri delle varie  connessioni, anche i nomi delle cartelle e le query.
 
 \subsection{Parte share}
-La parte share si basa su una struttura simile a quella del modulo clienti. Per ragioni di tempo, non si è potuto sviluppare un modify per i progetti e la pagina di visualizzazione dei progetti è quindi un semplice dump dei dati, con però la possibilità di inviare una maila  tutti coloro che sono stati assegnati al progetto. La struttura è stata tuttavia predisposta all’aggiunta di funzionalità.
+La parte share si basa su una struttura simile a quella del modulo clienti. Per ragioni di tempo, non si è potuto sviluppare un modify per i progetti e la pagina di visualizzazione dei progetti è quindi un semplice dump dei dati, con però la possibilità di inviare una mail a tutti coloro che sono stati assegnati al progetto. La struttura è stata tuttavia predisposta all’aggiunta di funzionalità.
 
 \subsubsection{Pagina di visualizzazione dei progetti}
 Vista la struttura della tabella dei lavoratori, la pagina si occupa di mostrare una riorganizzazione dei dati di quella tabella per dare una migliore leggibilità.
-È composta prevalentemente attraverso l’iniezione di codice HTML da parte di funzioni JavaScript che manipolano i risultati del webservice che viene chiamato tramite AJAX.
+È composta prevalentemente attraverso l’iniezione di codice HTML da parte di funzioni JavaScript che manipolano i risultati del web service che viene chiamato tramite AJAX.
 La parte statica è definita nei file
 \begin {itemize}
 \item \texttt{dipendenti.get.desc.xml}
@@ -165,7 +165,7 @@ Questa pagina è chiamata senza parametri tramite richiesta POST al webscript �
 \item \texttt{public static DirContext ldapContext (Hashtable <String,String>env)} che invece è il suo costruttore con parametri.
 \item \texttt{public static String getUsers()}, che è il metodo principale della classe e che si occupa di creare la richiesta degli utenti all’LDAP e di iterare la risposta ottenuta al fine di formare una stringa che rispetti le condizioni già citate.
 \item \texttt{public static String getcontextFactory()} e \texttt{public static DirContext getLdapcontext()} che  semplicemente ritornano il valore degli omonimi  parametri.
-\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)}, metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata AAJAX del webscript e che contiene le istruzioni per gestirla.
+\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)}, metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata AJAX del webscript e che contiene le istruzioni per gestirla.
 \end{itemize}
 \paragraph{GetWorkers.java}
 Questa pagina è chiamata senza parametri tramite richiesta POST al webscript “GetWorkers” dalla funzione “setup()” della pagina “dipendenti”. Essa si occupa di ritornare il risultato dell’interrogazione della tabella lavoratori, con il valore delle varie celle separati da un opportuno separatore e le righe separate da un diverso separatore. Ciò permette in seguito al codice JavaScript di ricomporla in un array di array di stringhe  che è possibile iterare.
