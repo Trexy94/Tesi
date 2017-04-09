@@ -1,3 +1,4 @@
+\select@language {italian}
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {italian}
@@ -12,55 +13,55 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces architettura generale\relax }}{16}{figure.caption.22}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces architettura generale\relax }}{16}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces architettura estesa\relax }}{17}{figure.caption.23}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces architettura estesa\relax }}{17}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Architettura di Share\relax }}{18}{figure.caption.24}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Architettura di Share\relax }}{18}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Architettura del componente Platform\relax }}{18}{figure.caption.25}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Architettura del componente Platform\relax }}{18}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Architettura del Repository\relax }}{19}{figure.caption.26}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces descrizione generale di quanto creato per il modulo relativo ai clienti\relax }}{26}{figure.caption.27}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces pagina di inserimento di un nuovo cliente\relax }}{35}{figure.caption.38}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces pagina di visualizzazione dei clienti nel database\relax }}{35}{figure.caption.39}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces pagina di dettaglio di un cliente \relax }}{35}{figure.caption.40}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Architettura del Repository\relax }}{19}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces descrizione generale di quanto creato per il modulo relativo ai progetti\relax }}{38}{figure.caption.41}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces descrizione generale di quanto creato per il modulo relativo ai clienti\relax }}{26}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces pagina di inserimento di un nuovo progetto, inserimento dei dati\relax }}{45}{figure.caption.50}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces pagina di inserimento di un nuovo cliente\relax }}{35}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces pagina di inserimento di un nuovo progetto, assegnazione dei lavoratori \relax }}{45}{figure.caption.51}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces pagina di visualizzazione dei clienti nel database\relax }}{35}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces pagina di visualizzazione dei progetti \relax }}{45}{figure.caption.52}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces pagina di dettaglio di un cliente \relax }}{35}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces descrizione generale di quanto creato per il modulo relativo ai temi\relax }}{49}{figure.caption.56}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces descrizione generale di quanto creato per il modulo relativo ai progetti\relax }}{38}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces pagina di login\relax }}{52}{figure.caption.59}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces pagina di inserimento di un nuovo progetto, inserimento dei dati\relax }}{45}{figure.caption.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces pagina per la password dimenticata\relax }}{52}{figure.caption.60}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces pagina di inserimento di un nuovo progetto, assegnazione dei lavoratori \relax }}{45}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces home page predefinita di Alfresco \relax }}{53}{figure.caption.61}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces pagina di visualizzazione dei progetti \relax }}{45}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces nuovo aspetto della home page \relax }}{53}{figure.caption.62}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces pagina principale di un sito di Alfresco, tema predefinito \relax }}{54}{figure.caption.63}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces descrizione generale di quanto creato per il modulo relativo ai temi\relax }}{49}{figure.caption.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces pagina principale di un sito di Alfresco, nuovo aspetto \relax }}{54}{figure.caption.64}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces pagina di login\relax }}{52}{figure.caption.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces raccolta documenti predefinita di alfresco \relax }}{55}{figure.caption.65}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces pagina per la password dimenticata\relax }}{52}{figure.caption.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.9}{\ignorespaces nuovo aspetto della raccolta documenti \relax }}{55}{figure.caption.66}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces home page predefinita di Alfresco \relax }}{53}{figure.caption.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.5}{\ignorespaces nuovo aspetto della home page \relax }}{53}{figure.caption.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.6}{\ignorespaces pagina principale di un sito di Alfresco, tema predefinito \relax }}{54}{figure.caption.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.7}{\ignorespaces pagina principale di un sito di Alfresco, nuovo aspetto \relax }}{54}{figure.caption.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.8}{\ignorespaces raccolta documenti predefinita di alfresco \relax }}{55}{figure.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.9}{\ignorespaces nuovo aspetto della raccolta documenti \relax }}{55}{figure.caption.68}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
