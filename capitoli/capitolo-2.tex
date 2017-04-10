@@ -17,28 +17,28 @@ Per prima cosa, è necessario premettere che l'azienda in cui si è svolto lo st
 In particolare, durante lo stage sono stati richiesti i seguenti punti:
 \begin{itemize}
 \item Tracciabilità: è stato spesso richiesto di rendere conto dello stato di avanzamento dei processi, delle componenti e delle attività in lavorazione, al fine di verificare il rispetto della tabella di marcia,
-\item Documentazione: descrizione di quanto è stato fatto, delle strategie utilizzate e dei dettagli implementativi in modo puntuale e preciso, per far sì che quanto è stato fatto generi utilità all'azienda e sia riutilizzabile e replicabile in futuro, senza dover rifare tutte le attività, avendo già una strategia e una soluzione pronte e immediatamente utilizzabili.
-\item Misurazione: per ogni attività eseguita, deve essere misurabile il suo costo(in termini di tempo, nel caso del progetto qui esposto), e la sua qualità complessiva, in base a vari indicatori.
+\item Documentazione: descrizione di quanto è stato fatto, delle strategie utilizzate e dei dettagli implementativi in modo puntuale e preciso, per far sì che quanto fatto generi utilità all'azienda e sia riutilizzabile e replicabile in futuro, senza dover rifare tutte le attività, avendo già una strategia e una soluzione pronte e immediatamente applicabili.
+\item Misurazione: per ogni attività eseguita, deve essere misurabile il suo costo(in termini di tempo, nel caso del progetto qui esposto) e la sua qualità complessiva, in base a vari indicatori.
 \end{itemize}
 Quanto esposto è stato tenuto in grande considerazione durante lo sviluppo, al fine di realizzare un prodotto quanto più possibile conforme agli standard di qualità aziendali
 \subsection{Considerazioni iniziali}
-Alfresco, soprattutto nella versione Community, utilizzata dall'azienda perché Open Source è dotata di pochissime utilità di base, dal momento che il profitto dell'azienda che produce il software proviene dalla consulenza tecnica fornita dai loro esperti e dalla vendita di moduli ulteriori che vanno ad estendere la dotazione di base, moduli disponibili, soprattutto nel caso dei più interessanti, solo tramite la sottoscrizione di un abbonamento, che viene valutato di caso in caso ma è comunque costoso. L'azienda quindi punta a fornire moduli adatti alla gestione di clienti e progetti integrati direttamente in Alfresco, e punta quindi gradualmente ad accentrare in Alfresco più funzionalità possibili, sostituendo gradualmente gli applicativi attualmente utilizzati ad esempio per la gestione dei progetti e la rendicontazione, per poi in un futuro poter proporre a  clienti terzi il prodotto finito. Per questo motivo il progetto di stage si è concretizzato in quanto esposto, cercando quindi di introdurre alcune funzionalità.
+Alfresco, soprattutto nella versione Community, utilizzata dall'azienda perché Open Source, è dotata di pochissime utilità di base, dal momento che il profitto dell'azienda che produce il software proviene dalla consulenza tecnica fornita dai loro esperti e dalla vendita di moduli ulteriori che vanno ad estendere la dotazione di base, moduli disponibili, soprattutto nel caso dei più interessanti, solo tramite la sottoscrizione di un abbonamento, che viene valutato di caso in caso ma è comunque costoso. L'azienda quindi punta a fornire moduli adatti alla gestione di clienti e progetti integrati direttamente in Alfresco, e punta quindi gradualmente ad accentrare in Alfresco più funzionalità possibili, sostituendo gradualmente gli applicativi attualmente utilizzati ad esempio per la gestione dei progetti e la rendicontazione, per poi in un futuro poter proporre a  clienti terzi il prodotto finito. Per questo motivo il progetto di stage si è concretizzato in quanto esposto, cercando quindi di introdurre alcune funzionalità.
 \subsection{Approccio alla piattaforma}
 Le prime due settimane di stage sono state dedicate quasi interamente allo studio della complessa architettura
 e della SDK della piattaforma.
-Per affrontare quanto appena illustrate è stato effettuato un attento studio
+Per affrontare quanto appena evidenziato è stato effettuato un attento studio
 della SDK di Alfresco, scegliendo il tipo di archetipo da utilizzare. La scelta è
 ricaduta sull’archetipo all-in-one in quanto permette lo sviluppo sia del lato front-end
 che di quello back-end in simultanea, senza dover distribuire ed installare separatamente un modulo per ogni parte sviluppata.
 In seguito, si sono analizzate le richieste poste dall'azienda in merito alle funzionalità desiderate al fine di individuare le strategie e i metodi migliori per realizzare quanto richiesto
 \subsection{Ambiente di test}
-Assieme allo sviluppo dei vari moduli, è proceduta a pari passo anche la creazione e il mantenimento di un ambiente di test dove poter testare i moduli in maniera sicura prima di portarli in produzione e applicare i moduli nel \gls{KMS} aziendale. Ciò è stato espressamente richiesto dall'azienda e quindi i moduli prodotti, non appena la loro installazione era possibile, sono stati caricati e provati nel \gls{KMS} di test che replicava quello dell'azienda, e successivamente, prima del rilascio finale, in una copia esatta del software del \gls{KMS} di produzione.
+Assieme allo sviluppo dei vari moduli, su espressa richiesta dell’azienda, è proceduta a pari passo anche la creazione e il mantenimento di un ambiente di test dove poter testare i moduli in maniera sicura prima di portarli in produzione e applicarli nel \gls{KMS} aziendale. Nello specifico quindi i moduli prodotti, non appena la loro installazione era possibile, sono stati caricati e provati nel \gls{KMS} di test che replicava quello dell'azienda, e successivamente prima del rilascio finale, in una copia esatta del software del \gls{KMS} di produzione.
 \section{Vincoli}
-Per quanto riguarda l'implementazione, non sono stati imposti allo stagista vincoli stringenti per quanto riguarda i dettagli implementativi e accessibilità, anche se è stato esplicitato che il codice doveva essere facile da manutenere e che tutti i parametri e le stringhe utilizzate dovevano essere collocate in opportuni file di properties, in maniera da rendere facile configurazione e localizzazione. Non sono stati specificati requisiti di qualità, in quanto è stato indicato di rispettare gli standard aziendali.
+Per quanto riguarda l'implementazione, non sono stati imposti allo stagista vincoli stringenti per quanto riguarda i dettagli implementativi e l'accessibilità, anche se è stato esplicitato che il codice doveva essere facile da manutenere e che tutti i parametri e le stringhe utilizzate dovevano essere collocate in opportuni file di properties, in maniera da rendere facile configurazione e localizzazione. Non sono stati specificati requisiti di qualità, in quanto è stato indicato di rispettare gli standard aziendali.
 \section{Metodologia di sviluppo}
-Per lo sviluppo si è ricorsi al framework agile scrum, che è quello utilizzato dall'azienda, eseguendo ovviamente daily scrum quotidianamente per fare il punto sulla situazione e facendo sprint di durata di una/due settimane.
+Per lo sviluppo si è ricorsi al framework agile Scrum, che è quello utilizzato dall'azienda, eseguendo ovviamente daily Scrum quotidianamente per fare il punto sulla situazione e facendo sprint di durata di una/due settimane.
 \section{Requisiti funzionali}
-Tenuto conto dei vincoli elencati nei punti precedenti, per prima cosa si è eseguita una analisi relativa ai requisiti funzionali.
+Tenuto conto dei vincoli elencati nei punti precedenti, per prima cosa si è eseguita un'analisi relativa ai requisiti funzionali.
 Per rendere più chiare le priorità nello sviluppo è stata adottata una simbologia di
 classificazione dei requisiti.
 Ad ogni Requisito Funzionale è associato un codice del tipo R.X.Y dove:
@@ -70,7 +70,7 @@ R.O.1.1.2  & Deve essere possibile assegnare la partita IVA o il codice fiscale 
 \hline
 R.O.1.1.3  & Deve essere possibile assegnare una descrizione ad un cliente & Completato \\
 \hline
-R.O.1.1.4  & Deve essere possibile assegnare la data di inizio del rapporto di un cliente & Completato \\
+R.O.1.1.4  & Deve essere possibile assegnare la data di inizio del rapporto con un cliente & Completato \\
 \hline
 R.O.1.1.5  & Deve essere possibile assegnare la data di fine del rapporto con un cliente & Completato \\
 \hline
@@ -88,7 +88,7 @@ R.O.1.1.7.4  & Deve essere possibile scegliere quali sottocartelle si vogliono c
 \hline
 R.O.1.2  & Deve essere possibile visualizzare i dati di un cliente & Completato \\
 \hline
-R.O.1.2.1  & Deve essere raggiungere la cartella relativa ad un cliente & Completato \\
+R.O.1.2.1  & Deve essere possibile raggiungere la cartella relativa ad un cliente & Completato \\
 \hline
 R.O.1.3  & Deve essere possibile modificare i dati di un cliente & Completato \\
 \hline
@@ -108,11 +108,11 @@ R.D.2    & L'applicazione deve permettere il CRUD dei progetti & Non completato 
 \hline
 R.D.2.1    & Deve essere possibile creare un progetto & Completato \\
 \hline
-R.D.2.1.1    & Deve essere assegnare un nome ad un progetto & Completato \\
+R.D.2.1.1    & Deve essere possibile assegnare un nome ad un progetto & Completato \\
 \hline
-R.D.2.1.2    & Deve essere assegnare una descrizione ad un progetto & Completato \\
+R.D.2.1.2    & Deve essere possibile assegnare una descrizione ad un progetto & Completato \\
 \hline
-R.D.2.1.3    & Deve essere assegnare dei lavoratori ad un progetto & Completato \\
+R.D.2.1.3    & Deve essere possibile assegnare dei lavoratori ad un progetto & Completato \\
 \hline
 R.F.2.1.3.1    & Deve essere possibile ottenere i lavoratori dalla piattaforma LDAP & Completato \\
 \hline
@@ -126,7 +126,7 @@ R.D.2.1.4.1  & Deve essere possibile specificare quali sottocartelle si vogliono
 \hline
 R.F.2.1.4.2  & Le cartelle devono essere visibili solo agli amministratori e a coloro ai quali è stato assegnato un progetto & Completato \\
 \hline
-R.D.2.1.5  & Deve essere assegnare un cliente un progetto & Completato \\
+R.D.2.1.5  & Deve essere possibile assegnare un cliente un progetto & Completato \\
 \hline
 R.D.2.2    & Deve essere possibile visualizzare i dati di un progetto &Completato \\
 \hline

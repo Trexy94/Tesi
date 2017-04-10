@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  9 APR 2017 22:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.2.26)  10 APR 2017 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1630,34 +1630,32 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 Underfull \vbox (badness 2409) has occurred while \output is active []
 
  [30]
-[31] [32] [33]
-<immagini/nuove_immagini/cliente-insert.jpg, id=621, 1347.0325pt x 623.32875pt>
+[31] [32] [33] [34]
+<immagini/nuove_immagini/cliente-insert.jpg, id=627, 1347.0325pt x 623.32875pt>
 File: immagini/nuove_immagini/cliente-insert.jpg Graphic file (type jpg)
 <use immagini/nuove_immagini/cliente-insert.jpg>
 Package pdftex.def Info: immagini/nuove_immagini/cliente-insert.jpg used on inp
-ut line 334.
+ut line 333.
 (pdftex.def)             Requested size: 372.0pt x 172.14354pt.
 
-<immagini/nuove_immagini/clienti-lista.jpg, id=622, 1355.0625pt x 229.85875pt>
+<immagini/nuove_immagini/clienti-lista.jpg, id=628, 1355.0625pt x 229.85875pt>
 File: immagini/nuove_immagini/clienti-lista.jpg Graphic file (type jpg)
 
 <use immagini/nuove_immagini/clienti-lista.jpg>
 Package pdftex.def Info: immagini/nuove_immagini/clienti-lista.jpg used on inpu
-t line 339.
+t line 338.
 (pdftex.def)             Requested size: 372.0pt x 63.10086pt.
 
-<immagini/nuove_immagini/cliente-detail.jpg, id=623, 1333.98375pt x 627.34375pt
+<immagini/nuove_immagini/cliente-detail.jpg, id=629, 1333.98375pt x 627.34375pt
 >
 File: immagini/nuove_immagini/cliente-detail.jpg Graphic file (type jpg)
  <use immagini/nuove_immagini/cliente-detail.jpg>
 Package pdftex.def Info: immagini/nuove_immagini/cliente-detail.jpg used on inp
-ut line 344.
+ut line 343.
 (pdftex.def)             Requested size: 372.0pt x 174.9371pt.
 ) (./capitoli/capitolo-6.tex
-[34] [35 <./immagini/nuove_immagini/cliente-insert.jpg> <./immagini/nuove_immag
-ini/clienti-lista.jpg> <./immagini/nuove_immagini/cliente-detail.jpg>] [36
-
-]
+[35 <./immagini/nuove_immagini/cliente-insert.jpg> <./immagini/nuove_immagini/c
+lienti-lista.jpg>] [36 <./immagini/nuove_immagini/cliente-detail.jpg>]
 Capitolo 6.
 
 <immagini//diagrammi_cartelle/progettifolder.png, id=639, 4013.99625pt x 3996.9
@@ -1667,7 +1665,9 @@ File: immagini//diagrammi_cartelle/progettifolder.png Graphic file (type png)
 Package pdftex.def Info: immagini//diagrammi_cartelle/progettifolder.png used o
 n input line 26.
 (pdftex.def)             Requested size: 372.0pt x 370.38135pt.
- [37]
+ [37
+
+]
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) [38 <./immagini//diagrammi_cartelle/progettifolder.png>] [39] [40] [41] [42] 
@@ -1842,7 +1842,7 @@ c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive
 f-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1000.pfb>
-Output written on .\/tesi.pdf (73 pages, 6832766 bytes).
+Output written on .\/tesi.pdf (73 pages, 6833101 bytes).
 PDF statistics:
  1393 PDF objects out of 1440 (max. 8388607)
  1238 compressed objects within 13 object streams

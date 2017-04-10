@@ -51,7 +51,7 @@
 
 \intro{In questo capitolo verrà esposta l'implementazione e le fasi che hanno portato la creazione del modulo clienti}\\
 
-\section{Scopo del modulo} il modulo clienti si pone come scopo quello di creare un semplice sistema di CRUD in un database. In questo caso è stato implementato in un database Postgres, che è quello che viene incluso di default con la distribuzione di Alfresco Community, ma è stata esplicita richiesta dell'azienda che fosse possibile una configurazione su ambienti simili ma che non fossero esclusivamente Postgres.
+\section{Scopo del modulo} Il modulo clienti si pone come scopo quello di creare un semplice sistema di CRUD in un database. In questo caso è stato implementato in un database Postgres, che è quello che viene incluso di default con la distribuzione di Alfresco Community, ma è stata esplicita richiesta dell'azienda che fosse possibile una configurazione su ambienti simili ma che non fossero esclusivamente Postgres.
 \section{Presentazione generale del modulo}
 Nella figura \ref{fig:cartelle-clienti} si illustra in generale quanto è stato prodotto per questo modulo. In seguito, nella descrizione di dettaglio, si indicheranno i nomi specifici di tutti i file creati
 \begin{figure}[!ht]
@@ -141,11 +141,11 @@ Le pagine includono inoltre nell’HTML la richiesta di JQuery, mediante le line
 
 La pagina vis\_clienti è la pagina di gestione dei clienti, ed è suddivisa nei file:
 \begin{itemize}
-\item \texttt{vis\_clienti.get.desc.xml} che funziona come descritto nel \hyperref[cap:architettura]{ quarto  capitolo}.
-\item \texttt{vis\_clienti.get.html.ftl} che fornisce lo scheletro della pagina, che verrà poi popolata tramite richieste AJAX delle parti dinamiche.
-\item \texttt{vis\_clienti.get.js}, che funziona come descritto prima.
-\item \texttt{vis\_clienti.css}, incluso in maniera analoga al javascript come descritto prima e che definisce il CSS della pagina.
-\item \texttt{vis\_clienti.js}, incluso come descritto prima
+\item \texttt{vis\_clienti.get.desc.xml} che funziona come descritto nel \hyperref[cap:architettura]{ quarto  capitolo};
+\item \texttt{vis\_clienti.get.html.ftl} che fornisce lo scheletro della pagina, che verrà poi popolata tramite richieste AJAX delle parti dinamiche;
+\item \texttt{vis\_clienti.get.js}, che funziona come descritto sopra;
+\item \texttt{vis\_clienti.css}, incluso in maniera analoga al javascript come descritto prima e che definisce il CSS della pagina;
+\item \texttt{vis\_clienti.js}, incluso come descritto sopra.
 \end{itemize}
 In particolare la pagina nella sua parte principale offre la lista degli identificativi dei clienti attivi e non, che è anche il nome con cui sono stati salvati nelle cartelle di Alfresco. Si è scelto questa rappresentazione in quanto è logicamente vicina alla struttura di Alfresco e sarà più facile in futuro implementare funzionalità quali la visualizzazione dei progetti del cliente.  I pulsanti dei clienti attivi e inattivi sono generati rispettivamente da \texttt{clients.java}  e  \texttt{inactive.java}  chiamati all’avvio della pagina tramite \texttt{window.onload} che si occupano di definire anche i giusti parametri che verranno poi utilizzati per popolare il form che consente l’aggiornamento dei dati di un particolare cliente. Il form è già presente nella pagina ma viene reso visibile da una opportuna funzione javascript che si occupa anche di popolare la tabella sottostante tramite una chiamata AJAX al web script \texttt{TablePageGenerator.java}, che si occupa di fornire la tabella e di iniettare il pulsante cancella e il pulsante  per definire  la data di fine del rapporto  con il corretto id. I pulsanti sono collegati a loro volta a \texttt{delete.java} e \texttt{update.java}, chiamati tramite opportune chiamate AJAX.
 
@@ -153,14 +153,14 @@ I messaggi di errore e di conferma sono gestiti dove possibile in JavaScript e d
 
 Per riassumere la pagina fa uso delle seguenti funzioni JavaScript:
 \begin{itemize}
-\item \texttt{set\_table(identificativo)} che si occupa di generare la tabella di un determinato cliente tramite richiesta AJAX
+\item \texttt{set\_table(identificativo)} che si occupa di generare la tabella di un determinato cliente tramite richiesta AJAX;
 \item \texttt{detail(id,nome,pi,descr,datainizio,datafine)}che si occupa di settare 
-E mostrare il dettaglio di un cliente
-\item \texttt{controllaPIVA(pi)} che esegue semplicemente  il controllo della partita IVA
-\item \texttt{sendRequest()} Che invia la richiesta AJAX di aggiornamento di un determinato cliente
-\item \texttt{set\_data\_fine(ID)} che setta la data di fine di un determinato record di un cliente tramite richiesta AJAX
-\item \texttt{cancella(key)} che fa la richiesta tramite AJAX di cancellazione di un record con un determinato ID
-\item \texttt{up()} che popola la pagina con i pulsanti dei clienti, tramite richiesta AJAX.
+e mostrare il dettaglio di un cliente;
+\item \texttt{controllaPIVA(pi)} che esegue semplicemente  il controllo della partita IVA;
+\item \texttt{sendRequest()} Che invia la richiesta AJAX di aggiornamento di un determinato cliente;
+\item \texttt{set\_data\_fine(ID)} che setta la data di fine di un determinato record di un cliente tramite richiesta AJAX;
+\item \texttt{cancella(key)} che fa la richiesta tramite AJAX di cancellazione di un record con un determinato ID;
+\item \texttt{up()} che popola la pagina con i pulsanti dei clienti, tramite richiesta AJAX;
 \item \texttt{vai(name)} che reindirizza alla cartella con dato nome.
 \end{itemize}
 Sono presenti altre funzioni che svolgono compiti banali quale la codifica e decodifica di entità, per garantire il funzionamento della pagina nel caso i record contengano caratteri speciali
@@ -169,7 +169,7 @@ Sono presenti altre funzioni che svolgono compiti banali quale la codifica e dec
 
 \subsection{Creazione della parte repo}
 \subsubsection{Creazione delle variabili del modulo}
-Per rendere possibile la modifica di alcune configurazioni anche dopo che il modulo è stato installato in alfresco, si è provveduto a creare un file in \texttt{configModule.properties}, Accessibile da Java aggiungendo al codice le linee mostrate nel listato \ref{lst:properties}
+Per rendere possibile la modifica di alcune configurazioni anche dopo che il modulo è stato installato in alfresco, si è provveduto a creare un file in \texttt{configModule.properties}, accessibile da Java aggiungendo al codice le linee mostrate nel listato \ref{lst:properties}
 \begin{lstlisting}[language=Java, caption= inclusione delle properties, label=lst:properties]
 private static Properties properties=new Properties();
 
@@ -179,7 +179,7 @@ public static final String getValue(String value) {
 	
 properties.load(getClass().getResourceAsStream("/alfresco/module/AIOProject-repo-amp/config/configModule.properties"));
 \end{lstlisting}
-Questo permette quindi di recuperare le variabili, che si è cercato di documentare direttamente sul codice tramite nomi significativi e una breve descrizione. Il codice è riportato nel listato \ref{lst:clienti-properties}
+Questo permette quindi di recuperare le variabili che si è cercato di documentare direttamente sul codice tramite nomi significativi e una breve descrizione. Il codice è riportato nel listato \ref{lst:clienti-properties}
 \begin{lstlisting}[caption=contenuto di configModule.properties,label=lst:clienti-properties]
 #query configuration
 queryselection=select id,name, piva, datainizio, datafine, descr from clienti where identificativo='param1' order by id
@@ -220,7 +220,7 @@ Come già accennato, le pagine in share per il loro completo funzionamento neces
 \begin{lstlisting}[language=Java, caption=connesione tramite JDBC, label=lst:java-jdbc]
 connection=DriverManager.getConnection((connector+":"+type+"://"+ip+":"+port+"/"+server),id,password);
 \end{lstlisting}
-Che sono i parametri definiti nel paragrafo query configuration del .properties
+che sono i parametri definiti nel paragrafo query configuration del .properties
 
 I Web Script sono poi registrati nel file \texttt{webscript-context.xml} secondo le modalità già descritte.
 
@@ -228,23 +228,22 @@ Per comodità nella chiamata l’indirizzo è stato settato con lo stesso nome d
 
 Passiamo ora in rassegna i vari web script implementati, in ordine alfabetico.
 \paragraph{clients.java}
-Questo web script, situato in \texttt{clients.java} e dalla pagina definita in \texttt{clients.post.desc.xml} e in \texttt{clients.post.html.ftl}, si occupa di generare i pulsanti necessari a visualizzare poi la pagina di dettaglio per un utente attivo. Si occupa quindi di interrogare il database e di definire di conseguenza i parametri dei pulsanti e il loro nome, che chiamano uno la funzione \texttt{detail(id,nome,pi,descr,datainizio,datafine)},e l’altro la funzione \texttt{vai(name)}. Si appoggia sulla query definita in queryselectactive per selezionare gli utenti attivi, percorrendo poi il result set per di volta in volta assegnare i parametri.
-Viene chiamato senza parametri.
+Questo web script, situato in \texttt{clients.java} e dalla pagina definita in \texttt{clients.post.desc.xml} e in \texttt{clients.post.html.ftl}, si occupa di generare i pulsanti necessari a visualizzare poi la pagina di dettaglio per un utente attivo. Si occupa quindi di interrogare il database e di definire di conseguenza i parametri dei pulsanti e il loro nome, che chiamano uno la funzione \texttt{detail(id,nome,pi,descr,datainizio,datafine)},e l’altro la funzione \texttt{vai(name)}. Si appoggia sulla query definita in queryselectactive per selezionare gli utenti attivi, percorrendo poi il result set percorrendo poi il result set per assegnare di volta in volta i parametri. Viene chiamato senza parametri.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
-\item \texttt{getValue(String value)}, che recupera una property con una data value.
-\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties.
-\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla.
-\item \texttt{execute(Connection con, String query, WebScriptResponse res)}, metodo che esegue la query.
-\item \texttt{writedata(ResultSet rs, String result, Connection con)}, metodo che si occupa di ritornare il codice html necessario a generare i pulsanti dei clienti attivi
+\item \texttt{getValue(String value)}, che recupera una property con una data value;
+\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties;
+\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla;
+\item \texttt{execute(Connection con, String query, WebScriptResponse res)}, metodo che esegue la query;
+\item \texttt{writedata(ResultSet rs, String result, Connection con)}, metodo che si occupa di ritornare il codice HTML necessario a generare i pulsanti dei clienti attivi.
 \end{itemize}
 \paragraph{delete.java}
 Questo web script, situato in \texttt{delete.java} e dalla pagina definita in \texttt{delete.post.desc.xml} e in \texttt{delete.post.html.ftl}  si occupa semplicemente di cancellare un elemento che abbia un determinato id, fornito come parametro della chiamata. Si appoggia sulla query definita alla voce querydelete.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
-\item \texttt{getValue(String value)}, che recupera una property con una data value
-\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties.
-\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla.
+\item \texttt{getValue(String value)}, che recupera una property con una data value;
+\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties;
+\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla;
 \item \texttt{execute(Connection con, String query)}, metodo che esegue la query di delete di un dato record del database.
 \end{itemize}
 \paragraph{inactive.java}
@@ -252,39 +251,39 @@ Questo web script, situato in \texttt{inactive.java} e dalla pagina definita in 
 Viene chiamato senza parametri.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
-\item \texttt{getValue(String value)}, che recupera una property con una data value
-\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties.
-\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla.
-\item \texttt{execute(Connection con, String query, WebScriptResponse res)}, metodo che esegue la query.
+\item \texttt{getValue(String value)}, che recupera una property con una data value;
+\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties;
+\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla;
+\item \texttt{execute(Connection con, String query, WebScriptResponse res)}, metodo che esegue la query;
 \item \texttt{writedata(ResultSet rs, String result, Connection con)}, metodo che si occupa di ritornare il codice html necessario a generare i pulsanti dei clienti non attivi.
 \end{itemize}
 Si è deciso di renderla autonoma rispetto a clients per consentire una migliore estensione ad ulteriori eventuali funzionalità.
 \paragraph{query\_processor.java}
-Questo web script, situato in \texttt{query\_processor.java} e dalla pagina definita in \texttt{query\_processor.post.desc.xml} e in \texttt{query\_processor.post.html.ftl} . Si occupa di inserire un oggetto nel database, utilizzando la query definita in  queryinsertion e deve essere chiamato con i seguenti parametri:
+Questo web script, situato in \texttt{query\_processor.java} e dalla pagina definita in \texttt{query\_processor.post.desc.xml} e in \texttt{query\_processor.post.html.ftl} si occupa di inserire un oggetto nel database, utilizzando la query definita in  queryinsertion e deve essere chiamato con i seguenti parametri:
 \begin{itemize}
-\item ID:l’identificativo del cliente,
-\item Nome:il nome esteso del cliente,
-\item Piva:la partita iva del cliente,
-\item Descr:una descrizione generica,
-\item Datainizio:la data di inizio del rapporto,
-\item Datafine:la data di fine del rapporto(se non presente, verrà settata a null),
-\item Mode:1=inserimento con la creazione delle cartelle, 2=inserimento senza creazione di cartelle ,
-\item Box1:flag per la creazione della cartella di nome definito in folder.one,
-\item box2:flag per la creazione della cartella di nome definito in folder.two,
-\item box3:flag per la creazione della cartella di nome definito in folder.three,
-\item box4:flag per la creazione della cartella di nome definito in folder.four,
-\item box5:flag per la creazione della cartella di nome definito in folder.five,
+\item ID:l’identificativo del cliente;
+\item Nome:il nome esteso del cliente;
+\item Piva:la partita iva del cliente;
+\item Descr:una descrizione generica;
+\item Datainizio:la data di inizio del rapporto;
+\item Datafine:la data di fine del rapporto(se non presente, verrà settata a null);
+\item Mode:1=inserimento con la creazione delle cartelle, 2=inserimento senza creazione di cartelle;
+\item Box1:flag per la creazione della cartella di nome definito in folder.one;
+\item box2:flag per la creazione della cartella di nome definito in folder.two;
+\item box3:flag per la creazione della cartella di nome definito in folder.three;
+\item box4:flag per la creazione della cartella di nome definito in folder.four;
+\item box5:flag per la creazione della cartella di nome definito in folder.five.
 \end{itemize}
 Lo script si appoggia, oltre al JDBC per l’inserimento nel database, sulla \gls{API} di Alfresco 
 FileFolderService per creare la gerarchia di cartelle corrispondente, di permissionservice per settare i permessi di accesso alle cartelle (per il momento codificati nel Java e non configurabili dopo l’installazione se non mediante l’editor dei permessi di Alfresco)
-E fa utilizzo anche nodeservice, un altro elemento dell'\gls{API}, per settare la descrizione della cartella principale.
-Per includere il serviceregisty, necessario per accedere alla \gls{API} di Alfresco, è necessario, oltre a specificare  nel bean, il cui funzionamento è stato già descritto, tramite le righe mostrate nel listato \ref{lst:service-registry}
+e fa utilizzo anche nodeservice, un altro elemento dell'\gls{API}, per settare la descrizione della cartella principale.
+Per includere il serviceregisty, necessario per accedere alla \gls{API} di Alfresco, è necessario, oltre a specificare  nel bean, il cui funzionamento è stato già descritto, le righe mostrate nel listato \ref{lst:service-registry}
 \begin{lstlisting}[language=XML,label=lst:service-registry,caption=inclusione del service registry nel bean]
         <property name="serviceRegistry">
           <ref bean="ServiceRegistry" />
       </property>
 \end{lstlisting}
-E poi nel codice java con l’aggiunta di quanto mostrato alla figura \ref{lst:service-registry-java}
+anche includerlo poi nel codice java con l’aggiunta di quanto mostrato alla figura \ref{lst:service-registry-java}
 \begin{lstlisting}[language=Java,label=lst:service-registry-java,caption=inclusione del service registry nel bean]
 import org.alfresco.service.ServiceRegistry;
 
@@ -297,11 +296,11 @@ public void setServiceRegistry(ServiceRegistry serviceRegistry) {
 Ritorna una stringa di risultato dove è specificato l’esito dell’operazione.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
-\item \texttt{setServiceRegistry(ServiceRegistry serviceRegistry)}, che inizializza il parametro per il service registry di Alfresco. È richiesto obbligatoriamente da Alfresco se si vogliono utilizzare le sue funzionalità
-\item \texttt{getValue(String value)}, che recupera una property con una data value
-\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties.
-\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla.
-\item \texttt{execute(Connection con, String query)}, metodo che esegue la query.
+\item \texttt{setServiceRegistry(ServiceRegistry serviceRegistry)}, che inizializza il parametro per il service registry di Alfresco. È richiesto obbligatoriamente da Alfresco se si vogliono utilizzare le sue funzionalità;
+\item \texttt{getValue(String value)}, che recupera una property con una data value;
+\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties;
+\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla;
+\item \texttt{execute(Connection con, String query)}, metodo che esegue la query;
 \item \texttt{create\_folder\_tree(String ID, String descr,Boolean box1, Boolean box2, Boolean box3, Boolean box4, Boolean box5)}, metodo che si occupa di creare le cartelle relative ad un nuovo cliente, di settarne i permessi e di settare la descrizione della cartella padre.
 \end{itemize}
 \paragraph{TablePageGenerator.java}
@@ -309,19 +308,19 @@ Questo web script, situato in \texttt{TablePageGenerator.java} e dalla pagina de
 Il web script si occupa di generare il codice della tabella e di iniettare i giusti parametri nel pulsante per cancellare, e, nel caso la data di fine non sia stata settata, anche di generare il pulsante per la modifica della data di fine rapporto.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
-\item \texttt{getValue(String value)}, che recupera una property con una data value
-\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties.
-\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla.
-\item \texttt{execute(Connection con, String query, WebScriptResponse res)}, metodo che esegue la query.
+\item \texttt{getValue(String value)}, che recupera una property con una data value;
+\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties;
+\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla;
+\item \texttt{execute(Connection con, String query, WebScriptResponse res)}, metodo che esegue la query;
 \item \texttt{dumpData(ResultSet rs, String result)}, metodo che si occupa di ritornare il codice html necessario a generare la tabella dello storico di un cliente.
 \end{itemize}
 \paragraph{update.java}
 Questo web script, situato in \texttt{update.java} e dalla pagina definita in \texttt{update.post.desc.xml} e in \texttt{update.post.html.ftl}  si occupa semplicemente di cancellare un elemento che abbia un determinato id, un campo da aggiornare e un valore con cui aggiornarlo,  forniti come parametro della chiamata. Si appoggia sulla query definita alla voce queryupdate.
 La classe si compone delle seguenti funzioni:
 \begin{itemize}
-\item \texttt{getValue(String value)}, che recupera una property con una data value
-\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties.
-\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla.
+\item \texttt{getValue(String value)}, che recupera una property con una data value;
+\item \texttt{inizialize\_values ()}, che inizializza le variabili utilizzate, recuperandole dalle properties;
+\item \texttt{public void execute(WebScriptRequest req, WebScriptResponse res)} metodo obbligatorio che si può intendere come il metodo che viene invocato alla chiamata Ajax del web script e che contiene le istruzioni per gestirla;
 \item \texttt{executeupdate(Connection con, String query)}, metodo che esegue la query di update della data di fine di un dato record del database.
 \end{itemize}
 

@@ -106,7 +106,7 @@ Se si approfondisce il componente Platform (contenuto nell'alfresco.war) vedremo
 
 Per maggiori informazioni si rimanda alla visione della documentazione di Alfresco.
 
-Oltre a Share vi sono anche molti altri client che possono connettersi al repository, e questi includono anche molti client compatibili con CMIS, e via il protocollo SharePoint e il client SharePoint. Esiste anche, a pagamento, la possibilità di sincronizzare i contenuti nel cloud.
+Oltre a Share vi sono anche molti altri client che possono connettersi al repository, e questi includono anche molti client compatibili con CMIS, e attraverso il protocollo SharePoint e il client SharePoint. Esiste anche, a pagamento, la possibilità di sincronizzare i contenuti nel cloud.
 
 Platform inoltre contiene numerose \gls{API}, Servizi, e protocolli.
 
@@ -157,13 +157,13 @@ per il solo Alfresco Repository Web Application;
 Alfresco Share Web Application;
 \item Alfresco all-in-one (AIO): questo archetipo si utilizza quando vi è necessità di creare un progetto che richieda sia la componente Share che quella Repo, è la più potente e completa delle distribuzioni SDK, ma anche la più pesante.
 \end{itemize}
-tutti questi archetipi hanno delle caratteristiche comuni, quali:
+Tutti questi archetipi hanno delle caratteristiche comuni, quali:
 \begin{itemize}
-\item AMP packaging, cioè sono in grado di generare con la loro compilazione i file AMP, che sono i file che contengono i dati che poi verranno installati nei WAR corrispondenti.
-\item La gestione delle dipendenze in Maven;
-\item La generazione di uno scheletro di base sul quale poter creare il proprio progetto;
-\item Il supporto ai test di unità, test che vanno inseriti in un'apposita directory.
-\item Facilitazioni per l'integrazione di un progetto negli IDE, come IntelliJ IDEA e Eclipse.
+\item AMP packaging, cioè sono in grado di generare con la loro compilazione i file AMP, ovvero i file che contengono i dati che poi verranno installati nei WAR corrispondenti;
+\item la gestione delle dipendenze in Maven;
+\item la generazione di uno scheletro di base sul quale poter creare il proprio progetto;
+\item il supporto ai test di unità, test che vanno inseriti in un'apposita directory;
+\item facilitazioni per l'integrazione di un progetto negli IDE, come IntelliJ IDEA e Eclipse.
 \end{itemize}
 \subsection{Repository AMP archetype}
 L’Alfresco Repository AMP genera un scheletro di progetto per gestire le estensioni e le
@@ -213,7 +213,7 @@ Ovviamente questo archetipo è il più pesante, e il suo completo deploy richied
 \section{Gestione dei moduli}
 \subsection{Creazione}
 Per poter utilizzare l'SDK è necessario sottostare ai prerequisiti descritti nella pagina dei prerequisiti di installazione di Alfresco\footcite{site:alfresco-prerequisites}.
-Fatto questo il progetto può essere importato in un IDE, ad esempio in Eclipse, seguendo le apposite guide nella documentazione di Alfresco\footcite{site:alfresco-rad}
+Fatto questo il progetto può essere importato in un IDE, ad esempio in Eclipse, seguendo le apposite guide nella documentazione di Alfresco\footcite{site:alfresco-rad}. 
 Le cartelle su cui andremo a sviluppare saranno la repo-amp e la share-amp. La share-amp verrà utilizzata per sviluppare l’interfaccia grafica del modulo mentre la parte di repo-amp  per lo sviluppo del “back-end”, le altre folder create servono per replicare l’ambiente di Alfresco in fase di esecuzione del modulo, e quindi non ha senso lavorare su di esse.\\
 È necessario installare il driver jdbc se si intende  lavorare nell’SDK interagendo con database terzi, e dato che non è incluso nell'SDK anche se presente nell'ambiente finale, va incluso seguendo quanto descritto nel forum di Alfresco \footcite{site:alfresco-jdbc}. 
 Una volta fatto questo, bisogna aprire nell’IDE o anche a mano i vari file di Alfresco, seguendo quanto descritto nelle guide già citate, la cartella contenente la parte che verrà utilizzata per registrare la pagina in Alfresco share, nella cartella contenente le estensioni web e più nello specifico i web script. %partendo dalla cartella di installazione (sono riportati gli indirizzi utilizzando i nomi dell’esempio sopra citato: %\texttt{/ alfresco-extension / acme-cms-poc / acme-cms-poc-share-amp / src / main / amp / config / alfresco / web-extension / site-webscripts / com / example / pages}
@@ -238,7 +238,7 @@ Quanto detto è sufficiente per creare una pagina che non necessiti di interazio
 
 Per quanto riguarda una pagina che invece fa uso delle \gls{API} di Alfresco il procedimento è più complicato: la pagina che verrà mostrata all’utente è collocata nella cartella contenente i template per i web script.
 La pagina generata è situata all’indirizzo \texttt{<ip>:<porta>/alfresco/service<url>}.
-È inoltre necessario creare un bean che fa da collegamento tra il codice java, situato appunto in una cartella specifica che contiene le classi java, e la pagina che verrà generata. Per farlo seguire quanto descritto nelle guide per la configurazione di Alfresco \footcite{site:alfresco-bean}.
+È inoltre necessario creare un bean che fa da collegamento tra il codice java, situato appunto in una cartella specifica che contiene le classi java, e la pagina che verrà generata. Per farlo è necessario seguire quanto descritto nelle guide per la configurazione di Alfresco \footcite{site:alfresco-bean}.
 
 \subsection{Manutenzione}
 Nel momento in cui si ha l'intenzione di modificare un modulo per evenienze riguardanti aspetti grafici o logici indiretti, si dovrà aprire il modulo con un IDE a piacere, e applicare le modifiche desiderate sui file.\\
